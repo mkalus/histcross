@@ -1,5 +1,9 @@
 <?php
-/* SVN FILE: $Id: test.php 7945 2008-12-19 02:16:01Z gwoo $ */
+/*
+ * Part of histcross - the semantic database for historians.
+ * Copyright (c) 2005-2009, Maximilian Kalus, auxnet.de
+ * See licence.txt for details (MIT licence).
+ */
 /**
  * Short description for file.
  *
@@ -21,7 +25,7 @@
  * @since         CakePHP(tm) v 1.2.0.4433
  * @version       $Revision: 7945 $
  * @modifiedby    $LastChangedBy: gwoo $
- * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
+ * @lastmodified  $Date: 2008-12-18 20:16:01 -0600 (Thu, 18 Dec 2008) $
  * @license       http://www.opensource.org/licenses/opengroup.php The Open Group Test Suite License
  */
 error_reporting(E_ALL);

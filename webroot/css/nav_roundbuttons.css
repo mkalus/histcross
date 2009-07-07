@@ -1,0 +1,56 @@
+/* $Id: nav_roundbuttons.css 27 2008-12-02 17:01:15Z Maximilian Kalus $ */
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+  #nav_main {
+    float: left;
+    width: 100%;
+  }
+
+  #nav_main ul {
+    line-height: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    white-space: nowrap;
+  }
+
+  #nav_main li {
+	background: transparent url('../img/nav_oval/oval-gray-left.gif') no-repeat top left;
+	display: block;
+	float: left;
+	line-height: 16px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+	height: 24px; /* Height of button background height */
+	padding-left: 11px; /* Width of left menu image */
+    margin: 0 0 0 5px;
+  }
+
+  #nav_main li a {
+	text-decoration: none;
+	background: transparent url('../img/nav_oval/oval-gray-right.gif') no-repeat top right;
+	display: block;
+	padding: 4px 11px 4px 0; /*Set 11px below to match value of 'padding-left' value above*/
+  }
+
+  #nav_main li a:link, a:visited, a:active {
+	color: #494949; /*button text color*/
+  }
+
+
+  #nav_main li:hover{ /* Hover state CSS */
+	background-position: bottom left;
+  }
+
+  #nav_main li a:hover { /* Hover state CSS */
+	background-position: bottom right;
+	color: black;
+  }
+
+  #nav_main li.current {
+	background: transparent url('../img/nav_oval/oval-blue-left.gif') no-repeat top left;
+  }
+
+  #nav_main li.current a {
+	background: transparent url('../img/nav_oval/oval-blue-right.gif') no-repeat top right;
+  }
+  

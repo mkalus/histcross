@@ -1,4 +1,6 @@
 <?php
+/* Part of histcross (c) 2009, Maximilian Kalus, auxnet.de
+ * See licence.txt for details (MIT licence). */
 /* SVN FILE: $Id: core.php 7945 2008-12-19 02:16:01Z gwoo $ */
 /**
  * This is core configuration file.
@@ -38,7 +40,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 2);
+	Configure::write('debug', 0);
 /**
  * Application wide charset encoding
  */
@@ -85,7 +87,7 @@
  * Defines the default error type when using the log() function. Used for
  * differentiating error logging and debugging. Currently PHP supports LOG_DEBUG.
  */
-	define('LOG_ERROR', 2);
+	define('LOG_ERROR', 0);
 /**
  * The preferred session handling method. Valid values:
  *
@@ -122,7 +124,7 @@
  * Session time out time (in seconds).
  * Actual value depends on 'Security.level' setting.
  */
-	Configure::write('Session.timeout', '120');
+	Configure::write('Session.timeout', '600');
 /**
  * If set to false, sessions are not automatically started.
  */
@@ -148,7 +150,7 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+	Configure::write('Security.salt', 'kawItNabJoodAwInvekeubtukilbyogats[Owvar');
 /**
  * Compress CSS output by removing comments, whitespace, repeating tags, etc.
  * This requires a/var/cache directory to be writable by the web server for caching.
@@ -168,8 +170,8 @@
  * The classname and database used in CakePHP's
  * access control lists.
  */
-	Configure::write('Acl.classname', 'DbAcl');
-	Configure::write('Acl.database', 'default');
+//	Configure::write('Acl.classname', 'DbAcl');
+//	Configure::write('Acl.database', 'default');
 /**
  *
  * Cache Engine Configuration
@@ -223,5 +225,37 @@
  *	));
  *
  */
-	Cache::config('default', array('engine' => 'File'));
+//	Cache::config('default', array('engine' => 'File'));
+
+	Cache::config('default', array(
+ 		'engine' => 'Xcache', //[required]
+ 		'duration'=> 3600, //[optional]
+ 		'probability'=> 100, //[optional]
+ 		'prefix' => Inflector::slug(APP_DIR) . '_', //[optional] prefix every cache file with this string
+  	));
+
+/**
+ * HC-specific configuration
+ */
+//Path to imagepagick convert
+	DEFINE('PERPAGE', 20);
+	Configure::write('HC.version', '2.0'); //major/minor version number
+
+//Path to imagepagick convert and graphviz
+	Configure::write('HC.convert_path', '/usr/bin/convert');
+	Configure::write('HC.graphviz_path', '/usr/bin/neato -Gmode=hier');
+//Sizes of icons - used by convert
+	Configure::write('HC.pictogram_big', '24x24');
+	Configure::write('HC.pictogram_small', '16x16');
+//GMT-Wrapper
+	Configure::write('HC.GMTWrapper', 'GMT'); //disable to disable GMT completely
+//Search engine - possible values are 'simple' and 'sphinx'
+	Configure::write('HC.SearchEngine', 'sphinx');
+//If Sphinx is used, set the server and port of sphinx
+	Configure::write('HC.SphinxHost', 'localhost');
+	Configure::write('HC.SphinxPort', 3312);
+//Also set the indices to search and the type of index
+	Configure::write('HC.SphinxVertices', 'histcross_vertices');
+	Configure::write('HC.SphinxRelations', 'histcross_relations');
+	Configure::write('HC.SphinxIndex', 'soundex'); //Type of Sphinx index, soundex or plain
 ?>

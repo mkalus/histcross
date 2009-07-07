@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ * Angepasst Max Kalus
+ * $Id: basemod.css 8 2008-11-24 19:20:21Z Maximilian Kalus $
+ */
+
+@media screen, projection
+{
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting YAML's  basic layout elements
+   * (de) Gestaltung des YAML Basis-Layouts
+   */
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body { background: #AEBFD2 repeat-x top left fixed; padding: 10px 0; }
+
+  /* (en) Centering layout in old IE-versions */
+  /* (de) Zentrierung des Layouts in alten IE-versionen */
+  body { text-align: center; }
+  #page_margins { text-align:left; margin: 0 auto; }
+
+  /* (en) Layout: width, background, borders */
+  /* (de) Layout: Breite, Hintergrund, Rahmen */
+  #page_margins { min-width: 740px; max-width: 80em; background: #fff; }
+  #page{ padding: 10px; }
+
+  /* (en) Designing main layout elements */
+  /* (de) Gestaltung der Hauptelemente des Layouts */
+  #header {
+    color: #000;
+    background: #fff repeat-x top left;
+    padding: 15px 5px 5px 20px; 
+  }
+
+  #topnav { color: #aaa; background: transparent; }
+
+  #main { background: #fff;padding:10px 0; }
+
+  #footer { 
+    color:#666; 
+    background: #f9f9f9;
+    padding: 10px 20px;
+    border-top: 5px #efefef solid;
+
+  }
+
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting content container
+   * (de) Formatierung der Inhalts-Container
+   *
+   * |-------------------------------|
+   * | #header                       |
+   * |-------------------------------|
+   * | #col1   | #col3     | #col2   |
+   * | 25%     | flexible  | 25%     |
+   * |-------------------------------|
+   * | #footer                       |
+   * |-------------------------------|
+   */
+
+
+  #col1 { width: 200px; }
+  #col1_content { padding: 5px 5px 5px 5px; }
+
+  #col2, #col2_content { display:none; }
+
+  #col3 { margin-left: 200px; margin-right: 0; }
+  #col3_content { padding: 5px 5px 5px 5px; }
+
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Modifying "shiny buttons" navigation
+   * (en) Anpassung der "Shiny Buttons" Navigation
+   */
+
+  #nav * { border: 0px none !important; }
+  #nav_main { background-color: #dddddd; padding-top: 5px; padding-bottom: 5px; }
+  #nav_main ul { margin-left: 10px; }
+}

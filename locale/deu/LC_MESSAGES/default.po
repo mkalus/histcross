@@ -1,0 +1,1441 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HistCross\n"
+"POT-Creation-Date: 2009-01-06 11:57+0100\n"
+"PO-Revision-Date: 2009-01-06 11:57+0100\n"
+"Last-Translator: Maximilian Kalus <info@histcross.org>\n"
+"Language-Team: Max Kalus <info@histcross.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: /controllers/app_controller.php:134
+msgid "Error in Request - Ajax required!"
+msgstr "Fehler in der Anfrage - Ajax wird benötigt!"
+
+#: /controllers/app_controller.php:139;162;209
+msgid "Error in Request - wrong parameters"
+msgstr "Fehler in der Anfrage - falsche Parameter."
+
+#: /controllers/app_controller.php:194;199
+msgid "Bibliography added"
+msgstr "Bibliographie hinzugefügt"
+
+#: /controllers/app_controller.php:228;233
+#: /controllers/bibliographies_controller.php:90
+msgid "Bibliography deleted"
+msgstr "Bibliographie gelöscht"
+
+#: /controllers/bibliographies_controller.php:31
+msgid "Invalid Bibliography."
+msgstr "Keine gültige Bibliographie."
+
+#: /controllers/bibliographies_controller.php:56;72
+msgid "The Bibliography has been saved"
+msgstr "Der Eintrag in die Bibliographie wurde gespeichert"
+
+#: /controllers/bibliographies_controller.php:59;75
+msgid "The Bibliography could not be saved. Please, try again."
+msgstr "Der Eintrag in die Bibliographie konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/bibliographies_controller.php:66
+msgid "Invalid Bibliography"
+msgstr "Falsche Bibliographie"
+
+#: /controllers/bibliographies_controller.php:86
+msgid "Invalid id for Bibliography"
+msgstr "Falsche Id für Bibiographie"
+
+#: /controllers/inferences_controller.php:33;61
+msgid "The Inference has been saved"
+msgstr "Inferenz wurde gespeichert"
+
+#: /controllers/inferences_controller.php:36;64
+msgid "The Inference could not be saved. Please, try again."
+msgstr "Die Inferenz konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/inferences_controller.php:56
+msgid "Invalid Inference"
+msgstr "Ungültige Inferenz"
+
+#: /controllers/inferences_controller.php:112
+msgid "Invalid id for Inference"
+msgstr "Ungültige Id für Inferenz"
+
+#: /controllers/inferences_controller.php:116
+msgid "Inference deleted"
+msgstr "Inferenz gelöscht"
+
+#: /controllers/pictograms_controller.php:29
+msgid "Invalid Pictogram."
+msgstr "Falsches Bild."
+
+#: /controllers/pictograms_controller.php:39;54
+msgid "The Pictogram has been saved"
+msgstr "Das Bild wurde gespeichert"
+
+#: /controllers/pictograms_controller.php:42;57
+msgid "The Pictogram could not be saved. Please, try again."
+msgstr "Das Bild konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/pictograms_controller.php:49
+msgid "Invalid Pictogram"
+msgstr "Falsches Bild"
+
+#: /controllers/pictograms_controller.php:68
+msgid "Invalid id for Pictogram"
+msgstr "Ungültige Id für Bild"
+
+#: /controllers/pictograms_controller.php:72
+msgid "Pictogram deleted"
+msgstr "Bild gelöscht"
+
+#: /controllers/relation_classes_controller.php:39
+msgid "Invalid RelationClass."
+msgstr "Ungültige Kantenklasse."
+
+#: /controllers/relation_classes_controller.php:60;76
+msgid "The RelationClass has been saved"
+msgstr "Die Kantenklasse wurde gepspeichert"
+
+#: /controllers/relation_classes_controller.php:63;79
+msgid "The RelationClass could not be saved. Please, try again."
+msgstr "Die Kantenklasse konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/relation_classes_controller.php:70
+msgid "Invalid RelationClass"
+msgstr "Ungültige Kantenklasse"
+
+#: /controllers/relation_classes_controller.php:90
+msgid "Invalid id for RelationClass"
+msgstr "Ungültige Id für Kantenklasse"
+
+#: /controllers/relation_classes_controller.php:94
+msgid "RelationClass deleted"
+msgstr "Kantenklasse gelöscht"
+
+#: /controllers/relation_types_controller.php:39
+msgid "Invalid RelationType."
+msgstr "Ungültiger Kantentyp."
+
+#: /controllers/relation_types_controller.php:63;83
+msgid "The RelationType has been saved"
+msgstr "Der Kantentyp wurde gepspeichert"
+
+#: /controllers/relation_types_controller.php:66;86
+msgid "The RelationType could not be saved. Please, try again."
+msgstr "Der Kantentyp konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/relation_types_controller.php:77
+msgid "Invalid RelationType"
+msgstr "Ungültiger Kantentyp"
+
+#: /controllers/relation_types_controller.php:101
+msgid "Invalid id for RelationType"
+msgstr "Ungültige Id für  Kantentyp"
+
+#: /controllers/relation_types_controller.php:105
+msgid "RelationType deleted"
+msgstr "Kantentyp gelöscht"
+
+#: /controllers/relations_controller.php:32;420
+msgid "Invalid Relation."
+msgstr "Ungültige Kante."
+
+#: /controllers/relations_controller.php:100;142
+msgid "The Relation has been saved"
+msgstr "Die Kante wurde gepspeichert"
+
+#: /controllers/relations_controller.php:103;145
+msgid "The Relation could not be saved. Please, try again."
+msgstr "Die Kante konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/relations_controller.php:133
+msgid "Invalid Relation"
+msgstr "Ungültige Kante"
+
+#: /controllers/relations_controller.php:180;207
+msgid "Invalid id for Relation"
+msgstr "Ungültige Id für Kante"
+
+#: /controllers/relations_controller.php:184
+msgid "Relation deleted"
+msgstr "Kante gelöscht"
+
+#: /controllers/relations_controller.php:247
+msgid "Invalid id for Relation for Inference Search"
+msgstr "Ungültige Id für Kante innerhalb der Inferenzsuche"
+
+#: /controllers/relations_controller.php:257
+msgid "No fitting Relation found for Inference Search"
+msgstr "Keine möglichen neuen Kanten für die Inferenzsuche gefunden"
+
+#: /controllers/relations_controller.php:283
+msgid "No Inferences found for this Relation"
+msgstr "Keine Inferenzen für diese Kante gefunden"
+
+#: /controllers/relations_controller.php:289
+msgid "No possible Inferences found"
+msgstr "Keine möglichen Inferenzen gefunden"
+
+#: /controllers/relations_controller.php:434
+msgid "Invalid parameters."
+msgstr "Ungültige Parameter"
+
+#: /controllers/relations_controller.php:444
+msgid "Automatically created inference based on relation #"
+msgstr "Automatisch erstellte Inferenz der Kante #"
+
+#: /controllers/relations_controller.php:450
+msgid "Unable to add inference - error in validation of data."
+msgstr "Hinzufügen der abgeleiteten Kante nicht möglich - Fehler bei der Validierung der Daten."
+
+#: /controllers/relations_controller.php:462
+msgid "Inferred relation was successfully added."
+msgstr "Abgeleitete Kante wurde erfolgreich hinzugefügt."
+
+#: /controllers/searches_controller.php:27
+msgid "Please submit a search phrase!"
+msgstr "Bitte geben Sie einen Suchbegriff an!"
+
+#: /controllers/tagsets_controller.php:33
+msgid "Invalid Tag Set."
+msgstr "Ungültige Schlagwortmenge."
+
+#: /controllers/tagsets_controller.php:60;264
+msgid "Invalid id for Tag Set"
+msgstr "Ungültige Id für Schlagwortmenge"
+
+#: /controllers/tagsets_controller.php:132
+#: /controllers/vertices_controller.php:39
+msgid "Invalid Vertex."
+msgstr "Ungültiger Knoten"
+
+#: /controllers/tagsets_controller.php:145
+msgid "The Tag Set has been saved."
+msgstr "Das Schlagwort wurde gespeichert."
+
+#: /controllers/tagsets_controller.php:150
+msgid "The Tag Set has been saved"
+msgstr "Das Schlagwort wurde gespeichert"
+
+#: /controllers/tagsets_controller.php:161
+msgid "The Tag Set could not be saved. Please, try again."
+msgstr "Schlagwort konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/tagsets_controller.php:213
+msgid "Invalid id for Deletion"
+msgstr "Ungültige Id für die Löschung"
+
+#: /controllers/tagsets_controller.php:221
+msgid "Entry deleted."
+msgstr "Eintrag gelöscht."
+
+#: /controllers/tagsets_controller.php:227
+msgid "Entry deleted"
+msgstr "Eintrag gelöscht"
+
+#: /controllers/tagsets_controller.php:245
+msgid "Invalid Tag Set"
+msgstr "Ungültige Schlagwortmenge"
+
+#: /controllers/tagsets_controller.php:250
+msgid "The Tagset has been saved"
+msgstr "Das Schlagwort wurde gespeichert"
+
+#: /controllers/tagsets_controller.php:253
+msgid "The Tagset could not be saved. Please, try again."
+msgstr "Schlagwort konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/tagsets_controller.php:268
+msgid "Tag Set deleted"
+msgstr "Schlagwortmenge gelöscht"
+
+#: /controllers/users_controller.php:30
+msgid "Invalid user."
+msgstr "Ungültiger Benutzer."
+
+#: /controllers/users_controller.php:42;63
+msgid "The user has been saved"
+msgstr "Benutzer wurde gespeichert"
+
+#: /controllers/users_controller.php:45;66
+msgid "The user could not be saved. Please, try again."
+msgstr "Der Benutzer konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/users_controller.php:52;77
+msgid "Invalid user"
+msgstr "Ungültiger Benutzer"
+
+#: /controllers/users_controller.php:57;81
+msgid "Privilege break"
+msgstr "Fehlerhafter Zugang auf Zugangsberechtigungen"
+
+#: /controllers/users_controller.php:87
+msgid "The password has been changed"
+msgstr "Das Passwort wurde geändert"
+
+#: /controllers/users_controller.php:90
+msgid "The password could not be changed. Please, try again."
+msgstr "Das Passwort konnte nicht geändert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/users_controller.php:101
+msgid "Invalid id for User"
+msgstr "Ungültige Id für Benutzer"
+
+#: /controllers/users_controller.php:105
+msgid "User deleted"
+msgstr "Benutzer gelöscht"
+
+#: /controllers/users_controller.php:143
+msgid "This user has been deleted."
+msgstr "Benutzer wurde gelöscht."
+
+#: /controllers/users_controller.php:188
+msgid "Login failed. Invalid username or password."
+msgstr "Login fehlgeschlagen. Login oder Passwort ungültig."
+
+#: /controllers/users_controller.php:206
+msgid "You have been logged out"
+msgstr "Sie wurden ausgeloggt"
+
+#: /controllers/vertex_classes_controller.php:39
+msgid "Invalid VertexClass."
+msgstr "Ungültige Knotenklasse."
+
+#: /controllers/vertex_classes_controller.php:60;76
+msgid "The VertexClass has been saved"
+msgstr "Knotenklasse wurde gespeichert"
+
+#: /controllers/vertex_classes_controller.php:63;79
+msgid "The VertexClass could not be saved. Please, try again."
+msgstr "Die Knotenklasse konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/vertex_classes_controller.php:70
+msgid "Invalid VertexClass"
+msgstr "Ungültige Knotenklasse"
+
+#: /controllers/vertex_classes_controller.php:90
+msgid "Invalid id for VertexClass"
+msgstr "Ungültige Id für Knotenklasse"
+
+#: /controllers/vertex_classes_controller.php:94
+msgid "VertexClass deleted"
+msgstr "Knotenklasse gelöscht"
+
+#: /controllers/vertex_types_controller.php:39
+msgid "Invalid VertexType."
+msgstr "Ungültiger Knotentyp."
+
+#: /controllers/vertex_types_controller.php:60;79
+msgid "The VertexType has been saved"
+msgstr "Knotentyp wurde gespeichert"
+
+#: /controllers/vertex_types_controller.php:63;82
+msgid "The VertexType could not be saved. Please, try again."
+msgstr "Der Knotentyp konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/vertex_types_controller.php:73
+msgid "Invalid VertexType"
+msgstr "Ungültiger Knotentyp"
+
+#: /controllers/vertex_types_controller.php:96
+msgid "Invalid id for VertexType"
+msgstr "Ungültige Id für Knotentyp"
+
+#: /controllers/vertex_types_controller.php:100
+msgid "VertexType deleted"
+msgstr "Knotentyp gelöscht"
+
+#: /controllers/vertices_controller.php:102;122
+msgid "The Vertex has been saved"
+msgstr "Knoten wurde gespeichert"
+
+#: /controllers/vertices_controller.php:105;125
+msgid "The Vertex could not be saved. Please, try again."
+msgstr "Der Knoten konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
+
+#: /controllers/vertices_controller.php:115
+msgid "Invalid Vertex"
+msgstr "Ungültiger Knoten"
+
+#: /controllers/vertices_controller.php:139;166
+msgid "Invalid id for Vertex"
+msgstr "Ungültige Id für Knoten"
+
+#: /controllers/vertices_controller.php:143
+msgid "Vertex deleted"
+msgstr "Knoten löscht"
+
+#: /dev/translation_helper.php:12
+msgid "Class"
+msgstr "Klasse"
+
+#: /dev/translation_helper.php:13
+msgid "Sort Key"
+msgstr "Sortierschlüssel"
+
+#: /dev/translation_helper.php:14
+msgid "Bibliographies"
+msgstr "Bibliographie"
+
+#: /dev/translation_helper.php:15
+msgid "Users"
+msgstr "Benutzer"
+
+#: /dev/translation_helper.php:16
+msgid "Long Title"
+msgstr "Langer Titel"
+
+#: /dev/translation_helper.php:17
+msgid "Pictogram"
+msgstr "Bild"
+
+#: /dev/translation_helper.php:18
+msgid "Pictograms"
+msgstr "Bilder"
+
+#: /dev/translation_helper.php:19
+msgid "Home"
+msgstr "Home"
+
+#: /dev/translation_helper.php:20;22
+msgid "Geographic Coordinates"
+msgstr "Geographische Koordinaten"
+
+#: /dev/translation_helper.php:21;23
+msgid "Date Entries"
+msgstr "Datumseinträge"
+
+#: /dev/translation_helper.php:24;28
+msgid "Related Relations"
+msgstr "Verknüpfte Kanten"
+
+#: /dev/translation_helper.php:25
+msgid "Similar Relations from left Vertex"
+msgstr "Ähnliche Kanten vom linken Knoten aus"
+
+#: /dev/translation_helper.php:26
+msgid "Similar Relations to right Vertex"
+msgstr "Ähnliche Kanten zum rechten Knoten"
+
+#: /dev/translation_helper.php:27
+msgid "Related Vertices"
+msgstr "Verknüpfte Knoten"
+
+#: /dev/translation_helper.php:29
+msgid "Related Vertex Types"
+msgstr "Verknüpfte Knotentypen"
+
+#: /dev/translation_helper.php:30
+msgid "Related Relation Types"
+msgstr "Verknüpfte Kantentypen"
+
+#: /dev/translation_helper.php:31
+msgid "Password must have at least 6 characters"
+msgstr "Passwort muss mindestens 6 Zeichen lang sein."
+
+#: /dev/translation_helper.php:32
+msgid "Minimum length is 4 letters"
+msgstr "Minimale Länge ist 4 Zeichen"
+
+#: /dev/translation_helper.php:33
+msgid "Username must be unique"
+msgstr "Benutzername existiert schon"
+
+#: /dev/translation_helper.php:34
+msgid "Passwords did not match"
+msgstr "Passwörter stimmen nicht überein"
+
+#: /dev/translation_helper.php:35
+msgid "The only groups allowed are admin, poweruser, and user."
+msgstr "Die einzigen erlaubten Gruppen sind admin, poweruser und user."
+
+#: /dev/translation_helper.php:36
+msgid "This field cannot be left blank"
+msgstr "Dieses Feld darf nicht leer sein"
+
+#: /dev/translation_helper.php:37
+msgid "Key must be a nuber between 1 and 255"
+msgstr "Schlüssel muss eine Zahl zwischen 1 und 255 sein"
+
+#: /dev/translation_helper.php:38
+msgid "Title cannot be left blank"
+msgstr "Titel darf nicht leer sein"
+
+#: /dev/translation_helper.php:39
+msgid "Title must be unique"
+msgstr "Titel existiert schon"
+
+#: /dev/translation_helper.php:40
+msgid "Please submit a picture"
+msgstr "Bitte laden Sie ein Bild hoch"
+
+#: /dev/translation_helper.php:41
+msgid "Only gif, jpg, and png-Files are allowed."
+msgstr "Nur Bilder im Format gif, jpg und png sind erlaubt."
+
+#: /dev/translation_helper.php:42
+msgid "Date has to be entered in the format DD.MM.YYYY (or MM.YYYY or YYYY)"
+msgstr "Datum muss im Format TT.MM.JJJJ (oder MM.JJJJ oder JJJJ) eingegeben werden"
+
+#: /dev/translation_helper.php:43
+msgid "Coordinates entered are not the right format - lat/lon as decimal format (12.33333 55.33333) or in degree format (dd:mm:ssN dd:mm:ssE)"
+msgstr "Koordinaten wurden nicht richtig eingegeben - korrekt sind Breite/Länge als Dezimalformat (12.33333 55.33333) oder im Format gg:mm:ssN gg:mm:ssE"
+
+#: /dev/translation_helper.php:44
+msgid "Class/Title separation has do be done correctly using a \"class:title\" pattern."
+msgstr "Klasse/Titel muss korrekterweise im Format \"Klasse:Titel\" angegeben werden."
+
+#: /dev/translation_helper.php:45
+msgid "Reference must be unique"
+msgstr "Referenz existiert schon"
+
+#: /models/pictogram.php:58
+msgid "Could not move the temporary picture ito process it further."
+msgstr "Konnte das temporäre Bild nicht in einen anderen Ordner verschieben, um es dort weiter zu verarbeiten."
+
+#: /views/bibliographies/add.ctp:12
+#: /views/elements/view_bibliography_list.ctp:71
+#: /views/elements/view_tagset_list.ctp:70
+msgid "Add Bibliography"
+msgstr "Bibliographischen Eintrag hinzufügen"
+
+#: /views/bibliographies/add.ctp:14
+#: /views/bibliographies/edit.ctp:16
+msgid "Short bibliographic entry used in lists"
+msgstr "Kurzer bibliographischer Eintrag für Listen und Texte"
+
+#: /views/bibliographies/add.ctp:15
+#: /views/bibliographies/edit.ctp:17
+msgid "Full bibliographic entry"
+msgstr "Vollständiger bibliographischer Eintrag"
+
+#: /views/bibliographies/add.ctp:16
+#: /views/bibliographies/edit.ctp:18
+msgid "Reference entry for texts"
+msgstr "Referenzeintrag für Textfelder"
+
+#: /views/bibliographies/add.ctp:20
+#: /views/elements/view_bibliography_list.ctp:83
+#: /views/elements/view_tagset_list.ctp:88
+#: /views/inferences/add.ctp:31
+#: /views/pictograms/add.ctp:19
+#: /views/relation_classes/add.ctp:18
+#: /views/relation_types/add.ctp:25
+#: /views/relations/add.ctp:25
+#: /views/tagsets/add_set.ctp:20
+#: /views/users/add.ctp:30
+#: /views/vertex_classes/add.ctp:19
+#: /views/vertex_types/add.ctp:21
+#: /views/vertices/add.ctp:22
+#: /views/vertices/view.ctp:73
+msgid "Add!"
+msgstr "Hinzufügen!"
+
+#: /views/bibliographies/add.ctp:24
+#: /views/bibliographies/edit.ctp:27
+msgid "List Bibliographies"
+msgstr "Liste Bibliographie auf"
+
+#: /views/bibliographies/edit.ctp:12
+msgid "Edit Bibliography"
+msgstr "Bibliographischen Eintrag editieren"
+
+#: /views/bibliographies/edit.ctp:22
+#: /views/inferences/edit.ctp:33
+#: /views/pictograms/edit.ctp:23
+#: /views/relation_classes/edit.ctp:12
+#: /views/relation_types/edit.ctp:26
+#: /views/relations/edit.ctp:27
+#: /views/tagsets/edit.ctp:11
+#: /views/users/changepassword.ctp:20
+#: /views/users/edit.ctp:31
+#: /views/vertex_classes/edit.ctp:21
+#: /views/vertex_types/edit.ctp:23
+#: /views/vertices/edit.ctp:24
+msgid "Change!"
+msgstr "Ändern!"
+
+#: /views/bibliographies/edit.ctp:26
+#: /views/elements/view_bibliography_list.ctp:47;47;60
+#: /views/elements/view_tagset_list.ctp:41;41;54
+#: /views/pictograms/edit.ctp:27
+#: /views/relation_classes/edit.ctp:16
+#: /views/relation_types/edit.ctp:30
+#: /views/relations/edit.ctp:31
+#: /views/tagsets/edit.ctp:15
+#: /views/users/edit.ctp:36
+#: /views/vertex_classes/edit.ctp:25
+#: /views/vertex_types/edit.ctp:27
+#: /views/vertices/edit.ctp:28
+msgid "Delete"
+msgstr "Löschen"
+
+#: /views/bibliographies/edit.ctp:26
+#: /views/relation_classes/edit.ctp:16
+#: /views/relation_types/edit.ctp:30
+#: /views/tagsets/edit.ctp:15
+#: /views/users/edit.ctp:36
+#: /views/vertex_classes/edit.ctp:25
+#: /views/vertex_types/edit.ctp:27
+msgid "Are you sure you want to delete %s?"
+msgstr "Sind Sie sicher, dass Sie %s löschen wollen?"
+
+#: /views/bibliographies/edit.ctp:28
+#: /views/pictograms/edit.ctp:29
+#: /views/relation_classes/edit.ctp:18
+#: /views/relation_types/edit.ctp:32
+#: /views/relations/edit.ctp:33
+#: /views/relations/possible_inferences.ctp:76
+#: /views/tagsets/edit.ctp:17
+#: /views/vertex_classes/edit.ctp:27
+#: /views/vertex_types/edit.ctp:29
+#: /views/vertices/edit.ctp:30
+msgid "View"
+msgstr "Zeigen"
+
+#: /views/bibliographies/view.ctp:15;17
+msgid "Bibliographic Entry"
+msgstr "Bibliographischer Eintrag"
+
+#: /views/bibliographies/view.ctp:21
+msgid "Full Bibliographic Entry"
+msgstr "Vollständiger Bibliographischer Eintrag"
+
+#: /views/bibliographies/view.ctp:23
+msgid "Short Reference"
+msgstr "Kurzreferenz"
+
+#: /views/bibliographies/view.ctp:26
+#: /views/elements/view_comment.ctp:20
+msgid "Comment"
+msgstr "Kommentar"
+
+#: /views/elements/footer_editinfo.ctp:12
+#: /views/users/view.ctp:25
+msgid "Created"
+msgstr "Erstellt"
+
+#: /views/elements/footer_editinfo.ctp:13;17
+msgid "%s by %s"
+msgstr "%s von %s"
+
+#: /views/elements/footer_editinfo.ctp:14;18
+msgid "d-m-Y H:i:s"
+msgstr "d.m.Y H:i:s"
+
+#: /views/elements/footer_editinfo.ctp:16
+msgid "Changed"
+msgstr "Geändert"
+
+#: /views/elements/form_dates.ctp:11
+msgid "Start Date"
+msgstr "Startdatum"
+
+#: /views/elements/form_dates.ctp:14;22
+msgid "ca"
+msgstr "ca"
+
+#: /views/elements/form_dates.ctp:15;23
+msgid "Unclear Date?"
+msgstr "Unklar?"
+
+#: /views/elements/form_dates.ctp:16;24
+msgid "Julian?"
+msgstr "Julianisches Datum?"
+
+#: /views/elements/form_dates.ctp:19
+msgid "Stop Date"
+msgstr "Enddatum"
+
+#: /views/elements/form_geo.ctp:10
+msgid "Geo Coordinates"
+msgstr "Geographische Koordinaten"
+
+#: /views/elements/form_pictogram.ctp:17
+msgid "--- optional select ---"
+msgstr "--- auswählen, falls gewünscht ---"
+
+#: /views/elements/form_undelete.ctp:14
+msgid "Unset to undelete data entry"
+msgstr "Haken löschen, um Löschung aufzuheben"
+
+#: /views/elements/layout_lastvertices.ctp:22
+msgid "Last Vertices:"
+msgstr "Letzte Knoten:"
+
+#: /views/elements/layout_morelinks.ctp:12
+msgid "Additional Actions:"
+msgstr "Zusätzliche Aktionen:"
+
+#: /views/elements/layout_morelinks.ctp:14
+#: /views/pages/home.ctp:24
+#: /views/tagsets/index.ctp:2
+msgid "Tag Sets"
+msgstr "Schlagwortmengen"
+
+#: /views/elements/layout_morelinks.ctp:15
+#: /views/relations/aggregate_cloud.ctp:11
+msgid "Relational Tag Clouds"
+msgstr "Relationale Tagwolken"
+
+#: /views/elements/layout_search.ctp:17
+msgid "Search!"
+msgstr "Suchen!"
+
+#: /views/elements/list_inferences.ctp:20
+#: /views/helpers/paginated_table.php:75
+msgid "icon_new_en.gif"
+msgstr "icon_new_de.gif"
+
+#: /views/elements/list_inferences.ctp:28
+#: /views/helpers/paginated_table.php:82
+msgid "New"
+msgstr "Neu"
+
+#: /views/elements/list_inferences.ctp:35
+msgid "Inferences"
+msgstr "Inferenzen"
+
+#: /views/elements/list_inferences.ctp:36
+msgid "Show more"
+msgstr "Mehr zeigen"
+
+#: /views/elements/list_inferences.ctp:37
+msgid "Show less"
+msgstr "Weniger zeigen"
+
+#: /views/elements/list_inferences.ctp:67
+msgid "Formula:"
+msgstr "Formel:"
+
+#: /views/elements/list_inferences.ctp:81
+#: /views/elements/list_relations_bib.ctp:29
+#: /views/elements/list_vertices_bib.ctp:28
+#: /views/elements/view_bibliography_list.ctp:35;35
+#: /views/helpers/hc_support.php:86
+#: /views/helpers/paginated_table.php:28
+msgid "Edit"
+msgstr "Editieren"
+
+#: /views/elements/list_relations_bib.ctp:14
+#: /views/elements/list_vertices_bib.ctp:14
+msgid "Pages"
+msgstr "Seitenangaben"
+
+#: /views/elements/list_relations_bib.ctp:15
+#: /views/elements/view_possible_inferences.ctp:20
+msgid "From Vertex"
+msgstr "Von Knoten"
+
+#: /views/elements/list_relations_bib.ctp:16
+#: /views/elements/list_vertices_bib.ctp:16
+#: /views/elements/view_possible_inferences.ctp:21
+msgid "Type"
+msgstr "Typ"
+
+#: /views/elements/list_relations_bib.ctp:17
+#: /views/elements/view_possible_inferences.ctp:22
+msgid "To Vertex"
+msgstr "Zu Knoten"
+
+#: /views/elements/list_relations_bib.ctp:18
+#: /views/elements/list_vertices_bib.ctp:17
+msgid "From"
+msgstr "Von"
+
+#: /views/elements/list_relations_bib.ctp:19
+#: /views/elements/list_vertices_bib.ctp:18
+msgid "To"
+msgstr "Bis"
+
+#: /views/elements/list_relations_bib.ctp:28
+#: /views/elements/list_vertices_bib.ctp:27
+#: /views/elements/view_bibliography_list.ctp:10;10
+#: /views/elements/view_tagset_list.ctp:12;12
+#: /views/helpers/paginated_table.php:27
+msgid "Details"
+msgstr "Details"
+
+#: /views/elements/list_vertices_bib.ctp:15
+msgid "Title"
+msgstr "Titel"
+
+#: /views/elements/view_bibliography_list.ctp:15
+msgid "Bibliography"
+msgstr "Bibliographie"
+
+#: /views/elements/view_bibliography_list.ctp:64
+#: /views/elements/view_tagset_list.ctp:58
+msgid "Really delete?"
+msgstr "Wirklich löschen?"
+
+#: /views/elements/view_bibliography_list.ctp:81
+msgid "Bibliography:"
+msgstr "Bibliographie:"
+
+#: /views/elements/view_bibliography_list.ctp:82
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: /views/elements/view_coordinates.ctp:11
+msgid "Coordinates"
+msgstr "Koordinaten"
+
+#: /views/elements/view_coordinates.ctp:16;17
+msgid "Show on Globe"
+msgstr "Auf dem Globus zeigen"
+
+#: /views/elements/view_geodate.ctp:17
+msgid "Show"
+msgstr "Zeigen"
+
+#: /views/elements/view_geodate.ctp:27
+msgid "none"
+msgstr "nichts"
+
+#: /views/elements/view_network.ctp:20;31
+msgid "Network Visualization"
+msgstr "Visualisierung des Netzwerks"
+
+#: /views/elements/view_network.ctp:26
+#: /views/tagsets/viewnetwork.ctp:22
+msgid "Graphviz Data File"
+msgstr "Graphviz Datei"
+
+#: /views/elements/view_network.ctp:28
+#: /views/tagsets/viewnetwork.ctp:24
+msgid "Coordinated DOT-File"
+msgstr "Graphviz DOT-Datei mit Koordinaten"
+
+#: /views/elements/view_network.ctp:37;38
+msgid "Visualize Network"
+msgstr "Netzwerk visualisieren"
+
+#: /views/elements/view_ok_icon.ctp:10;10
+#: /views/elements/view_possible_inferences.ctp:42;42
+msgid "Inference exists"
+msgstr "Inferenz existiert schon"
+
+#: /views/elements/view_possible_inferences.ctp:17
+#: /views/relations/view.ctp:93
+msgid "Possible Derived Relations"
+msgstr "Mögliche abgeleitete Kanten"
+
+#: /views/elements/view_possible_inferences.ctp:24;50;50
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: /views/elements/view_tagset_list.ctp:17
+msgid "Associated Sets"
+msgstr "Verknüpfte Schlagworte"
+
+#: /views/elements/view_tagset_list.ctp:83
+msgid "Add new set name below. Classification of sets can be achieved by using the schema &quot;class:setname&quot;."
+msgstr "Geben Sie ein neues Schlagwort unten ein. Die Klassifikation von Schlagwörtern erfolgt nach dem Schema &quot;Klasse:Schlagwort&quot;."
+
+#: /views/elements/view_tagset_list.ctp:85
+msgid "New Set:"
+msgstr "Neues Schlagwort:"
+
+#: /views/elements/view_time.ctp:36
+msgid "Time"
+msgstr "Zeitraum"
+
+#: /views/helpers/geography.php:128
+msgid "Error: No ImageMagick available"
+msgstr "Fehler: kein ImageMagick vorhanden"
+
+#: /views/helpers/geography.php:132
+msgid "Error: No GMT available"
+msgstr "Fehler: kein GMT vorhanden"
+
+#: /views/helpers/hc_support.php:43
+msgid "Day of Week: "
+msgstr "Wochentag:"
+
+#: /views/helpers/hc_support.php:54
+msgid "Gregorian: "
+msgstr "Gregorianisch:"
+
+#: /views/helpers/hc_support.php:60
+msgid "Julian Day: "
+msgstr "Julianischer Tag:"
+
+#: /views/helpers/paginated_table.php:91
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr "Seite %page% von %pages%, zeige %current% Einträge von insgesamt %count%. Starteintrag ist %start%, Endeintrag ist %end%."
+
+#: /views/helpers/paginated_table.php:114
+#: /views/searches/search.ctp:38
+msgid "previous"
+msgstr "vorherige"
+
+#: /views/helpers/paginated_table.php:116
+#: /views/searches/search.ctp:40
+msgid "next"
+msgstr "nächste"
+
+#: /views/helpers/paginated_table.php:252;259
+#: /views/users/changepassword.ctp:12
+#: /views/users/view.ctp:37
+msgid "Change Password"
+msgstr "Passwort ändern"
+
+#: /views/inferences/add.ctp:12
+msgid "Add Inference"
+msgstr "Inferenz hinzufügen"
+
+#: /views/inferences/add.ctp:14
+#: /views/inferences/edit.ctp:16
+msgid "Inference Type"
+msgstr "Inferenztyp"
+
+#: /views/inferences/add.ctp:15
+#: /views/inferences/edit.ctp:17
+msgid "Please select one inference type"
+msgstr "Bitte wählen Sie einen Inferenztyp"
+
+#: /views/inferences/add.ctp:17
+#: /views/inferences/edit.ctp:19
+msgid "a: "
+msgstr "a: "
+
+#: /views/inferences/add.ctp:20
+#: /views/inferences/edit.ctp:22
+msgid "Take second parameter of a (switch direction of arrow)"
+msgstr "Richtung der Pfeile für a umdrehen (zweiter Parameter des Dropdowns relevant)"
+
+#: /views/inferences/add.ctp:21
+#: /views/inferences/edit.ctp:23
+msgid "b: "
+msgstr "b: "
+
+#: /views/inferences/add.ctp:24
+#: /views/inferences/edit.ctp:26
+msgid "Take second parameter of b (switch direction of arrow)"
+msgstr "Richtung der Pfeile für b umdrehen (zweiter Parameter des Dropdowns relevant)"
+
+#: /views/inferences/add.ctp:25
+#: /views/inferences/edit.ctp:27
+msgid "c: "
+msgstr "c: "
+
+#: /views/inferences/add.ctp:28
+#: /views/inferences/edit.ctp:30
+msgid "Take second parameter of c (switch direction of arrow)"
+msgstr "Richtung der Pfeile für c umdrehen (zweiter Parameter des Dropdowns relevant)"
+
+#: /views/inferences/add.ctp:36
+#: /views/inferences/edit.ctp:38
+msgid "Back to the Relation Type"
+msgstr "Zurück zum Kantentyp"
+
+#: /views/inferences/edit.ctp:12
+msgid "Edit Inference"
+msgstr "Inferenz editieren"
+
+#: /views/layouts/default.ctp:14
+msgid "histcross • the Semantic Database for Historians •"
+msgstr "histcross • die semantische Datenbank für Historiker •"
+
+#: /views/layouts/default.ctp:47
+msgid "Logged in as: %s"
+msgstr "Eingeloggt als: %s"
+
+#: /views/layouts/default.ctp:47
+#: /views/users/view.ctp:15;17
+msgid "User"
+msgstr "Benutzer"
+
+#: /views/layouts/default.ctp:49
+msgid "Logout"
+msgstr "Logout"
+
+#: /views/layouts/default.ctp:51
+msgid "Login"
+msgstr "Login"
+
+#: /views/layouts/default.ctp:53
+msgid "Help"
+msgstr "Hilfe"
+
+#: /views/layouts/default.ctp:53
+#: /views/pages/imprint.ctp:1
+msgid "Imprint"
+msgstr "Impressum"
+
+#: /views/layouts/default.ctp:56
+msgid "histcross"
+msgstr "histcross"
+
+#: /views/layouts/default.ctp:57
+msgid "historic crossroads"
+msgstr "historic crossroads"
+
+#: /views/layouts/default.ctp:58
+msgid "The Semantic Database for Historians"
+msgstr "Die semantische Datenbank für Historiker"
+
+#: /views/pages/help.ctp:1
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: /views/pages/help.ctp:3
+msgid "To access the documentation of histcross, visit the following web site:"
+msgstr "Um die Dokumentation von histcross anzusehen, besuchen Sie bitte folgende Seite:"
+
+#: /views/pages/help.ctp:7
+msgid "histcross Version"
+msgstr "histcross-Version"
+
+#: /views/pages/help.ctp:11
+msgid "This is histcross version: "
+msgstr "Dies ist histcross-Version: "
+
+#: /views/pages/home.ctp:1
+msgid "histcross - the Semantic Database for Historians"
+msgstr "histcross - die semantische Datenbank für Historiker"
+
+#: /views/pages/home.ctp:3
+msgid "This is <strong>&quot;Historic Crossroads&quot;</strong>, a database for historians who want to store any historical information in a semantic knowledge base. Pieces of information can be connected to each other with semantic relations. The following elements are contained in the databse:"
+msgstr "Dies ist <strong>&quot;Historic Crossroads&quot;</strong>, eine Datenbank für Historiker, welche beliebige (geschichtliche) Informationen durch semantische (bedeutungstragende) Verbindungen untereinander verknüpft. Folgende Dinge sind in der Datenbank zu finden:"
+
+#: /views/pages/home.ctp:6
+msgid "<strong>Vertices/Objects:</strong> They contain any desired historical information, e.g. persons, locations or events."
+msgstr "<strong>Knoten/Objekte:</strong> Sie enthalten beliebige geschichtliche Informationen, z.B. Personen, Orte oder Ereignisse."
+
+#: /views/pages/home.ctp:7
+msgid "<strong>Relations:</strong> These connect vertices with each other in specific ways."
+msgstr "<strong>Kanten/Relationen:</strong> Diese verknüpfen Knoten in bestimmter Weise untereinander."
+
+#: /views/pages/home.ctp:8
+msgid "<strong>Vertex types and classes:</strong> Vertices are defined by types, e.g. &quot;person&quot; or &quot;event&quot;. Types in turn are combined to classes, e.g. &quot;Persons and Groups&quot;."
+msgstr "<strong>Knotentypen and -klassen:</strong> Knote werden jeweils durch einen Knotentyp genauer bestimmt, z.B. &quot;Person&quot; oder &quot;Ereignis&quot;. Knotentypen wiederum werden in Klassen zusammengefasst, z.B. &quot;Personen und Gruppen&quot;."
+
+#: /views/pages/home.ctp:9
+msgid "<strong>Relation types and classes:</strong> Relations are also defined by types (&quot;is father of &quot;, &quot;visiting&quot;) and classes (&quot;blood relations&quot;, &quot;person-location-relation&quot;)."
+msgstr "<strong>Kantentypen and -klassen:</strong> Auch Kanten werden in Typen (&quot;ist Vater von&quot;, &quot;hat besucht&quot;) und Klassen (&quot;Verwandtschaftsbeziehung&quot;, &quot;Person-Ort-Beziehung&quot;) eingeteilt."
+
+#: /views/pages/home.ctp:10
+msgid "<strong>Bibliographic references:</strong> They reference the sources."
+msgstr "<strong>Bibliographische Referenzen:</strong> Sie enthalten Informationen, wo die oben genannten Daten entnommen wurden."
+
+#: /views/pages/home.ctp:13
+msgid "Select one of the links below to navigate through this database."
+msgstr "Wählen Sie einen der unten stehenden Links aus, um auf die Datenbank zuzugreifen."
+
+#: /views/pages/home.ctp:18
+msgid "Vertices"
+msgstr "Knoten"
+
+#: /views/pages/home.ctp:19
+msgid "Relations"
+msgstr "Kanten"
+
+#: /views/pages/home.ctp:20
+msgid "Vertex Types"
+msgstr "Knotentypen"
+
+#: /views/pages/home.ctp:21
+msgid "Relation Types"
+msgstr "Kantentypen"
+
+#: /views/pages/home.ctp:22
+msgid "Vertex Classes"
+msgstr "Knotenklassen"
+
+#: /views/pages/home.ctp:23
+msgid "Relation Classes"
+msgstr "Kantenklassen"
+
+#: /views/pages/imprint.ctp:7
+msgid "Germany"
+msgstr "Deutschland"
+
+#: /views/pages/imprint.ctp:11
+msgid "Disclaimer"
+msgstr "Haftungsausschluss"
+
+#: /views/pages/imprint.ctp:13
+msgid "1. Content"
+msgstr "1. Inhalt des Onlineangebotes"
+
+#: /views/pages/imprint.ctp:15
+msgid "The author reserves the right not to be responsible for the topicality, correctness, completeness or quality of the information provided. Liability claims regarding damage caused by the use of any information provided, including any kind of information which is incomplete or incorrect, will therefore be rejected."
+msgstr "Der Autor übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt."
+
+#: /views/pages/imprint.ctp:16
+msgid "All offers are not-binding and without obligation. Parts of the pages or the complete publication including all offers and information might be extended, changed or partly or completely deleted by the author without separate announcement."
+msgstr "Alle Angebote sind freibleibend und unverbindlich. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen."
+
+#: /views/pages/imprint.ctp:18
+msgid "2. Referrals and links"
+msgstr "2. Verweise und Links"
+
+#: /views/pages/imprint.ctp:19
+msgid "The author is not responsible for any contents linked or referred to from his pages - unless he has full knowledge of illegal contents and would be able to prevent the visitors of his site fromviewing those pages. If any damage occurs by the use of information presented there, only the author of the respective pages might be liable, not the one who has linked to these pages. Furthermore the author is not liable for any postings or messages published by users of discussion boards, guestbooks or mailinglists provided on his page."
+msgstr "Bei direkten oder indirekten Verweisen auf fremde Webseiten (\"Hyperlinks\"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern.Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller verlinkten /verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist."
+
+#: /views/pages/imprint.ctp:21
+msgid "3. Copyright"
+msgstr "3. Urheber- und Kennzeichenrecht"
+
+#: /views/pages/imprint.ctp:22
+msgid "The author intended not to use any copyrighted material for the publication or, if not possible, to indicate the copyright of the respective object."
+msgstr "Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen."
+
+#: /views/pages/imprint.ctp:23
+msgid "The copyright for any material created by the author is reserved. Any duplication or use of objects such as images, diagrams, sounds or texts in other electronic or printed publications is not permitted without the author&rsquo;s agreement."
+msgstr "Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind!Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet."
+
+#: /views/pages/imprint.ctp:25
+msgid "4. Privacy policy"
+msgstr "4. Datenschutz"
+
+#: /views/pages/imprint.ctp:26
+msgid "If the opportunity for the input of personal or business data (email addresses, name, addresses) is given, the input of these data takes place voluntarily. The use and payment of all offered services are permitted - if and so far technically possible and reasonable - without specification of any personal data or under specification of anonymized data or an alias. The use of published postal addresses, telephone or fax numbers and email addresses for marketing purposes is prohibited, offenders sending unwanted spam messages will be punished."
+msgstr "Sofern innerhalb des Internetangebotes die Möglichkeit zur Eingabe persönlicher oder geschäftlicher Daten (Emailadressen, Namen, Anschriften) besteht, so erfolgt die Preisgabe dieser Daten seitens des Nutzers auf ausdrücklich freiwilliger Basis. Die Inanspruchnahme und Bezahlung aller angebotenen Dienste ist - soweit technisch möglich und zumutbar - auch ohne Angabe solcher Daten bzw. unter Angabe anonymisierter Daten oder eines Pseudonyms gestattet. Die Nutzung der im Rahmen des Impressums oder vergleichbarer Angaben veröffentlichten Kontaktdaten wie Postanschriften, Telefon- und Faxnummern sowie Emailadressen durch Dritte zur Übersendung von nicht ausdrücklich angeforderten Informationen ist nicht gestattet. Rechtliche Schritte gegen die Versender von sogenannten Spam-Mails bei Verstössen gegen dieses Verbot sind ausdrücklich vorbehalten."
+
+#: /views/pages/imprint.ctp:28
+msgid "5. Legal validity of this disclaimer"
+msgstr "5. Rechtswirksamkeit dieses Haftungsausschlusses"
+
+#: /views/pages/imprint.ctp:29
+msgid "This disclaimer is to be regarded as part of the internet publication which you were referred from. If sections or individual terms of this statement are not legal or correct, the content or validity of the other parts remain uninfluenced by this fact."
+msgstr "Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt."
+
+#: /views/pictograms/add.ctp:12
+msgid "Add Pictogram"
+msgstr "Bild hinzufügen"
+
+#: /views/pictograms/add.ctp:23
+#: /views/pictograms/edit.ctp:28
+msgid "List Pictograms"
+msgstr "Bilder auflisten"
+
+#: /views/pictograms/edit.ctp:12
+msgid "Edit Pictogram"
+msgstr "Bild editieren"
+
+#: /views/pictograms/edit.ctp:19
+msgid "Current Pictures"
+msgstr "Momentane Bilder"
+
+#: /views/pictograms/edit.ctp:20
+#: /views/pictograms/view.ctp:23
+msgid "Big: "
+msgstr "Groß:"
+
+#: /views/pictograms/edit.ctp:21
+#: /views/pictograms/view.ctp:24
+msgid "Small: "
+msgstr "Klein:"
+
+#: /views/pictograms/edit.ctp:27
+msgid "Are you sure you want to delete %s? This cannot be reversed!"
+msgstr "Wollen Sie wirklich %s löschen? Vorgang kann nicht rückgängig gemacht werden!"
+
+#: /views/pictograms/view.ctp:14;17
+msgid "Pictogram/Icon"
+msgstr "Bild"
+
+#: /views/pictograms/view.ctp:21
+msgid "Icons"
+msgstr "Bilder"
+
+#: /views/relation_classes/add.ctp:12
+msgid "Add RelationClass"
+msgstr "Kantenklasse hinzufügen"
+
+#: /views/relation_classes/add.ctp:22
+#: /views/relation_classes/edit.ctp:17
+msgid "List RelationClasses"
+msgstr "Liste Kantenklassen auf"
+
+#: /views/relation_classes/add.ctp:23
+#: /views/users/add.ctp:36
+#: /views/users/changepassword.ctp:26
+#: /views/users/edit.ctp:39
+#: /views/users/view.ctp:40
+msgid "List Users"
+msgstr "Liste Benutzer auf"
+
+#: /views/relation_classes/edit.ctp:4
+msgid "Edit RelationClass"
+msgstr "Kantenklasse editieren"
+
+#: /views/relation_classes/view.ctp:17;19
+msgid "Relation Class"
+msgstr "Kantenklasse"
+
+#: /views/relation_types/add.ctp:12
+msgid "Add RelationType"
+msgstr "Kantentyp hinzufügen"
+
+#: /views/relation_types/add.ctp:21
+#: /views/relation_types/edit.ctp:22
+msgid "Allowed Vertex from (empty to allow all)"
+msgstr "Mögliche von-Knoten-Beziehungen (leer für alle)"
+
+#: /views/relation_types/add.ctp:22
+#: /views/relation_types/edit.ctp:23
+msgid "Allowed Vertex to (empty to allow all)"
+msgstr "Mögliche nach-Knoten-Beziehungen (leer für alle)"
+
+#: /views/relation_types/add.ctp:29
+#: /views/relation_types/edit.ctp:31
+msgid "List RelationTypes"
+msgstr "Liste Kantentypen auf"
+
+#: /views/relation_types/edit.ctp:12
+msgid "Edit RelationType"
+msgstr "Kantentyp editieren"
+
+#: /views/relation_types/view.ctp:17;30
+msgid "Relation Type"
+msgstr "Kantentyp"
+
+#: /views/relation_types/view.ctp:19
+msgid "X"
+msgstr "X"
+
+#: /views/relation_types/view.ctp:30
+#: /views/vertex_types/view.ctp:30
+msgid " of the Class %s"
+msgstr " der Klasse %s"
+
+#: /views/relations/add.ctp:12
+msgid "Add Relation"
+msgstr "Füge Kante hinzu"
+
+#: /views/relations/add.ctp:29
+#: /views/relations/edit.ctp:32
+#: /views/relations/possible_inferences.ctp:77
+msgid "List Relations"
+msgstr "Liste Kanten auf"
+
+#: /views/relations/aggregate_cloud.ctp:13
+msgid "Popular &quot;From&quot;-Vertices"
+msgstr "Beliebte &quot;von&quot;-Knoten"
+
+#: /views/relations/aggregate_cloud.ctp:23
+msgid "Popular &quot;To&quot;-Vertices"
+msgstr "Beliebte &quot;nach&quot;-Knoten"
+
+#: /views/relations/edit.ctp:12
+msgid "Edit Relation"
+msgstr "Kante editieren"
+
+#: /views/relations/edit.ctp:31
+#: /views/vertices/edit.ctp:28
+msgid "Are you sure you want to delete # %s?"
+msgstr "Wollen Sie wirklich # %s löschen?"
+
+#: /views/relations/possible_inferences.ctp:56
+msgid "Inferences for:"
+msgstr "Inferenzen für:"
+
+#: /views/relations/possible_inferences.ctp:60;64
+#: /views/relations/view.ctp:61;65
+msgid "Relation"
+msgstr "Kante"
+
+#: /views/relations/possible_inferences.ctp:64
+#: /views/relations/view.ctp:65
+msgid " of the Type %s and the Class %s"
+msgstr " des Typs %s und der Klasse %s"
+
+#: /views/relations/view.ctp:94
+msgid "Show possible derived relations"
+msgstr "Zeige mögliche abgeleitete Kanten"
+
+#: /views/searches/search.ctp:17
+msgid "Search Results"
+msgstr "Suchergebnisse"
+
+#: /views/searches/search.ctp:19
+msgid "Search for &quot;%s&quot;"
+msgstr "Suche nach &quot;%s&quot;"
+
+#: /views/searches/search.ctp:21
+msgid "Nothing was found!"
+msgstr "Es wurde nichts gefunden!"
+
+#: /views/searches/search.ctp:24
+msgid "Found %s matches. Showing page %s of %s."
+msgstr "%s Treffer gefunden. Zeige Seite %s von %s."
+
+#: /views/searches/search.ctp:28
+msgid "Relevance: "
+msgstr "Relevanz:"
+
+#: /views/tagsets/add_set.ctp:13
+msgid "Add Tag Set"
+msgstr "Füge Schlagwort hinzu"
+
+#: /views/tagsets/add_set.ctp:14
+msgid "Add new tag set name below. Classification of sets can be achieved by using the schema &quot;class:set name&quot;."
+msgstr "Geben Sie ein neues Schlagwort unten ein. Die Klassifikation von Schlagwörtern erfolgt nach dem Schema &quot;Klasse:Schlagwort&quot;."
+
+#: /views/tagsets/add_set.ctp:24
+msgid "List Tagsets"
+msgstr "Liste Schlagwortmengen auf"
+
+#: /views/tagsets/delete_set.ctp:10
+msgid "Data deletion failed! Something strange happened..."
+msgstr "Löschung war nicht erfolgreich! Etwas eigenartiges ist passiert..."
+
+#: /views/tagsets/edit.ctp:4
+msgid "Edit Tag Set"
+msgstr "Editiere Schlagwortmenge"
+
+#: /views/tagsets/edit.ctp:16
+msgid "List Tag Sets"
+msgstr "Liste Schlagwortmengen auf"
+
+#: /views/tagsets/index.ctp:19
+msgid "Tag Cloud"
+msgstr "Tagwolke"
+
+#: /views/tagsets/view.ctp:21;23
+msgid "Tag Set"
+msgstr "Schlagwortmenge"
+
+#: /views/tagsets/view.ctp:27
+msgid "Tag Set Elements"
+msgstr "Elemente der Schlagwortmenge"
+
+#: /views/tagsets/view.ctp:50
+msgid "List all Tag Sets"
+msgstr "Liste alle Schlagwortmengen auf"
+
+#: /views/users/add.ctp:12
+msgid "Add User"
+msgstr "Füge Benutzer hinzu"
+
+#: /views/users/add.ctp:14
+#: /views/users/edit.ctp:15
+msgid "Username, alphanumeric"
+msgstr "Benutzername, alphanumerisch"
+
+#: /views/users/add.ctp:15
+#: /views/users/changepassword.ctp:15
+msgid "Password with a minimum length of 6 letters"
+msgstr "Passwort, mindestens 6 Zeichen"
+
+#: /views/users/add.ctp:16
+msgid "Repeat Password"
+msgstr "Passwort wiederholen"
+
+#: /views/users/add.ctp:18
+#: /views/users/edit.ctp:16
+msgid "Real name of user"
+msgstr "Echter Name des Benutzers"
+
+#: /views/users/add.ctp:26
+#: /views/users/edit.ctp:26
+msgid "Set the privileges of users"
+msgstr "Privilegien der Benutzer festlegen"
+
+#: /views/users/edit.ctp:12
+msgid "Edit User"
+msgstr "Editiere Benutzer"
+
+#: /views/users/view.ctp:21
+msgid "Username"
+msgstr "Benutzername"
+
+#: /views/users/view.ctp:23
+msgid "Group"
+msgstr "Gruppe"
+
+#: /views/users/view.ctp:27
+msgid "Modified"
+msgstr "Verändert"
+
+#: /views/users/view.ctp:29
+msgid "Last Login"
+msgstr "Letzter Login"
+
+#: /views/vertex_classes/add.ctp:12
+msgid "Add VertexClass"
+msgstr "Knotenklasse hinzufügen"
+
+#: /views/vertex_classes/add.ctp:16
+#: /views/vertex_classes/edit.ctp:18
+msgid "Numeric value, order is ascending (1 = high, 255 = low)"
+msgstr "Numerischer Wert (1 = hoch, 255 = niedrig)"
+
+#: /views/vertex_classes/add.ctp:23
+#: /views/vertex_classes/edit.ctp:26
+msgid "List VertexClasses"
+msgstr "Liste Knotenklassen auf"
+
+#: /views/vertex_classes/edit.ctp:12
+msgid "Edit VertexClass"
+msgstr "Editiere Knotenklasse"
+
+#: /views/vertex_classes/view.ctp:17;19
+msgid "Vertex Class"
+msgstr "Knotenklasse"
+
+#: /views/vertex_types/add.ctp:12
+msgid "Add VertexType"
+msgstr "Füge Knotentyp hinzu"
+
+#: /views/vertex_types/add.ctp:25
+#: /views/vertex_types/edit.ctp:28
+msgid "List VertexTypes"
+msgstr "Liste Knotentypen auf"
+
+#: /views/vertex_types/edit.ctp:12
+msgid "Edit VertexType"
+msgstr "Editiere Knotentyp"
+
+#: /views/vertex_types/view.ctp:17;30
+msgid "Vertex Type"
+msgstr "Knotentyp"
+
+#: /views/vertices/add.ctp:12
+msgid "Add Vertex"
+msgstr "Füge Knoten hinzu"
+
+#: /views/vertices/add.ctp:26
+#: /views/vertices/edit.ctp:29
+msgid "List Vertices"
+msgstr "Liste Knoten auf"
+
+#: /views/vertices/edit.ctp:12
+msgid "Edit Vertex"
+msgstr "Editiere Knoten"
+
+#: /views/vertices/view.ctp:35;38
+msgid "Vertex"
+msgstr "Knoten"
+
+#: /views/vertices/view.ctp:38
+msgid " of the Type %s of the Class %s"
+msgstr " des Typs %s und der Klasse %s"
+
+#: /views/vertices/view.ctp:66
+msgid "Add New Relation to this Vertex"
+msgstr "Neue Kante zu diesem Knoten hinzufügen"
+
+#: /views/vertices/view.ctp:71
+msgid "--- select ---"
+msgstr "--- Bitte auswählen ---"
+
+#: /webroot/test.php:99
+msgid "Debug setting does not allow access to this url."
+msgstr "Debug-Einstellung verbietet Zugriff auf diesen URL."
+
+#~ msgid "Change"
+#~ msgstr "Ändern!"
+#~ msgid "Submit"
+#~ msgstr "Abschicken"
+

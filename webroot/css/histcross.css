@@ -1,0 +1,592 @@
+/* $Id: histcross.css 101 2009-01-02 14:01:18Z Maximilian Kalus $ */
+a img {
+	border:none;
+}
+
+.viewentry h2 img.icon_b {
+	margin-right: 0.2em;
+}
+
+.languageselect {
+	margin-top: 20px;
+}
+
+.languageselect img {
+	margin-right: 10px;
+}
+
+#rightfooter { float: right; }
+
+/* Forms */
+form {
+	margin-right: 20px;
+	padding: 0;
+	width: 100%;
+}
+fieldset {
+	border: 1px solid #ccc;
+	padding: 15px 20px;
+}
+fieldset legend {
+	background:#fff;
+	color: #e32;
+	font-size: 160%;
+	font-weight: bold;
+}
+fieldset fieldset {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 16px 10px;
+}
+fieldset fieldset legend {
+	font-size: 100%;
+	font-weight: normal;
+}
+fieldset fieldset div {
+	clear: left;
+	margin: 0 20px;
+}
+form div {
+	margin-bottom: 0.8em;
+	padding: 0px;
+	vertical-align: text-top;
+}
+form div.input {
+	color: #444;
+}
+form div.required {
+	color: #333;
+	font-weight: bold;
+}
+form div.submit {
+	border: 0;
+	margin-top: 10px;
+	margin-left: 140px;
+}
+label {
+	display: block;
+	padding-right: 20px;
+}
+input, textarea {
+	clear: both;
+	font-size: 100%;
+	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+	padding: 2px;
+	width: 300px;
+	margin-right: 5px;
+}
+textarea {
+	width: 100%;
+}
+select {
+	clear: both;
+	font-size: 100%;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+	padding: 2px;
+}
+select[multiple=multiple] {
+	width: 300px;
+}
+option {
+	font-size: 100%;
+	padding: 0 3px;
+}
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+input[type=radio] {
+	float:left;
+	width:auto;
+	margin: 0 3px 7px 0;
+}
+div.radio label {
+	margin: 0 0 6px 20px;
+}
+input[type=submit] {
+	display: inline;
+	font-size: 100%;
+	padding: 2px 5px;
+	width: auto;
+	vertical-align: bottom;
+}
+div.geodate div {
+	margin-bottom: 0em;
+}
+div.geodate div {
+	float: left;
+	width: 130px;
+}
+div.datetime label {
+	display: inline;
+}
+div.datetime input {
+	width: 10em;
+}
+
+div.datetimeboxes div {
+	margin-bottom: 0em;
+}
+div.datetimeboxes div {
+	float: left;
+	width: auto;
+}
+div.datetimeboxes label {
+	display: inline;
+}
+div.datetimeboxes input {
+	width: 10em;
+}
+.multiCheckboxLabel {
+	margin-bottom: 0.3em;
+	font-weight: bold;
+}
+div.rightblock {
+	float: right;
+}
+
+/* Notices and Errors */
+div.message {
+	color: #900;
+	font-size: 140%;
+	font-weight: bold;
+	margin: 1em 0;
+}
+div.error-message {
+	clear: both;
+	color: #900;
+	font-weight: bold;
+}
+p.error {
+	background-color: #e32;
+	color: #fff;
+	font-family: Courier, monospace;
+	font-size: 120%;
+	line-height: 140%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+p.error em {
+	color: #000;
+	font-weight: normal;
+	line-height: 140%;
+}
+.notice {
+	background: #ffcc00;
+	color: #000;
+	display: block;
+	font-family: Courier, monospace;
+	font-size: 120%;
+	line-height: 140%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+.success {
+	background: green;
+	color: #fff;
+}
+div.inferencetypes {
+	float: left;
+}
+div.inferencetypes input {
+	float: left;
+}
+div.inferencetypes label {
+	float: right;
+}
+
+/*  Actions  */
+div.actions ul {
+	margin: 0px 0;
+	padding: 0;
+}
+div.actions li {
+	display: inline;
+	list-style-type: none;
+	line-height: 2em;
+	margin: 0 2em 0 0;
+	white-space: nowrap;
+}
+div.actions ul li a {
+	background:#fff;
+	color: #003d4c;
+	text-decoration: none;
+}
+div.actions ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+/* Related */
+div.related {
+	clear: both;
+	display: block;
+}
+
+
+
+
+
+/* ======================================================================== */
+
+/* Scaffold View */
+dl.dataentry {
+	margin: 0em 0em;
+	width: 100%;
+}
+dl.dataentry dt {
+	font-weight: bold;
+}
+dl.dataentry dd {
+	vertical-align: top;
+	padding: 2px;
+}
+
+dl.dataentry dd.comment {
+	background:#eeeeee;
+}
+
+dd.bibshort {
+	font-style: italic;
+}
+
+/* Dataentry editinfo Footer */
+.editinfo dl {
+	margin-top: 50px;
+	border-top: 1px solid #cccccc;
+}
+.editinfo dt {
+	font-weight: bold;
+	padding-left: 0px;
+	vertical-align: top;
+}
+.editinfo dd {
+	margin-left: 10em;
+	margin-top: -1.5em;
+	vertical-align: top;
+}
+
+
+/* Paging */
+div.paging {
+	text-align: center;
+	background:#fff;
+	color: #666666;
+	margin-bottom: 2em;
+	font-size: 16px;
+}
+div.paging a {
+	text-decoration: none;
+	color: #2b66a5;
+	border: 1px solid #2b66a5;
+	padding: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+div.paging a:hover {
+	background-color: #FFFF80;
+}
+div.paging span.current {
+	background-color: #2e6ab1;
+	border: 1px solid #2b66a5;
+	padding: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+	color: #FFF !important;
+	font-weight: bold;
+	cursor: default;
+}
+div.paging .enabled {
+	font-weight: bold;
+}
+div.paging .disabled {
+	display: inline;
+	color: #999999;
+	border: 1px solid #2b66a5;
+	padding: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+/* List Table Layout */
+table.listtable {
+	width: 100%;
+}
+
+.listtable th {
+	background-color:#000000;
+	color:#FFFFFF;
+	text-align: center;
+}
+
+.listtable th a {
+	color:#FFFFFF;
+}
+
+.listtable td {
+	color:#000000;
+	padding: 2px;
+}
+.listtable td a {
+	color:#000000;
+}
+
+.listtable tr.altrow td {
+	background-color: #DDDDDD;
+}
+
+.listtable .number {
+	text-align: right;
+}
+
+.listtable .nobreak {
+	white-space: nowrap;
+}
+
+/* Inferences */
+.listtable a.grey {
+	color: #666;
+}
+
+/* Content */
+.bib_page {
+	color: #2b66a5;
+}
+
+.bib_entry {
+	color: #2b66a5 !important;
+}
+
+/* Bibliography lists */
+#bibliography_list {
+	margin-bottom: 20px;
+}
+
+#bibliography_list .bibliography_page {
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.smallinputline {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.smallinputline .smallinlineinput {
+	display: inline;
+	vertical-align: middle;
+	font-size: 100%;
+	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+	width: 50px;
+	padding: 0px;
+}
+
+.smallinputline .wider {
+	width: 200px;
+}
+
+.smallinputline select.smallinlineinput {
+	width: auto;
+	font-size: 100%;
+}
+
+.smallinputline .submit {
+	display: inline;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.smallinputline input.smallinlineinput[type=submit] {
+	display: inline;
+	font-size: 100%;
+	padding: 0px;
+	width: auto;
+	vertical-align: middle;
+}
+
+.ajaxloaderright {
+	padding-top: 20px;
+	float: right;
+}
+
+/* Autocomplete field */
+.autocomplete_live {
+    background:#F0F0F0 none repeat scroll 0%;
+    clear:both;
+    cursor:pointer;
+    display:block;
+    margin:0px;
+    padding:0px;
+    z-index:9999;
+    border:1px solid #C0C0C0;
+    border-bottom:0px;
+}
+
+.autocomplete_live ul {
+    clear:both;
+    display:block;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    width:100%;
+}
+
+.autocomplete_live li {
+    background:#F0F0F0 none repeat scroll 0%;
+    border-bottom:1px solid #C0C0C0;
+    display:block;
+    height:20px;
+    list-style-type:none;
+    margin:0px;
+    padding:3px;
+}
+
+.autocomplete_live img {
+    margin-right:3px;
+}
+
+/* Last seen css */
+.lastseen_vertices {
+    background:#F0F0F0 none repeat scroll 0%;
+    margin:0px;
+    padding:2px;
+    border:1px solid #C0C0C0;
+}
+
+.lastseen_vertices ul {
+    display:block;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+
+.lastseen_vertices li {
+    display:block;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+
+.lastseen_vertices img {
+    margin-right:3px;
+}
+
+.lastseen_vertices .header {
+	font-weight: bold;
+}
+
+/*More links*/
+.morelinks {
+    margin-bottom: 5px;
+}
+
+.morelinks li {
+    margin-left: 4px;
+    list-style-type:square;
+	font-weight: bold;
+}
+
+/*Search box*/
+.searchbox {
+    background:#F0F0F0 none repeat scroll 0%;
+    margin:0px;
+    width: 184px;
+    padding:2px;
+    border:1px solid #C0C0C0;
+    margin-bottom: 10px;
+}
+
+.searchbox input {
+	width: 178px;
+    margin: 0px !important;
+    padding: 0px;
+    float: none;	
+}
+
+.searchbox div {
+	margin-bottom: 0.3em;
+}
+
+.searchbox div.submit {
+	border: 0;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.searchbox div.submit input {
+	width: auto;
+}
+
+.searchmatches {
+    margin:0px;
+    margin-bottom: 10px;
+    padding:2px;
+    display:block;
+    list-style-type:none;
+}
+
+.searchmatches li {
+    margin:0px;
+    padding:2px;
+    display:block;
+    list-style-type:none;
+    border-bottom:1px solid #C0C0C0;
+}
+
+.searchmatches .matchtitle {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.searchmatches img {
+	margin-right: 5px;
+}
+
+.match {
+	font-weight: bold;
+}
+
+.highlight {
+	background-color: #FFFF33;
+}
+
+/* Inferences */
+.relationtype {
+	font-weight: bold;
+}
+
+.inference_box {
+	padding-bottom: 5px;
+}
+
+.inference_formula {
+	padding-bottom: 20px;
+}
+
+.inference_formula span {
+	font-style: italic;
+}
+
+/* Tagsets and Tagcloud */
+.tagsetlist {
+	margin-bottom: 40px;
+}
+
+.tagsetlist a {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.tagcloud {
+	border: 1px solid #C0C0C0;
+	padding: 5px;
+}
+
+.tagcloud a {
+	margin-right: 10px;
+}
