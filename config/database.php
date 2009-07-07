@@ -79,23 +79,14 @@
 class DATABASE_CONFIG {
 
 	var $default = array(
-		'driver' => 'mysql',
-		'persistent' => false,
+		'driver' => 'mysqli',
+		'persistent' => true,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
-		'prefix' => '',
-	);
-
-	var $test = array(
-		'driver' => 'mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
+		'login' => 'histcross2',
+		'password' => 'very_secret_pw',
+		'database' => 'histcross2',
+		'prefix' => 'hc_',
+		'encoding' => 'utf8',
 	);
 }
 ?>

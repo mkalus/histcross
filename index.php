@@ -1,4 +1,6 @@
 <?php
+/* Part of histcross (c) 2009, Maximilian Kalus, auxnet.de
+ * See licence.txt for details (MIT licence). */
 /* SVN FILE: $Id: index.php 7945 2008-12-19 02:16:01Z gwoo $ */
 /**
  * PHP versions 4 and 5
