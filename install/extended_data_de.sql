@@ -8,6 +8,9 @@
 -- PHP-Version: 5.2.4-2ubuntu5.6
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+/*!40101 SET NAMES utf8 */;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
 
 --
 -- Datenbank: `histcross2`
