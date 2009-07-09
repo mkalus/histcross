@@ -142,7 +142,6 @@ INSERT INTO `hc_pictograms` (`id`, `title`) VALUES
 (145, 'Coat-of-Arms: Rome'),
 (146, 'Things: copper ingot');
 
-
 --
 -- Daten für Tabelle `hc_table_updates`
 --
