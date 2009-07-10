@@ -163,3 +163,16 @@ INSERT INTO `hc_inference_types` (`id`, `is_xy`, `connects`, `comment`,
 (5, 0, 'yz', 'A(x,y) ∧ B(y,z) ⇒ C(y,z)', 'yz_yz'),
 (6, 0, 'xy', 'A(x,y) ∧ B(y,z) ⇒ C(x,y)', 'yz_xy');
 
+--
+-- Daten für Tabelle `hc_users`
+--
+
+INSERT INTO `hc_users` (`id`, `username`, `password`, `created`, 
+`modified`, `la
+stlogin`, `name`, `deleted`, `group`) VALUES
+(1, 'mkalus', 'xxx', '2005-12-22 09:19:18', '2008-12-29 22:29:13', 
+'2009-07-08 13:13:54', 'Maximilian Kalus', 0, 'admin'),
+(2, 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2009-06-19 
+08:46:28', '2009-06-19 08:46:28', NULL, 'Test User', 0, 'admin');
+
+
