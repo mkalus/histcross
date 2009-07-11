@@ -5,6 +5,6 @@
 # */5 * * * * /[path_to_this_file]/updateindex.sh
 if [ -f /var/run/searchd.pid ];
 then
-	/usr/local/bin/indexer --quiet --config /usr/local/etc/sphinx.conf --rotate histcross_vertices
-	/usr/local/bin/indexer --quiet --config /usr/local/etc/sphinx.conf --rotate histcross_relations
+	/usr/bin/indexer --quiet --config /etc/sphinx-search/sphinx.conf --rotate histcross_vertices
+	/usr/bin/indexer --quiet --config /etc/sphinx-search/sphinx.conf --rotate histcross_relations
 fi
