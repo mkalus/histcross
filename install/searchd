@@ -19,9 +19,9 @@
 PATH=/usr/sbin:/usr/bin:/sbin:/bin
 DESC="Sphinx Index Query Daemon"
 NAME=searchd
-DAEMON=/usr/local/bin/$NAME
-INDEXER=/usr/local/bin/indexer
-DAEMON_ARGS="--config /usr/local/etc/sphinx.conf"
+DAEMON=/usr/bin/$NAME
+INDEXER=/usr/bin/indexer
+DAEMON_ARGS="--config /etc/sphinx-search/sphinx.conf"
 PIDFILE=/var/run/searchd.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
