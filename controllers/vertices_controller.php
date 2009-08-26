@@ -150,6 +150,100 @@ class VerticesController extends AppController {
 	}
 	
 	/**
+	 * Return an XML representation of the object including related notes
+	 * @param $id
+	 */
+	function netxml($id) {
+		if (!$id) {
+			$this->Session->setFlash(__('Invalid Vertex.', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		
+		//Retrieve vertex data
+		$root = $this->_getVertexDataforXML($id);
+		if (!is_array($root)) {
+			$this->Session->setFlash(__('Invalid Vertex.', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		$this->set('root', $root);
+		
+		//retrieve data of related vertices
+		$relations = array();
+		if(count($root['connections']) > 0) {
+			foreach($root['connections'] as $conn) {
+				$relations[$conn['to_vertex_id']] = $this->_getVertexDataforXML($conn['to_vertex_id']);
+			}
+		}
+		$this->set('relations', $relations);
+		
+		//Request is sent as XML file
+		$this->RequestHandler->respondAs('xml');
+		$this->layoutPath = 'xml';
+		$this->layout = 'default';
+		
+	}
+	
+	/**
+	 * Protected method to retreive vertex data from the database for the XML
+	 * presentation of $this->netxml()
+	 * @param $id
+	 * @return Array of vertex data or string with error
+	 */
+	function _getVertexDataforXML($id) {
+		if (!$id || !is_numeric($id)) return 'error';
+		
+		//direct queries to speed up things
+		//first the vertex
+		$q = $this->Vertex->query("SELECT Vertex.id, Vertex.start_time_entry, Vertex.stop_time_entry, Vertex.start_time_ca, Vertex.stop_time_ca, Vertex.start_time_questionable, Vertex.stop_time_questionable, Vertex.title, Vertex.pictogram_id, VertexType.title, VertexType.pictogram_id FROM hc_vertices AS Vertex, hc_vertex_types AS VertexType WHERE Vertex.vertex_type_id = VertexType.id AND Vertex.deleted = 0 AND VertexType.deleted = 0 AND Vertex.id = '".$id."'");
+		if (!is_array($q[0])) return 'error';
+		$vertex = $q[0];
+		
+		//now the connection of this vertex
+		//only get relevant data - we will query for the rest of the vertices below
+		$temparr = array(); //temporary array
+		$tempids = array();
+		$q = $this->Vertex->query("SELECT Relation.id, Relation.start_time_entry, Relation.stop_time_entry, Relation.start_time_ca, Relation.stop_time_ca, Relation.start_time_questionable, Relation.stop_time_questionable, Relation.from_vertex_id, Relation.to_vertex_id, RelationType.title_from, RelationType.title_to, RelationType.pictogram_id FROM hc_relations AS Relation, hc_relation_types AS RelationType WHERE Relation.deleted = 0 AND RelationType.deleted = 0 AND Relation.relation_type_id = RelationType.id AND (Relation.from_vertex_id = '".$id."' OR Relation.to_vertex_id = '".$id."')");
+		foreach($q as $rel) {
+			$temparr[$rel['Relation']['id']] = array(
+				'id' => $rel['Relation']['id'],
+	            'start_time_entry' => $rel['Relation']['start_time_entry'],
+	            'stop_time_entry' => $rel['Relation']['stop_time_entry'],
+	            'start_time_ca' => $rel['Relation']['start_time_ca'],
+	            'stop_time_ca' => $rel['Relation']['stop_time_ca'],
+	            'start_time_questionable' => $rel['Relation']['start_time_questionable'],
+	            'stop_time_questionable' => $rel['Relation']['stop_time_questionable'],
+				'to_vertex_id' => ($rel['Relation']['from_vertex_id']==$id?$rel['Relation']['to_vertex_id']:$rel['Relation']['from_vertex_id']),
+				'title' => ($rel['Relation']['from_vertex_id']==$id?$rel['RelationType']['title_from']:$rel['RelationType']['title_to']),
+				'pictogram_id' => $rel['RelationType']['pictogram_id'],
+			);
+			$tempids[$rel['Relation']['id']] = $temparr[$rel['Relation']['id']]['to_vertex_id'];
+		}
+		
+		//ok, now add information of vertices to temparr:
+		$vertarr = array(); //temporary array
+		if (count($tempids) > 0) {
+			$q = $this->Vertex->query("SELECT Vertex.id, Vertex.start_time_entry, Vertex.stop_time_entry, Vertex.start_time_ca, Vertex.stop_time_ca, Vertex.start_time_questionable, Vertex.stop_time_questionable, Vertex.title, Vertex.pictogram_id, VertexType.title, VertexType.pictogram_id FROM hc_vertices AS Vertex, hc_vertex_types AS VertexType WHERE Vertex.vertex_type_id = VertexType.id AND Vertex.deleted = 0 AND VertexType.deleted = 0 AND Vertex.id IN ('".implode("','", $tempids)."')");
+			foreach($q as $vert) {
+				$vertarr[$vert['Vertex']['id']] = $vert;
+			}
+			unset($q);
+		}
+		
+		foreach($tempids as $key => $val) {
+			//deleted entry?
+			if (!$vertarr[$val]) unset($temparr[$key]);
+			else { //ok
+				$temparr[$key]['Vertex'] = $vertarr[$val]['Vertex'];
+				$temparr[$key]['VertexType'] = $vertarr[$val]['VertexType'];
+			}
+		}
+		
+		$vertex['connections'] = $temparr;
+		
+		return $vertex;
+	}
+	
+	/**
 	 * Tell the indexer that something has changed - called by add, edit, delete
 	 */
 	function _updateIndexerNotification() {

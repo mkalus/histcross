@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.histcross.org/netxml" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:histcross="http://www.histcross.org/netxml">
+    <annotation>
+    	<documentation>XML Schema for exporting vertices information from histcross.</documentation></annotation>
+
+
+
+
+    <complexType name="vertex">
+    	<sequence>
+    		<element name="relation" type="histcross:relation"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    	<attribute name="id" type="int" use="required"></attribute>
+    	<attribute name="title" type="string" use="required"></attribute>
+    	<attribute name="start" type="string" use="optional"></attribute>
+        <attribute name="stop" type="string" use="optional"></attribute>
+    	<attribute name="pictogram_id" type="int" use="required"></attribute>
+    	<attribute name="vertex_type" type="string" use="required"></attribute>
+    </complexType>
+
+    <complexType name="netxml">
+    	<sequence>
+    		<element name="rootvertex" type="histcross:vertex" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="netxml" type="histcross:netxml"></element>
+
+    <complexType name="relation">
+    	<sequence>
+    		<element name="vertex" type="histcross:vertex" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="relation" type="histcross:relation"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    	</sequence>
+    	<attribute name="id" type="string" use="required"></attribute>
+    	<attribute name="title" type="string" use="required"></attribute>
+    	<attribute name="start" type="string" use="optional"></attribute>
+    	<attribute name="stop" type="string" use="optional"></attribute>
+    	<attribute name="pictogram_id" type="string" use="required"></attribute>
+    </complexType>
+</schema>

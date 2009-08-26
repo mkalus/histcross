@@ -62,6 +62,21 @@ class HcSupportHelper extends Helper {
 	}
 	
 	/**
+	 * Returns simple dateformat without HTML wrapping
+	 * $value -> String value to show
+	 * $ca -> true, if ca-value
+	 * $questionable -> true, if questionable value
+	 */
+	function dateformatsimple($value, $ca = false, $questionable = false) {
+		if ($value == '') return ''; //empty values
+
+		if ($ca) $value = '~'.$value;
+		if ($questionable) $value = $value.'?';
+
+		return $value;
+	}
+	
+	/**
 	 * Creates an edit link, if user may edit this entity
 	 */
 	function createIconandEditLink($id, $icon = 'icon_object.gif', $icontitle = null) {
