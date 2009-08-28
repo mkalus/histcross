@@ -1,0 +1,54 @@
+<project name="HistcrossRadar" basedir="." default="main">
+
+  <property name="src.dir"       value="src" />
+  <property name="build.dir"     value="build" />
+  <property name="main-class"    value="org.histcross.radar.Radar" />
+  <property name="jar.dir"       value="." />
+  <property name="build.version" value="1.5" />
+  <property name="sign.alias"    value="histcross.org" />
+  <property name="sign.pw"       value="123Linux" />
+  <property name="signed.dir"    value="../../webroot/files" />
+  
+  <target name="clean">
+    <delete dir="${build.dir}" />
+    <delete file="${jar.dir}/${ant.project.name}.jar" />
+  </target>
+ 
+  <target name="compile">
+    <mkdir dir="${build.dir}" />
+    <javac srcdir="${src.dir}" destdir="${build.dir}" source="${build.version}" target="${build.version}" />
+    <copy todir="${build.dir}">
+      <fileset dir="${src.dir}"
+             includes="**/*.ttf,**/*.properties,**/*.txt" />
+	</copy>
+  </target>
+  
+  <target name="jar" depends="compile">
+    <mkdir dir="${jar.dir}"/>
+    <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${build.dir}">
+      <manifest>
+        <attribute name="Main-Class" value="${main-class}"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="sign" depends="jar">
+    <signjar jar="${jar.dir}/${ant.project.name}.jar"
+    	alias="${sign.alias}"  storepass="${sign.pw}" />
+  </target>
+  
+  <target name="copysigned" depends="sign">
+    <copy file="${jar.dir}/${ant.project.name}.jar"
+        todir="${signed.dir}" />
+  </target>
+  
+
+  <target name="run" depends="jar">
+    <java jar="${jar.dir}/${ant.project.name}.jar" fork="true">
+      <arg value="http://histcross" />
+      <arg value="123" />
+    </java>
+  </target>
+
+  <target name="main" depends="clean,jar" />
+</project>

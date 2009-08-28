@@ -1,0 +1,259 @@
+/**
+ * Holds the information on vertices and relations
+ */
+package org.histcross.radar;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+import nu.xom.*;
+
+/**
+ * @author mkalus
+ *
+ */
+public class VertexContainer {
+	/**
+	 * HashMaps for Vertices and Relations
+	 */
+	HashMap<Integer, Vertex> vertices;
+	HashMap<Integer, Relation> relations;
+	
+	/**
+	 * faster iterations
+	 */
+	Vertex[] fastVertices;
+	Relation[] fastRelations;
+	
+	/**
+	 * Data structure for vertices
+	 */
+	Vertex rootVertex;
+	LinkedList<Vertex> secondLevelVertices;
+	HashMap<Vertex, LinkedList<Vertex>> thirdLevelVertices;
+	
+	/**
+	 * Loads the data
+	 * @param baseUrl siteURL e.g. http://www.histcross.org/
+	 * @param id to retreive
+	 * @return Status codes for the Radar class
+	 */
+	public int loadData(String baseUrl, int id) {
+		//initialize hash maps
+		vertices = new HashMap<Integer, Vertex>();
+		relations = new HashMap<Integer, Relation>();
+		secondLevelVertices = new LinkedList<Vertex>();
+		thirdLevelVertices = new HashMap<Vertex, LinkedList<Vertex>>();
+
+		Document doc = null;
+		
+		//applet no parameter given
+		if (id == -1) return RadarSettings.APP_PARMERR;
+
+		//Create a DOM-parser and check errors
+		try {
+			Builder parser = new Builder();
+			doc = parser.build(baseUrl + "vertices/netxml/" + id);
+		} catch (ValidityException e) {
+			System.err.println("XML file is invalid. (Somewhat embarrassing.)");
+			return RadarSettings.APP_XMLERR;
+		} catch (ParsingException ex) {
+			System.err.println("XML file is malformed. (How embarrassing!)");
+			return RadarSettings.APP_XMLERR;
+		} catch (IOException ex) {
+			System.err.println("Could not fetch XML file. The site may be down.");
+			return RadarSettings.APP_XMLERR;
+		} catch (Exception e) {
+			return RadarSettings.APP_XMLERR;
+		}
+		//System.out.println(doc.toXML());
+		
+		//Ok, now we have the document, let's parse it
+		Element rootElem = doc.getRootElement(); //get root XML
+		//get root vertex
+		Element rootVertexElem = rootElem.getFirstChildElement("rootvertex", "http://www.histcross.org/netxml");
+		//add to list and set as instance variable
+		rootVertex = addVertex(rootVertexElem);
+		if (rootVertex == null) return RadarSettings.APP_XMLERR;
+		rootVertex.setPrintBig(true); //set Big Icon
+		
+		//add second and third level navigation
+		Elements secondLvl = rootVertexElem.getChildElements();
+		for (int i = 0; i < secondLvl.size(); i++) {
+			Element secLvlRelation = secondLvl.get(i); //2nd lvl relation element
+			//get first element: vertex
+			Element vertexElem = secLvlRelation.getFirstChildElement("vertex", "http://www.histcross.org/netxml");
+			//add vertex to list
+			Vertex vertex = addVertex(vertexElem);
+			if (vertex == null) return RadarSettings.APP_XMLERR;
+			vertex.setPrintBig(true); //set Big Icon
+			//add to 2nd lvl vertex-list
+			secondLevelVertices.add(vertex);
+			
+			//now add relation to list
+			addRelation(rootVertex.getId(), vertex.getId(), secLvlRelation);
+			
+			//initialze linked list for third level
+			LinkedList<Vertex> vertexList = new LinkedList<Vertex>();
+			//now to the third level navigation
+			Elements thirdLvl = secLvlRelation.getChildElements("relation", "http://www.histcross.org/netxml");
+			for (int j = 0; j < thirdLvl.size(); j++) {
+				Element thirdLvlRelation = thirdLvl.get(j); //3nd lvl relation element
+				//get first element: vertex
+				Element vertexElem2 = thirdLvlRelation.getFirstChildElement("vertex", "http://www.histcross.org/netxml");
+				//add vertex to list
+				Vertex vertex2 = addVertex(vertexElem2);
+				if (vertex2 == null) return RadarSettings.APP_XMLERR;
+				//add to 3nd lvl vertex-list
+				vertexList.add(vertex2);
+				
+				//now add relation to list
+				addRelation(vertex.getId(), vertex2.getId(), thirdLvlRelation);
+			}
+			//add linked list to third level structure
+			thirdLevelVertices.put(vertex, vertexList);
+		}
+
+		//now create fast access
+		fastVertices = new Vertex[vertices.size()];
+		int i = 0;
+		Iterator<Integer> it = vertices.keySet().iterator();
+    	while (it.hasNext()) {
+    		Integer key = it.next();
+    		Vertex v = vertices.get(key);
+    		fastVertices[i++] = v;
+    	}
+		fastRelations = new Relation[relations.size()];
+		i = 0;
+		it = relations.keySet().iterator();
+    	while (it.hasNext()) {
+    		Integer key = it.next();
+    		Relation r = relations.get(key);
+    		fastRelations[i++] = r;
+    	}
+		
+		return RadarSettings.APP_OK; //everything ok
+	}
+	
+	/**
+	 * Add a vertex to the list or return an already existing one
+	 * @param e Element of the type <histcross:vertex id="354" title="Aden" start="" stop="" pictogram_id="48" vertex_type="Land/Reich"/>
+	 * @return created or retrieved vertex
+	 */
+	public Vertex addVertex(Element e) {
+		try {
+			Vertex v;
+			//retrive element attributes
+			int id = Integer.parseInt(e.getAttribute("id").getValue());
+			
+			//check for existing vertex in list
+			v = vertices.get(new Integer(id));
+			//yes, already there - return this key
+			if (v != null) return v;
+			
+			//retrive element attributes (cont'd)
+			String title = e.getAttribute("title").getValue();
+			String start, stop;
+			Attribute startA = e.getAttribute("start");
+			if (startA == null) start = null;
+			else start = startA.getValue();
+			Attribute stopA = e.getAttribute("stop");
+			if (stopA == null) stop = null;
+			else stop = stopA.getValue();
+			int pictogram_id = Integer.parseInt(e.getAttribute("pictogram_id").getValue());
+			String vertexType = e.getAttribute("vertex_type").getValue();
+			
+			//Create new vertex
+			v = new Vertex(id, title, start, stop, pictogram_id, vertexType);
+			vertices.put(new Integer(id), v);
+
+			return v;
+		} catch (Exception ex) {
+			return null;
+		}
+	}
+	
+	/**
+	 * Add a relation to the list or return an already existing one
+	 * Note: make shure that the vertices already exist in the data structure!
+	 * @param from id of the "from" element
+	 * @param to id of the "to" element
+	 * @param e Element of the type <histcross:relation id="4878" title="umfasst politisch" pictogram_id="52" start="1538" stop="">
+	 * @return created or retrieved relation
+	 */
+	public Relation addRelation(int from, int to, Element e) {
+		try {
+			Relation r;
+			//retrive element attributes
+			int id = Integer.parseInt(e.getAttribute("id").getValue());
+			
+			//check for existing relation in list
+			r = relations.get(new Integer(id));
+			//yes, already there - return this key
+			if (r != null) return r;
+			
+			//retrive element attributes (cont'd)
+			String title = e.getAttribute("title").getValue();
+			String start, stop;
+			Attribute startA = e.getAttribute("start");
+			if (startA == null) start = null;
+			else start = startA.getValue();
+			Attribute stopA = e.getAttribute("stop");
+			if (stopA == null) stop = null;
+			else stop = stopA.getValue();
+			int pictogram_id = Integer.parseInt(e.getAttribute("pictogram_id").getValue());
+			
+			Vertex fromVertex = vertices.get(new Integer(from));
+			Vertex toVertex = vertices.get(new Integer(to));
+			if (fromVertex == null || toVertex == null) throw new Exception();
+			
+			//Create new vertex
+			r = new Relation(id, fromVertex, toVertex, title, start, stop, pictogram_id);
+			relations.put(new Integer(id), r);
+
+			return r;
+		} catch (Exception ex) {
+			return null;
+		}
+	}
+	
+	/**
+	 * Calculate the positions of the elements on a plane
+	 * @param width in pixels
+	 * @param height in pixels
+	 */
+	public void calculatePositions(int width, int height) {
+		if (rootVertex == null) return;
+		
+		//first calculate position of center element - easy...
+		rootVertex.setXY(width/2, height/2);
+		
+		//first calculate the positions of the second and third level
+		//elements
+		double elements = secondLevelVertices.size();
+		double grade = 2 * Math.PI / elements;
+		double x0 = rootVertex.getX();
+		double y0 = rootVertex.getY();
+		double radius = RadarSettings.radius1;
+		int i = 0;
+		Iterator<Vertex> it = secondLevelVertices.iterator();
+		while (it.hasNext()) {
+			Vertex v = it.next();
+			double x = x0 + radius * Math.cos(i * grade);
+			double y = y0 + radius * Math.sin(i++ * grade);
+			v.setXY((int) x, (int) y);
+		}
+	}
+
+	/**
+	 * Test method
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		VertexContainer v = new VertexContainer();
+		v.loadData("http://histcross/", 354);
+	}
+
+}
