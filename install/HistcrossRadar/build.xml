@@ -5,8 +5,8 @@
   <property name="main-class"    value="org.histcross.radar.Radar" />
   <property name="jar.dir"       value="." />
   <property name="build.version" value="1.5" />
-  <property name="sign.alias"    value="histcross.org" />
-  <property name="sign.pw"       value="123Linux" />
+  <property name="sign.alias"    value="YOURSIGNATURE" />
+  <property name="sign.pw"       value="YOURPW" />
   <property name="signed.dir"    value="../../webroot/files" />
   
   <target name="clean">

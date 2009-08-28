@@ -78,7 +78,8 @@ class AppController extends Controller {
 			//Only non-deleted Users are accepted
 			$this->Auth->userScope = array('User.deleted' => 0);
 			//Generally allow index and view pages and some other stuff
-			$this->Auth->allow('index', 'view', 'search', 'viewglobe', 'aggregate_cloud', 'viewnetwork', 'set_language', 'user_login', 'netxml');
+			$this->Auth->allow('index', 'view', 'search', 'viewglobe', 'aggregate_cloud',
+				'viewnetwork', 'set_language', 'user_login', 'netxml', 'netplain');
 			if ($this->name == 'Pages')
 				$this->Auth->allow('display');
 			$this->Auth->deny('edit', 'add', 'delete');

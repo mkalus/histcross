@@ -153,7 +153,7 @@ class VerticesController extends AppController {
 	 * Return an XML representation of the object including related notes
 	 * @param $id
 	 */
-	function netxml($id) {
+	function netxml($id, $respondAsXML = true) {
 		if (!$id) {
 			$this->Session->setFlash(__('Invalid Vertex.', true));
 			$this->redirect(array('action'=>'index'));
@@ -176,11 +176,28 @@ class VerticesController extends AppController {
 		}
 		$this->set('relations', $relations);
 		
-		//Request is sent as XML file
-		$this->RequestHandler->respondAs('xml');
-		$this->layoutPath = 'xml';
-		$this->layout = 'default';
-		
+		$this->set('hostname',
+			$hostname = (env('HTTPS')?'https':'http').'://'.env('HTTP_HOST').substr(env('SCRIPT_NAME'), 0, -9));
+
+		if ($respondAsXML) {
+			//Request is sent as XML file
+			$this->RequestHandler->respondAs('xml');
+			$this->layoutPath = 'xml';
+			$this->layout = 'default';
+		} else {
+			//Request is sent as plain file
+			$this->RequestHandler->respondAs('text');
+			$this->layoutPath = 'text';
+			$this->layout = 'default';
+		}
+	}
+	
+	/**
+	 * Return a plain representation of the object including related notes
+	 * @param $id
+	 */
+	function netplain($id) {
+		$this->netxml($id, false);
 	}
 	
 	/**
