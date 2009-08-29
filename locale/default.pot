@@ -1,86 +1,12 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from files:
-#  Revision: 106 /app/controllers/app_controller.php
-#  Revision: 115 /app/controllers/bibliographies_controller.php
-#  Revision: 101 /app/controllers/inferences_controller.php
-#  Revision: 33 /app/controllers/pictograms_controller.php
-#  Revision: 36 /app/controllers/relation_classes_controller.php
-#  Revision: 66 /app/controllers/relation_types_controller.php
-#  Revision: 110 /app/controllers/relations_controller.php
-#  Revision: 70 /app/controllers/searches_controller.php
-#  Revision: 111 /app/controllers/vertices_controller.php
-#  Revision: 93 /app/controllers/users_controller.php
-#  Revision: 36 /app/controllers/vertex_classes_controller.php
-#  Revision: 39 /app/controllers/vertex_types_controller.php
-#  Revision: 95 /app/dev/translation_helper.php
-#  Revision: 56 /app/models/pictogram.php
-#  Revision: 103 /app/views/bibliographies/add.ctp
-#  Revision: 103 /app/views/elements/view_bibliography_list.ctp
-#  Revision: 103 /app/views/elements/view_tagset_list.ctp
-#  Revision: 103 /app/views/bibliographies/edit.ctp
-#  Revision: 103 /app/views/inferences/add.ctp
-#  Revision: 103 /app/views/pictograms/add.ctp
-#  Revision: 103 /app/views/relation_classes/add.ctp
-#  Revision: 103 /app/views/relation_types/add.ctp
-#  Revision: 103 /app/views/relations/add.ctp
-#  Revision: 103 /app/views/tagsets/add_set.ctp
-#  Revision: 103 /app/views/users/add.ctp
-#  Revision: 103 /app/views/vertex_classes/add.ctp
-#  Revision: 103 /app/views/vertex_types/add.ctp
-#  Revision: 103 /app/views/vertices/add.ctp
-#  Revision: 110 /app/views/vertices/view.ctp
-#  Revision: 103 /app/views/inferences/edit.ctp
-#  Revision: 103 /app/views/pictograms/edit.ctp
-#  Revision: 103 /app/views/relation_types/edit.ctp
-#  Revision: 103 /app/views/relations/edit.ctp
-#  Revision: 103 /app/views/users/changepassword.ctp
-#  Revision: 103 /app/views/users/edit.ctp
-#  Revision: 103 /app/views/vertex_classes/edit.ctp
-#  Revision: 103 /app/views/vertex_types/edit.ctp
-#  Revision: 103 /app/views/vertices/edit.ctp
-#  Revision: 104 /app/views/relations/possible_inferences.ctp
-#  Revision: 115 /app/views/bibliographies/view.ctp
-#  Revision: 27 /app/views/elements/view_comment.ctp
-#  Revision: 55 /app/views/elements/footer_editinfo.ctp
-#  Revision: 55 /app/views/users/view.ctp
-#  Revision: 50 /app/views/elements/form_dates.ctp
-#  Revision: 43 /app/views/elements/form_geo.ctp
-#  Revision: 41 /app/views/elements/form_pictogram.ctp
-#  Revision: 114 /app/views/elements/layout_lastvertices.ctp
-#  Revision: 114 /app/views/elements/layout_morelinks.ctp
-#  Revision: 76 /app/views/relations/aggregate_cloud.ctp
-#  Revision: 86 /app/views/elements/layout_search.ctp
-#  Revision: 96 /app/views/elements/list_inferences.ctp
-#  Revision: 117 /app/views/helpers/paginated_table.php
-#  Revision: 115 /app/views/elements/list_relations_bib.ctp
-#  Revision: 115 /app/views/elements/list_vertices_bib.ctp
-#  Revision: 72 /app/views/helpers/hc_support.php
-#  Revision: 107 /app/views/elements/view_possible_inferences.ctp
-#  Revision: 46 /app/views/elements/view_coordinates.ctp
-#  Revision: 27 /app/views/elements/view_geodate.ctp
-#  Revision: 78 /app/views/elements/view_network.ctp
-#  Revision: 78 /app/views/tagsets/viewnetwork.ctp
-#  Revision: 107 /app/views/elements/view_ok_icon.ctp
-#  Revision: 105 /app/views/relations/view.ctp
-#  Revision: 48 /app/views/elements/view_time.ctp
-#  Revision: 48 /app/views/helpers/geography.php
-#  Revision: 81 /app/views/searches/search.ctp
-#  Revision: 114 /app/views/layouts/default.ctp
-#  Revision: 55 /app/views/pictograms/view.ctp
-#  Revision: 55 /app/views/relation_classes/view.ctp
-#  Revision: 96 /app/views/relation_types/view.ctp
-#  Revision: 55 /app/views/vertex_types/view.ctp
-#  Revision: 75 /app/views/tagsets/delete_set.ctp
-#  Revision: 91 /app/views/tagsets/view.ctp
-#  Revision: 55 /app/views/vertex_classes/view.ctp
-#  Revision: 88 /app/webroot/test.php
+# Generated from file: Revision: 114 /app/views/layouts/default.ctp
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-01-06 11:57+0100\n"
+"POT-Creation-Date: 2009-08-29 15:25+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -89,930 +15,814 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: /controllers/app_controller.php:134
+#: /controllers/app_controller.php:136
 msgid "Error in Request - Ajax required!"
 msgstr ""
 
-#: /controllers/app_controller.php:139;162;209
+#: /controllers/app_controller.php:141;164;211
 msgid "Error in Request - wrong parameters"
 msgstr ""
 
-#: /controllers/app_controller.php:194;199
+#: /controllers/app_controller.php:196;201
 msgid "Bibliography added"
 msgstr ""
 
-#: /controllers/app_controller.php:228;233
-#: /controllers/bibliographies_controller.php:90
+#: /controllers/app_controller.php:230;235
+#: /controllers/bibliographies_controller.php:93
 msgid "Bibliography deleted"
 msgstr ""
 
-#: /controllers/bibliographies_controller.php:31
+#: /controllers/bibliographies_controller.php:32
 msgid "Invalid Bibliography."
 msgstr ""
 
-#: /controllers/bibliographies_controller.php:56;72
+#: /controllers/bibliographies_controller.php:57;75
 msgid "The Bibliography has been saved"
 msgstr ""
 
-#: /controllers/bibliographies_controller.php:59;75
+#: /controllers/bibliographies_controller.php:62;78
 msgid "The Bibliography could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/bibliographies_controller.php:66
+#: /controllers/bibliographies_controller.php:69
 msgid "Invalid Bibliography"
 msgstr ""
 
-#: /controllers/bibliographies_controller.php:86
+#: /controllers/bibliographies_controller.php:89
 msgid "Invalid id for Bibliography"
 msgstr ""
 
-#: /controllers/inferences_controller.php:33;61
+#: /controllers/inferences_controller.php:34;62
 msgid "The Inference has been saved"
 msgstr ""
 
-#: /controllers/inferences_controller.php:36;64
+#: /controllers/inferences_controller.php:37;65
 msgid "The Inference could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/inferences_controller.php:56
+#: /controllers/inferences_controller.php:57
 msgid "Invalid Inference"
 msgstr ""
 
-#: /controllers/inferences_controller.php:112
+#: /controllers/inferences_controller.php:113
 msgid "Invalid id for Inference"
 msgstr ""
 
-#: /controllers/inferences_controller.php:116
+#: /controllers/inferences_controller.php:117
 msgid "Inference deleted"
 msgstr ""
 
-#: /controllers/pictograms_controller.php:29
+#: /controllers/pictograms_controller.php:30
 msgid "Invalid Pictogram."
 msgstr ""
 
-#: /controllers/pictograms_controller.php:39;54
+#: /controllers/pictograms_controller.php:40;55
 msgid "The Pictogram has been saved"
 msgstr ""
 
-#: /controllers/pictograms_controller.php:42;57
+#: /controllers/pictograms_controller.php:43;58
 msgid "The Pictogram could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/pictograms_controller.php:49
+#: /controllers/pictograms_controller.php:50
 msgid "Invalid Pictogram"
 msgstr ""
 
-#: /controllers/pictograms_controller.php:68
+#: /controllers/pictograms_controller.php:69
 msgid "Invalid id for Pictogram"
 msgstr ""
 
-#: /controllers/pictograms_controller.php:72
+#: /controllers/pictograms_controller.php:73
 msgid "Pictogram deleted"
 msgstr ""
 
-#: /controllers/relation_classes_controller.php:39
+#: /controllers/relation_classes_controller.php:40
 msgid "Invalid RelationClass."
 msgstr ""
 
-#: /controllers/relation_classes_controller.php:60;76
+#: /controllers/relation_classes_controller.php:61;79
 msgid "The RelationClass has been saved"
 msgstr ""
 
-#: /controllers/relation_classes_controller.php:63;79
+#: /controllers/relation_classes_controller.php:66;82
 msgid "The RelationClass could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/relation_classes_controller.php:70
+#: /controllers/relation_classes_controller.php:73
 msgid "Invalid RelationClass"
 msgstr ""
 
-#: /controllers/relation_classes_controller.php:90
+#: /controllers/relation_classes_controller.php:93
 msgid "Invalid id for RelationClass"
 msgstr ""
 
-#: /controllers/relation_classes_controller.php:94
+#: /controllers/relation_classes_controller.php:97
 msgid "RelationClass deleted"
 msgstr ""
 
-#: /controllers/relation_types_controller.php:39
+#: /controllers/relation_types_controller.php:40
 msgid "Invalid RelationType."
 msgstr ""
 
-#: /controllers/relation_types_controller.php:63;83
+#: /controllers/relation_types_controller.php:64;86
 msgid "The RelationType has been saved"
 msgstr ""
 
-#: /controllers/relation_types_controller.php:66;86
+#: /controllers/relation_types_controller.php:69;89
 msgid "The RelationType could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/relation_types_controller.php:77
+#: /controllers/relation_types_controller.php:80
 msgid "Invalid RelationType"
 msgstr ""
 
-#: /controllers/relation_types_controller.php:101
+#: /controllers/relation_types_controller.php:104
 msgid "Invalid id for RelationType"
 msgstr ""
 
-#: /controllers/relation_types_controller.php:105
+#: /controllers/relation_types_controller.php:108
 msgid "RelationType deleted"
 msgstr ""
 
-#: /controllers/relations_controller.php:32;420
+#: /controllers/relations_controller.php:33;424
 msgid "Invalid Relation."
 msgstr ""
 
-#: /controllers/relations_controller.php:100;142
+#: /controllers/relations_controller.php:102;146
 msgid "The Relation has been saved"
 msgstr ""
 
-#: /controllers/relations_controller.php:103;145
+#: /controllers/relations_controller.php:107;149
 msgid "The Relation could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/relations_controller.php:133
+#: /controllers/relations_controller.php:137
 msgid "Invalid Relation"
 msgstr ""
 
-#: /controllers/relations_controller.php:180;207
+#: /controllers/relations_controller.php:184;211
 msgid "Invalid id for Relation"
 msgstr ""
 
-#: /controllers/relations_controller.php:184
+#: /controllers/relations_controller.php:188
 msgid "Relation deleted"
 msgstr ""
 
-#: /controllers/relations_controller.php:247
+#: /controllers/relations_controller.php:251
 msgid "Invalid id for Relation for Inference Search"
 msgstr ""
 
-#: /controllers/relations_controller.php:257
+#: /controllers/relations_controller.php:261
 msgid "No fitting Relation found for Inference Search"
 msgstr ""
 
-#: /controllers/relations_controller.php:283
+#: /controllers/relations_controller.php:287
 msgid "No Inferences found for this Relation"
 msgstr ""
 
-#: /controllers/relations_controller.php:289
+#: /controllers/relations_controller.php:293
 msgid "No possible Inferences found"
 msgstr ""
 
-#: /controllers/relations_controller.php:434
+#: /controllers/relations_controller.php:438
 msgid "Invalid parameters."
 msgstr ""
 
-#: /controllers/relations_controller.php:444
+#: /controllers/relations_controller.php:448
 msgid "Automatically created inference based on relation #"
 msgstr ""
 
-#: /controllers/relations_controller.php:450
+#: /controllers/relations_controller.php:454
 msgid "Unable to add inference - error in validation of data."
 msgstr ""
 
-#: /controllers/relations_controller.php:462
+#: /controllers/relations_controller.php:466
 msgid "Inferred relation was successfully added."
 msgstr ""
 
-#: /controllers/searches_controller.php:27
+#: /controllers/searches_controller.php:28
 msgid "Please submit a search phrase!"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:33
+#: /controllers/tagsets_controller.php:42
 msgid "Invalid Tag Set."
 msgstr ""
 
-#: /controllers/tagsets_controller.php:60;264
+#: /controllers/tagsets_controller.php:69;273
 msgid "Invalid id for Tag Set"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:132
-#: /controllers/vertices_controller.php:39
+#: /controllers/tagsets_controller.php:141
+#: /controllers/vertices_controller.php:40;158;165
 msgid "Invalid Vertex."
 msgstr ""
 
-#: /controllers/tagsets_controller.php:145
+#: /controllers/tagsets_controller.php:154
 msgid "The Tag Set has been saved."
 msgstr ""
 
-#: /controllers/tagsets_controller.php:150
+#: /controllers/tagsets_controller.php:159
 msgid "The Tag Set has been saved"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:161
+#: /controllers/tagsets_controller.php:170
 msgid "The Tag Set could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/tagsets_controller.php:213
+#: /controllers/tagsets_controller.php:222
 msgid "Invalid id for Deletion"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:221
+#: /controllers/tagsets_controller.php:230
 msgid "Entry deleted."
 msgstr ""
 
-#: /controllers/tagsets_controller.php:227
+#: /controllers/tagsets_controller.php:236
 msgid "Entry deleted"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:245
+#: /controllers/tagsets_controller.php:254
 msgid "Invalid Tag Set"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:250
+#: /controllers/tagsets_controller.php:259
 msgid "The Tagset has been saved"
 msgstr ""
 
-#: /controllers/tagsets_controller.php:253
+#: /controllers/tagsets_controller.php:262
 msgid "The Tagset could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/tagsets_controller.php:268
+#: /controllers/tagsets_controller.php:277
 msgid "Tag Set deleted"
 msgstr ""
 
-#: /controllers/users_controller.php:30
+#: /controllers/users_controller.php:31
 msgid "Invalid user."
 msgstr ""
 
-#: /controllers/users_controller.php:42;63
+#: /controllers/users_controller.php:43;64
 msgid "The user has been saved"
 msgstr ""
 
-#: /controllers/users_controller.php:45;66
+#: /controllers/users_controller.php:46;67
 msgid "The user could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/users_controller.php:52;77
+#: /controllers/users_controller.php:53;78
 msgid "Invalid user"
 msgstr ""
 
-#: /controllers/users_controller.php:57;81
+#: /controllers/users_controller.php:58;82
 msgid "Privilege break"
 msgstr ""
 
-#: /controllers/users_controller.php:87
+#: /controllers/users_controller.php:88
 msgid "The password has been changed"
 msgstr ""
 
-#: /controllers/users_controller.php:90
+#: /controllers/users_controller.php:91
 msgid "The password could not be changed. Please, try again."
 msgstr ""
 
-#: /controllers/users_controller.php:101
+#: /controllers/users_controller.php:102
 msgid "Invalid id for User"
 msgstr ""
 
-#: /controllers/users_controller.php:105
+#: /controllers/users_controller.php:106
 msgid "User deleted"
 msgstr ""
 
-#: /controllers/users_controller.php:143
+#: /controllers/users_controller.php:144
 msgid "This user has been deleted."
 msgstr ""
 
-#: /controllers/users_controller.php:188
+#: /controllers/users_controller.php:189
 msgid "Login failed. Invalid username or password."
 msgstr ""
 
-#: /controllers/users_controller.php:206
+#: /controllers/users_controller.php:207
 msgid "You have been logged out"
 msgstr ""
 
-#: /controllers/vertex_classes_controller.php:39
+#: /controllers/vertex_classes_controller.php:40
 msgid "Invalid VertexClass."
 msgstr ""
 
-#: /controllers/vertex_classes_controller.php:60;76
+#: /controllers/vertex_classes_controller.php:61;79
 msgid "The VertexClass has been saved"
 msgstr ""
 
-#: /controllers/vertex_classes_controller.php:63;79
+#: /controllers/vertex_classes_controller.php:66;82
 msgid "The VertexClass could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/vertex_classes_controller.php:70
+#: /controllers/vertex_classes_controller.php:73
 msgid "Invalid VertexClass"
 msgstr ""
 
-#: /controllers/vertex_classes_controller.php:90
+#: /controllers/vertex_classes_controller.php:93
 msgid "Invalid id for VertexClass"
 msgstr ""
 
-#: /controllers/vertex_classes_controller.php:94
+#: /controllers/vertex_classes_controller.php:97
 msgid "VertexClass deleted"
 msgstr ""
 
-#: /controllers/vertex_types_controller.php:39
+#: /controllers/vertex_types_controller.php:40
 msgid "Invalid VertexType."
 msgstr ""
 
-#: /controllers/vertex_types_controller.php:60;79
+#: /controllers/vertex_types_controller.php:61;82
 msgid "The VertexType has been saved"
 msgstr ""
 
-#: /controllers/vertex_types_controller.php:63;82
+#: /controllers/vertex_types_controller.php:66;85
 msgid "The VertexType could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/vertex_types_controller.php:73
+#: /controllers/vertex_types_controller.php:76
 msgid "Invalid VertexType"
 msgstr ""
 
-#: /controllers/vertex_types_controller.php:96
+#: /controllers/vertex_types_controller.php:99
 msgid "Invalid id for VertexType"
 msgstr ""
 
-#: /controllers/vertex_types_controller.php:100
+#: /controllers/vertex_types_controller.php:103
 msgid "VertexType deleted"
 msgstr ""
 
-#: /controllers/vertices_controller.php:102;122
+#: /controllers/vertices_controller.php:103;125
 msgid "The Vertex has been saved"
 msgstr ""
 
-#: /controllers/vertices_controller.php:105;125
+#: /controllers/vertices_controller.php:108;129
 msgid "The Vertex could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/vertices_controller.php:115
+#: /controllers/vertices_controller.php:118
 msgid "Invalid Vertex"
 msgstr ""
 
-#: /controllers/vertices_controller.php:139;166
+#: /controllers/vertices_controller.php:143;281
 msgid "Invalid id for Vertex"
 msgstr ""
 
-#: /controllers/vertices_controller.php:143
+#: /controllers/vertices_controller.php:147
 msgid "Vertex deleted"
 msgstr ""
 
-#: /dev/translation_helper.php:12
-msgid "Class"
-msgstr ""
-
-#: /dev/translation_helper.php:13
-msgid "Sort Key"
-msgstr ""
-
-#: /dev/translation_helper.php:14
-msgid "Bibliographies"
-msgstr ""
-
-#: /dev/translation_helper.php:15
-msgid "Users"
-msgstr ""
-
-#: /dev/translation_helper.php:16
-msgid "Long Title"
-msgstr ""
-
-#: /dev/translation_helper.php:17
-msgid "Pictogram"
-msgstr ""
-
-#: /dev/translation_helper.php:18
-msgid "Pictograms"
-msgstr ""
-
-#: /dev/translation_helper.php:19
-msgid "Home"
-msgstr ""
-
-#: /dev/translation_helper.php:20;22
-msgid "Geographic Coordinates"
-msgstr ""
-
-#: /dev/translation_helper.php:21;23
-msgid "Date Entries"
-msgstr ""
-
-#: /dev/translation_helper.php:24;28
-msgid "Related Relations"
-msgstr ""
-
-#: /dev/translation_helper.php:25
-msgid "Similar Relations from left Vertex"
-msgstr ""
-
-#: /dev/translation_helper.php:26
-msgid "Similar Relations to right Vertex"
-msgstr ""
-
-#: /dev/translation_helper.php:27
-msgid "Related Vertices"
-msgstr ""
-
-#: /dev/translation_helper.php:29
-msgid "Related Vertex Types"
-msgstr ""
-
-#: /dev/translation_helper.php:30
-msgid "Related Relation Types"
-msgstr ""
-
-#: /dev/translation_helper.php:31
-msgid "Password must have at least 6 characters"
-msgstr ""
-
-#: /dev/translation_helper.php:32
-msgid "Minimum length is 4 letters"
-msgstr ""
-
-#: /dev/translation_helper.php:33
-msgid "Username must be unique"
-msgstr ""
-
-#: /dev/translation_helper.php:34
-msgid "Passwords did not match"
-msgstr ""
-
-#: /dev/translation_helper.php:35
-msgid "The only groups allowed are admin, poweruser, and user."
-msgstr ""
-
-#: /dev/translation_helper.php:36
-msgid "This field cannot be left blank"
-msgstr ""
-
-#: /dev/translation_helper.php:37
-msgid "Key must be a nuber between 1 and 255"
-msgstr ""
-
-#: /dev/translation_helper.php:38
-msgid "Title cannot be left blank"
-msgstr ""
-
-#: /dev/translation_helper.php:39
-msgid "Title must be unique"
-msgstr ""
-
-#: /dev/translation_helper.php:40
-msgid "Please submit a picture"
-msgstr ""
-
-#: /dev/translation_helper.php:41
-msgid "Only gif, jpg, and png-Files are allowed."
-msgstr ""
-
-#: /dev/translation_helper.php:42
-msgid "Date has to be entered in the format DD.MM.YYYY (or MM.YYYY or YYYY)"
-msgstr ""
-
-#: /dev/translation_helper.php:43
-msgid "Coordinates entered are not the right format - lat/lon as decimal format (12.33333 55.33333) or in degree format (dd:mm:ssN dd:mm:ssE)"
-msgstr ""
-
-#: /dev/translation_helper.php:44
-msgid "Class/Title separation has do be done correctly using a \"class:title\" pattern."
-msgstr ""
-
-#: /dev/translation_helper.php:45
-msgid "Reference must be unique"
-msgstr ""
-
-#: /models/pictogram.php:58
+#: /models/pictogram.php:59
 msgid "Could not move the temporary picture ito process it further."
 msgstr ""
 
-#: /views/bibliographies/add.ctp:12
-#: /views/elements/view_bibliography_list.ctp:71
-#: /views/elements/view_tagset_list.ctp:70
+#: /views/bibliographies/add.ctp:13
+#: /views/elements/view_bibliography_list.ctp:72
+#: /views/elements/view_tagset_list.ctp:71
 msgid "Add Bibliography"
-msgstr ""
-
-#: /views/bibliographies/add.ctp:14
-#: /views/bibliographies/edit.ctp:16
-msgid "Short bibliographic entry used in lists"
 msgstr ""
 
 #: /views/bibliographies/add.ctp:15
 #: /views/bibliographies/edit.ctp:17
-msgid "Full bibliographic entry"
+msgid "Short bibliographic entry used in lists"
 msgstr ""
 
 #: /views/bibliographies/add.ctp:16
 #: /views/bibliographies/edit.ctp:18
+msgid "Full bibliographic entry"
+msgstr ""
+
+#: /views/bibliographies/add.ctp:17
+#: /views/bibliographies/edit.ctp:19
 msgid "Reference entry for texts"
 msgstr ""
 
-#: /views/bibliographies/add.ctp:20
-#: /views/elements/view_bibliography_list.ctp:83
-#: /views/elements/view_tagset_list.ctp:88
-#: /views/inferences/add.ctp:31
-#: /views/pictograms/add.ctp:19
-#: /views/relation_classes/add.ctp:18
-#: /views/relation_types/add.ctp:25
+#: /views/bibliographies/add.ctp:21
+#: /views/elements/view_bibliography_list.ctp:84
+#: /views/elements/view_tagset_list.ctp:89
+#: /views/inferences/add.ctp:32
+#: /views/pictograms/add.ctp:20
+#: /views/relation_classes/add.ctp:19
+#: /views/relation_types/add.ctp:26
 #: /views/relations/add.ctp:25
-#: /views/tagsets/add_set.ctp:20
-#: /views/users/add.ctp:30
-#: /views/vertex_classes/add.ctp:19
-#: /views/vertex_types/add.ctp:21
-#: /views/vertices/add.ctp:22
-#: /views/vertices/view.ctp:73
+#: /views/tagsets/add_set.ctp:21
+#: /views/users/add.ctp:31
+#: /views/vertex_classes/add.ctp:20
+#: /views/vertex_types/add.ctp:22
+#: /views/vertices/add.ctp:23
+#: /views/vertices/view.ctp:75
 msgid "Add!"
 msgstr ""
 
-#: /views/bibliographies/add.ctp:24
-#: /views/bibliographies/edit.ctp:27
+#: /views/bibliographies/add.ctp:25
+#: /views/bibliographies/edit.ctp:28
 msgid "List Bibliographies"
 msgstr ""
 
-#: /views/bibliographies/edit.ctp:12
+#: /views/bibliographies/edit.ctp:13
 msgid "Edit Bibliography"
 msgstr ""
 
-#: /views/bibliographies/edit.ctp:22
-#: /views/inferences/edit.ctp:33
-#: /views/pictograms/edit.ctp:23
-#: /views/relation_classes/edit.ctp:12
-#: /views/relation_types/edit.ctp:26
-#: /views/relations/edit.ctp:27
-#: /views/tagsets/edit.ctp:11
-#: /views/users/changepassword.ctp:20
-#: /views/users/edit.ctp:31
-#: /views/vertex_classes/edit.ctp:21
-#: /views/vertex_types/edit.ctp:23
-#: /views/vertices/edit.ctp:24
+#: /views/bibliographies/edit.ctp:23
+#: /views/inferences/edit.ctp:34
+#: /views/pictograms/edit.ctp:24
+#: /views/relation_classes/edit.ctp:21
+#: /views/relation_types/edit.ctp:27
+#: /views/relations/edit.ctp:28
+#: /views/tagsets/edit.ctp:21
+#: /views/users/changepassword.ctp:21
+#: /views/users/edit.ctp:32
+#: /views/vertex_classes/edit.ctp:22
+#: /views/vertex_types/edit.ctp:24
+#: /views/vertices/edit.ctp:25
 msgid "Change!"
 msgstr ""
 
-#: /views/bibliographies/edit.ctp:26
-#: /views/elements/view_bibliography_list.ctp:47;47;60
-#: /views/elements/view_tagset_list.ctp:41;41;54
-#: /views/pictograms/edit.ctp:27
-#: /views/relation_classes/edit.ctp:16
-#: /views/relation_types/edit.ctp:30
-#: /views/relations/edit.ctp:31
-#: /views/tagsets/edit.ctp:15
-#: /views/users/edit.ctp:36
-#: /views/vertex_classes/edit.ctp:25
-#: /views/vertex_types/edit.ctp:27
-#: /views/vertices/edit.ctp:28
+#: /views/bibliographies/edit.ctp:27
+#: /views/elements/view_bibliography_list.ctp:48;48;61
+#: /views/elements/view_tagset_list.ctp:42;42;55
+#: /views/pictograms/edit.ctp:28
+#: /views/relation_classes/edit.ctp:25
+#: /views/relation_types/edit.ctp:31
+#: /views/relations/edit.ctp:32
+#: /views/tagsets/edit.ctp:25
+#: /views/users/edit.ctp:37
+#: /views/vertex_classes/edit.ctp:26
+#: /views/vertex_types/edit.ctp:28
+#: /views/vertices/edit.ctp:29
 msgid "Delete"
 msgstr ""
 
-#: /views/bibliographies/edit.ctp:26
-#: /views/relation_classes/edit.ctp:16
-#: /views/relation_types/edit.ctp:30
-#: /views/tagsets/edit.ctp:15
-#: /views/users/edit.ctp:36
-#: /views/vertex_classes/edit.ctp:25
-#: /views/vertex_types/edit.ctp:27
+#: /views/bibliographies/edit.ctp:27
+#: /views/relation_classes/edit.ctp:25
+#: /views/relation_types/edit.ctp:31
+#: /views/tagsets/edit.ctp:25
+#: /views/users/edit.ctp:37
+#: /views/vertex_classes/edit.ctp:26
+#: /views/vertex_types/edit.ctp:28
 msgid "Are you sure you want to delete %s?"
 msgstr ""
 
-#: /views/bibliographies/edit.ctp:28
-#: /views/pictograms/edit.ctp:29
-#: /views/relation_classes/edit.ctp:18
-#: /views/relation_types/edit.ctp:32
-#: /views/relations/edit.ctp:33
-#: /views/relations/possible_inferences.ctp:76
-#: /views/tagsets/edit.ctp:17
-#: /views/vertex_classes/edit.ctp:27
-#: /views/vertex_types/edit.ctp:29
-#: /views/vertices/edit.ctp:30
+#: /views/bibliographies/edit.ctp:29
+#: /views/pictograms/edit.ctp:30
+#: /views/relation_classes/edit.ctp:27
+#: /views/relation_types/edit.ctp:33
+#: /views/relations/edit.ctp:34
+#: /views/relations/possible_inferences.ctp:77
+#: /views/tagsets/edit.ctp:27
+#: /views/vertex_classes/edit.ctp:28
+#: /views/vertex_types/edit.ctp:30
+#: /views/vertices/edit.ctp:31
 msgid "View"
 msgstr ""
 
-#: /views/bibliographies/view.ctp:15;17
+#: /views/bibliographies/view.ctp:16;18
 msgid "Bibliographic Entry"
 msgstr ""
 
-#: /views/bibliographies/view.ctp:21
+#: /views/bibliographies/view.ctp:22
 msgid "Full Bibliographic Entry"
 msgstr ""
 
-#: /views/bibliographies/view.ctp:23
+#: /views/bibliographies/view.ctp:24
 msgid "Short Reference"
 msgstr ""
 
-#: /views/bibliographies/view.ctp:26
-#: /views/elements/view_comment.ctp:20
+#: /views/bibliographies/view.ctp:27
+#: /views/elements/view_comment.ctp:21
 msgid "Comment"
 msgstr ""
 
-#: /views/elements/footer_editinfo.ctp:12
-#: /views/users/view.ctp:25
+#: /views/bibliographies/view.ctp:35
+msgid "Vertices connected to this Bibliographic Entry"
+msgstr ""
+
+#: /views/bibliographies/view.ctp:36
+msgid "Relations connected to this Bibliographic Entry"
+msgstr ""
+
+#: /views/elements/footer_editinfo.ctp:13
+#: /views/users/view.ctp:26
 msgid "Created"
 msgstr ""
 
-#: /views/elements/footer_editinfo.ctp:13;17
+#: /views/elements/footer_editinfo.ctp:14;18
 msgid "%s by %s"
 msgstr ""
 
-#: /views/elements/footer_editinfo.ctp:14;18
+#: /views/elements/footer_editinfo.ctp:15;19
 msgid "d-m-Y H:i:s"
 msgstr ""
 
-#: /views/elements/footer_editinfo.ctp:16
+#: /views/elements/footer_editinfo.ctp:17
 msgid "Changed"
 msgstr ""
 
-#: /views/elements/form_dates.ctp:11
+#: /views/elements/form_dates.ctp:12
 msgid "Start Date"
 msgstr ""
 
-#: /views/elements/form_dates.ctp:14;22
+#: /views/elements/form_dates.ctp:15;23
 msgid "ca"
 msgstr ""
 
-#: /views/elements/form_dates.ctp:15;23
+#: /views/elements/form_dates.ctp:16;24
 msgid "Unclear Date?"
 msgstr ""
 
-#: /views/elements/form_dates.ctp:16;24
+#: /views/elements/form_dates.ctp:17;25
 msgid "Julian?"
 msgstr ""
 
-#: /views/elements/form_dates.ctp:19
+#: /views/elements/form_dates.ctp:20
 msgid "Stop Date"
 msgstr ""
 
-#: /views/elements/form_geo.ctp:10
+#: /views/elements/form_geo.ctp:11
 msgid "Geo Coordinates"
 msgstr ""
 
-#: /views/elements/form_pictogram.ctp:17
+#: /views/elements/form_pictogram.ctp:18
 msgid "--- optional select ---"
 msgstr ""
 
-#: /views/elements/form_undelete.ctp:14
+#: /views/elements/form_undelete.ctp:15
 msgid "Unset to undelete data entry"
 msgstr ""
 
-#: /views/elements/layout_lastvertices.ctp:22
+#: /views/elements/layout_lastvertices.ctp:23
 msgid "Last Vertices:"
 msgstr ""
 
-#: /views/elements/layout_morelinks.ctp:12
+#: /views/elements/layout_morelinks.ctp:13
 msgid "Additional Actions:"
 msgstr ""
 
-#: /views/elements/layout_morelinks.ctp:14
+#: /views/elements/layout_morelinks.ctp:15
 #: /views/pages/home.ctp:24
-#: /views/tagsets/index.ctp:2
+#: /views/tagsets/index.ctp:12
 msgid "Tag Sets"
 msgstr ""
 
-#: /views/elements/layout_morelinks.ctp:15
-#: /views/relations/aggregate_cloud.ctp:11
+#: /views/elements/layout_morelinks.ctp:16
+#: /views/relations/aggregate_cloud.ctp:12
 msgid "Relational Tag Clouds"
 msgstr ""
 
-#: /views/elements/layout_search.ctp:17
+#: /views/elements/layout_search.ctp:18
 msgid "Search!"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:20
-#: /views/helpers/paginated_table.php:75
+#: /views/elements/list_inferences.ctp:21
+#: /views/helpers/paginated_table.php:76
 msgid "icon_new_en.gif"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:28
-#: /views/helpers/paginated_table.php:82
+#: /views/elements/list_inferences.ctp:29
+#: /views/helpers/paginated_table.php:83
 msgid "New"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:35
+#: /views/elements/list_inferences.ctp:36
 msgid "Inferences"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:36
+#: /views/elements/list_inferences.ctp:37
 msgid "Show more"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:37
+#: /views/elements/list_inferences.ctp:38
 msgid "Show less"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:67
+#: /views/elements/list_inferences.ctp:68
 msgid "Formula:"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:81
-#: /views/elements/list_relations_bib.ctp:29
-#: /views/elements/list_vertices_bib.ctp:28
-#: /views/elements/view_bibliography_list.ctp:35;35
-#: /views/helpers/hc_support.php:86
-#: /views/helpers/paginated_table.php:28
+#: /views/elements/list_inferences.ctp:82
+#: /views/elements/list_relations_bib.ctp:30
+#: /views/elements/list_vertices_bib.ctp:29
+#: /views/elements/view_bibliography_list.ctp:36;36
+#: /views/helpers/hc_support.php:102
+#: /views/helpers/paginated_table.php:29
 msgid "Edit"
 msgstr ""
 
-#: /views/elements/list_relations_bib.ctp:14
-#: /views/elements/list_vertices_bib.ctp:14
+#: /views/elements/list_relations_bib.ctp:15
+#: /views/elements/list_vertices_bib.ctp:15
 msgid "Pages"
 msgstr ""
 
-#: /views/elements/list_relations_bib.ctp:15
-#: /views/elements/view_possible_inferences.ctp:20
+#: /views/elements/list_relations_bib.ctp:16
+#: /views/elements/view_possible_inferences.ctp:21
 msgid "From Vertex"
 msgstr ""
 
-#: /views/elements/list_relations_bib.ctp:16
-#: /views/elements/list_vertices_bib.ctp:16
-#: /views/elements/view_possible_inferences.ctp:21
+#: /views/elements/list_relations_bib.ctp:17
+#: /views/elements/list_vertices_bib.ctp:17
+#: /views/elements/view_possible_inferences.ctp:22
 msgid "Type"
 msgstr ""
 
-#: /views/elements/list_relations_bib.ctp:17
-#: /views/elements/view_possible_inferences.ctp:22
-msgid "To Vertex"
-msgstr ""
-
 #: /views/elements/list_relations_bib.ctp:18
-#: /views/elements/list_vertices_bib.ctp:17
-msgid "From"
+#: /views/elements/view_possible_inferences.ctp:23
+msgid "To Vertex"
 msgstr ""
 
 #: /views/elements/list_relations_bib.ctp:19
 #: /views/elements/list_vertices_bib.ctp:18
+msgid "From"
+msgstr ""
+
+#: /views/elements/list_relations_bib.ctp:20
+#: /views/elements/list_vertices_bib.ctp:19
 msgid "To"
 msgstr ""
 
-#: /views/elements/list_relations_bib.ctp:28
-#: /views/elements/list_vertices_bib.ctp:27
-#: /views/elements/view_bibliography_list.ctp:10;10
-#: /views/elements/view_tagset_list.ctp:12;12
-#: /views/helpers/paginated_table.php:27
+#: /views/elements/list_relations_bib.ctp:29
+#: /views/elements/list_vertices_bib.ctp:28
+#: /views/elements/view_bibliography_list.ctp:11;11
+#: /views/elements/view_tagset_list.ctp:13;13
+#: /views/helpers/paginated_table.php:28
 msgid "Details"
 msgstr ""
 
-#: /views/elements/list_vertices_bib.ctp:15
+#: /views/elements/list_vertices_bib.ctp:16
 msgid "Title"
 msgstr ""
 
-#: /views/elements/view_bibliography_list.ctp:15
+#: /views/elements/view_bibliography_list.ctp:16
 msgid "Bibliography"
 msgstr ""
 
-#: /views/elements/view_bibliography_list.ctp:64
-#: /views/elements/view_tagset_list.ctp:58
+#: /views/elements/view_bibliography_list.ctp:65
+#: /views/elements/view_tagset_list.ctp:59
 msgid "Really delete?"
 msgstr ""
 
-#: /views/elements/view_bibliography_list.ctp:81
+#: /views/elements/view_bibliography_list.ctp:82
 msgid "Bibliography:"
 msgstr ""
 
-#: /views/elements/view_bibliography_list.ctp:82
+#: /views/elements/view_bibliography_list.ctp:83
 msgid "Pages:"
 msgstr ""
 
-#: /views/elements/view_coordinates.ctp:11
+#: /views/elements/view_coordinates.ctp:12
 msgid "Coordinates"
 msgstr ""
 
-#: /views/elements/view_coordinates.ctp:16;17
+#: /views/elements/view_coordinates.ctp:17;18
 msgid "Show on Globe"
 msgstr ""
 
-#: /views/elements/view_geodate.ctp:17
+#: /views/elements/view_geodate.ctp:18
 msgid "Show"
 msgstr ""
 
-#: /views/elements/view_geodate.ctp:27
+#: /views/elements/view_geodate.ctp:28
 msgid "none"
 msgstr ""
 
-#: /views/elements/view_network.ctp:20;31
+#: /views/elements/view_network.ctp:21;32
 msgid "Network Visualization"
 msgstr ""
 
-#: /views/elements/view_network.ctp:26
-#: /views/tagsets/viewnetwork.ctp:22
+#: /views/elements/view_network.ctp:27
+#: /views/tagsets/viewnetwork.ctp:23
 msgid "Graphviz Data File"
 msgstr ""
 
-#: /views/elements/view_network.ctp:28
-#: /views/tagsets/viewnetwork.ctp:24
+#: /views/elements/view_network.ctp:29
+#: /views/tagsets/viewnetwork.ctp:25
 msgid "Coordinated DOT-File"
 msgstr ""
 
-#: /views/elements/view_network.ctp:37;38
+#: /views/elements/view_network.ctp:38;39
 msgid "Visualize Network"
 msgstr ""
 
-#: /views/elements/view_ok_icon.ctp:10;10
-#: /views/elements/view_possible_inferences.ctp:42;42
+#: /views/elements/view_ok_icon.ctp:11;11
+#: /views/elements/view_possible_inferences.ctp:43;43
 msgid "Inference exists"
 msgstr ""
 
-#: /views/elements/view_possible_inferences.ctp:17
-#: /views/relations/view.ctp:93
+#: /views/elements/view_possible_inferences.ctp:18
+#: /views/relations/view.ctp:95
 msgid "Possible Derived Relations"
 msgstr ""
 
-#: /views/elements/view_possible_inferences.ctp:24;50;50
+#: /views/elements/view_possible_inferences.ctp:25;51;51
 msgid "Add"
 msgstr ""
 
-#: /views/elements/view_tagset_list.ctp:17
+#: /views/elements/view_tagset_list.ctp:18
 msgid "Associated Sets"
 msgstr ""
 
-#: /views/elements/view_tagset_list.ctp:83
+#: /views/elements/view_tagset_list.ctp:84
 msgid "Add new set name below. Classification of sets can be achieved by using the schema &quot;class:setname&quot;."
 msgstr ""
 
-#: /views/elements/view_tagset_list.ctp:85
+#: /views/elements/view_tagset_list.ctp:86
 msgid "New Set:"
 msgstr ""
 
-#: /views/elements/view_time.ctp:36
+#: /views/elements/view_time.ctp:37
 msgid "Time"
 msgstr ""
 
-#: /views/helpers/geography.php:128
+#: /views/helpers/geography.php:129
 msgid "Error: No ImageMagick available"
 msgstr ""
 
-#: /views/helpers/geography.php:132
+#: /views/helpers/geography.php:133
 msgid "Error: No GMT available"
 msgstr ""
 
-#: /views/helpers/hc_support.php:43
+#: /views/helpers/hc_support.php:44
 msgid "Day of Week: "
 msgstr ""
 
-#: /views/helpers/hc_support.php:54
+#: /views/helpers/hc_support.php:55
 msgid "Gregorian: "
 msgstr ""
 
-#: /views/helpers/hc_support.php:60
+#: /views/helpers/hc_support.php:61
 msgid "Julian Day: "
 msgstr ""
 
-#: /views/helpers/paginated_table.php:91
+#: /views/helpers/paginated_table.php:92
 msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
 msgstr ""
 
-#: /views/helpers/paginated_table.php:114
-#: /views/searches/search.ctp:38
+#: /views/helpers/paginated_table.php:115
+#: /views/searches/search.ctp:39
 msgid "previous"
 msgstr ""
 
-#: /views/helpers/paginated_table.php:116
-#: /views/searches/search.ctp:40
+#: /views/helpers/paginated_table.php:117
+#: /views/searches/search.ctp:41
 msgid "next"
 msgstr ""
 
-#: /views/helpers/paginated_table.php:252;259
-#: /views/users/changepassword.ctp:12
-#: /views/users/view.ctp:37
+#: /views/helpers/paginated_table.php:253;260
+#: /views/users/changepassword.ctp:13
+#: /views/users/view.ctp:38
 msgid "Change Password"
 msgstr ""
 
-#: /views/inferences/add.ctp:12
+#: /views/inferences/add.ctp:13
 msgid "Add Inference"
-msgstr ""
-
-#: /views/inferences/add.ctp:14
-#: /views/inferences/edit.ctp:16
-msgid "Inference Type"
 msgstr ""
 
 #: /views/inferences/add.ctp:15
 #: /views/inferences/edit.ctp:17
+msgid "Inference Type"
+msgstr ""
+
+#: /views/inferences/add.ctp:16
+#: /views/inferences/edit.ctp:18
 msgid "Please select one inference type"
 msgstr ""
 
-#: /views/inferences/add.ctp:17
-#: /views/inferences/edit.ctp:19
+#: /views/inferences/add.ctp:18
+#: /views/inferences/edit.ctp:20
 msgid "a: "
-msgstr ""
-
-#: /views/inferences/add.ctp:20
-#: /views/inferences/edit.ctp:22
-msgid "Take second parameter of a (switch direction of arrow)"
 msgstr ""
 
 #: /views/inferences/add.ctp:21
 #: /views/inferences/edit.ctp:23
-msgid "b: "
+msgid "Take second parameter of a (switch direction of arrow)"
 msgstr ""
 
-#: /views/inferences/add.ctp:24
-#: /views/inferences/edit.ctp:26
-msgid "Take second parameter of b (switch direction of arrow)"
+#: /views/inferences/add.ctp:22
+#: /views/inferences/edit.ctp:24
+msgid "b: "
 msgstr ""
 
 #: /views/inferences/add.ctp:25
 #: /views/inferences/edit.ctp:27
+msgid "Take second parameter of b (switch direction of arrow)"
+msgstr ""
+
+#: /views/inferences/add.ctp:26
+#: /views/inferences/edit.ctp:28
 msgid "c: "
 msgstr ""
 
-#: /views/inferences/add.ctp:28
-#: /views/inferences/edit.ctp:30
+#: /views/inferences/add.ctp:29
+#: /views/inferences/edit.ctp:31
 msgid "Take second parameter of c (switch direction of arrow)"
 msgstr ""
 
-#: /views/inferences/add.ctp:36
-#: /views/inferences/edit.ctp:38
+#: /views/inferences/add.ctp:37
+#: /views/inferences/edit.ctp:39
 msgid "Back to the Relation Type"
 msgstr ""
 
-#: /views/inferences/edit.ctp:12
+#: /views/inferences/edit.ctp:13
 msgid "Edit Inference"
 msgstr ""
 
@@ -1025,7 +835,7 @@ msgid "Logged in as: %s"
 msgstr ""
 
 #: /views/layouts/default.ctp:47
-#: /views/users/view.ctp:15;17
+#: /views/users/view.ctp:16;18
 msgid "User"
 msgstr ""
 
@@ -1186,328 +996,357 @@ msgstr ""
 msgid "This disclaimer is to be regarded as part of the internet publication which you were referred from. If sections or individual terms of this statement are not legal or correct, the content or validity of the other parts remain uninfluenced by this fact."
 msgstr ""
 
-#: /views/pictograms/add.ctp:12
+#: /views/pictograms/add.ctp:13
 msgid "Add Pictogram"
 msgstr ""
 
-#: /views/pictograms/add.ctp:23
-#: /views/pictograms/edit.ctp:28
+#: /views/pictograms/add.ctp:24
+#: /views/pictograms/edit.ctp:29
 msgid "List Pictograms"
 msgstr ""
 
-#: /views/pictograms/edit.ctp:12
+#: /views/pictograms/edit.ctp:13
 msgid "Edit Pictogram"
 msgstr ""
 
-#: /views/pictograms/edit.ctp:19
-msgid "Current Pictures"
-msgstr ""
-
 #: /views/pictograms/edit.ctp:20
-#: /views/pictograms/view.ctp:23
-msgid "Big: "
+msgid "Current Pictures"
 msgstr ""
 
 #: /views/pictograms/edit.ctp:21
 #: /views/pictograms/view.ctp:24
+msgid "Big: "
+msgstr ""
+
+#: /views/pictograms/edit.ctp:22
+#: /views/pictograms/view.ctp:25
 msgid "Small: "
 msgstr ""
 
-#: /views/pictograms/edit.ctp:27
+#: /views/pictograms/edit.ctp:28
 msgid "Are you sure you want to delete %s? This cannot be reversed!"
 msgstr ""
 
-#: /views/pictograms/view.ctp:14;17
+#: /views/pictograms/view.ctp:15;18
 msgid "Pictogram/Icon"
 msgstr ""
 
-#: /views/pictograms/view.ctp:21
+#: /views/pictograms/view.ctp:22
 msgid "Icons"
 msgstr ""
 
-#: /views/relation_classes/add.ctp:12
+#: /views/relation_classes/add.ctp:13
 msgid "Add RelationClass"
 msgstr ""
 
-#: /views/relation_classes/add.ctp:22
-#: /views/relation_classes/edit.ctp:17
+#: /views/relation_classes/add.ctp:23
+#: /views/relation_classes/edit.ctp:26
 msgid "List RelationClasses"
 msgstr ""
 
-#: /views/relation_classes/add.ctp:23
-#: /views/users/add.ctp:36
-#: /views/users/changepassword.ctp:26
-#: /views/users/edit.ctp:39
-#: /views/users/view.ctp:40
+#: /views/relation_classes/add.ctp:24
+#: /views/users/add.ctp:37
+#: /views/users/changepassword.ctp:27
+#: /views/users/edit.ctp:40
+#: /views/users/view.ctp:41
 msgid "List Users"
 msgstr ""
 
-#: /views/relation_classes/edit.ctp:4
+#: /views/relation_classes/edit.ctp:13
 msgid "Edit RelationClass"
 msgstr ""
 
-#: /views/relation_classes/view.ctp:17;19
+#: /views/relation_classes/view.ctp:18;20
 msgid "Relation Class"
 msgstr ""
 
-#: /views/relation_types/add.ctp:12
-msgid "Add RelationType"
+#: /views/relation_classes/view.ctp:35
+msgid "Related Relation Types"
 msgstr ""
 
-#: /views/relation_types/add.ctp:21
-#: /views/relation_types/edit.ctp:22
-msgid "Allowed Vertex from (empty to allow all)"
+#: /views/relation_types/add.ctp:13
+msgid "Add RelationType"
 msgstr ""
 
 #: /views/relation_types/add.ctp:22
 #: /views/relation_types/edit.ctp:23
+msgid "Allowed Vertex from (empty to allow all)"
+msgstr ""
+
+#: /views/relation_types/add.ctp:23
+#: /views/relation_types/edit.ctp:24
 msgid "Allowed Vertex to (empty to allow all)"
 msgstr ""
 
-#: /views/relation_types/add.ctp:29
-#: /views/relation_types/edit.ctp:31
+#: /views/relation_types/add.ctp:30
+#: /views/relation_types/edit.ctp:32
 msgid "List RelationTypes"
 msgstr ""
 
-#: /views/relation_types/edit.ctp:12
+#: /views/relation_types/edit.ctp:13
 msgid "Edit RelationType"
 msgstr ""
 
-#: /views/relation_types/view.ctp:17;30
+#: /views/relation_types/view.ctp:18;31
 msgid "Relation Type"
 msgstr ""
 
-#: /views/relation_types/view.ctp:19
+#: /views/relation_types/view.ctp:20
 msgid "X"
 msgstr ""
 
-#: /views/relation_types/view.ctp:30
-#: /views/vertex_types/view.ctp:30
+#: /views/relation_types/view.ctp:31
+#: /views/vertex_types/view.ctp:31
 msgid " of the Class %s"
 msgstr ""
 
-#: /views/relations/add.ctp:12
+#: /views/relation_types/view.ctp:48
+#: /views/vertices/view.ctp:63
+msgid "Related Relations"
+msgstr ""
+
+#: /views/relations/add.ctp:13
 msgid "Add Relation"
 msgstr ""
 
 #: /views/relations/add.ctp:29
-#: /views/relations/edit.ctp:32
-#: /views/relations/possible_inferences.ctp:77
+#: /views/relations/edit.ctp:33
+#: /views/relations/possible_inferences.ctp:78
 msgid "List Relations"
 msgstr ""
 
-#: /views/relations/aggregate_cloud.ctp:13
+#: /views/relations/aggregate_cloud.ctp:14
 msgid "Popular &quot;From&quot;-Vertices"
 msgstr ""
 
-#: /views/relations/aggregate_cloud.ctp:23
+#: /views/relations/aggregate_cloud.ctp:24
 msgid "Popular &quot;To&quot;-Vertices"
 msgstr ""
 
-#: /views/relations/edit.ctp:12
+#: /views/relations/edit.ctp:13
 msgid "Edit Relation"
 msgstr ""
 
-#: /views/relations/edit.ctp:31
-#: /views/vertices/edit.ctp:28
+#: /views/relations/edit.ctp:32
+#: /views/vertices/edit.ctp:29
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
-#: /views/relations/possible_inferences.ctp:56
+#: /views/relations/possible_inferences.ctp:57
 msgid "Inferences for:"
 msgstr ""
 
-#: /views/relations/possible_inferences.ctp:60;64
-#: /views/relations/view.ctp:61;65
+#: /views/relations/possible_inferences.ctp:61;65
+#: /views/relations/view.ctp:63;67
 msgid "Relation"
 msgstr ""
 
-#: /views/relations/possible_inferences.ctp:64
-#: /views/relations/view.ctp:65
+#: /views/relations/possible_inferences.ctp:65
+#: /views/relations/view.ctp:67
 msgid " of the Type %s and the Class %s"
 msgstr ""
 
-#: /views/relations/view.ctp:94
+#: /views/relations/view.ctp:87
+msgid "Similar Relations from left Vertex"
+msgstr ""
+
+#: /views/relations/view.ctp:88
+msgid "Similar Relations to right Vertex"
+msgstr ""
+
+#: /views/relations/view.ctp:96
 msgid "Show possible derived relations"
 msgstr ""
 
-#: /views/searches/search.ctp:17
+#: /views/searches/search.ctp:18
 msgid "Search Results"
 msgstr ""
 
-#: /views/searches/search.ctp:19
+#: /views/searches/search.ctp:20
 msgid "Search for &quot;%s&quot;"
 msgstr ""
 
-#: /views/searches/search.ctp:21
+#: /views/searches/search.ctp:22
 msgid "Nothing was found!"
 msgstr ""
 
-#: /views/searches/search.ctp:24
+#: /views/searches/search.ctp:23
+msgid "Back"
+msgstr ""
+
+#: /views/searches/search.ctp:25
 msgid "Found %s matches. Showing page %s of %s."
 msgstr ""
 
-#: /views/searches/search.ctp:28
+#: /views/searches/search.ctp:29
 msgid "Relevance: "
 msgstr ""
 
-#: /views/tagsets/add_set.ctp:13
+#: /views/tagsets/add_set.ctp:14
 msgid "Add Tag Set"
 msgstr ""
 
-#: /views/tagsets/add_set.ctp:14
+#: /views/tagsets/add_set.ctp:15
 msgid "Add new tag set name below. Classification of sets can be achieved by using the schema &quot;class:set name&quot;."
 msgstr ""
 
-#: /views/tagsets/add_set.ctp:24
+#: /views/tagsets/add_set.ctp:25
 msgid "List Tagsets"
 msgstr ""
 
-#: /views/tagsets/delete_set.ctp:10
+#: /views/tagsets/delete_set.ctp:11
 msgid "Data deletion failed! Something strange happened..."
 msgstr ""
 
-#: /views/tagsets/edit.ctp:4
+#: /views/tagsets/edit.ctp:14
 msgid "Edit Tag Set"
 msgstr ""
 
-#: /views/tagsets/edit.ctp:16
+#: /views/tagsets/edit.ctp:26
 msgid "List Tag Sets"
 msgstr ""
 
-#: /views/tagsets/index.ctp:19
+#: /views/tagsets/index.ctp:29
 msgid "Tag Cloud"
 msgstr ""
 
-#: /views/tagsets/view.ctp:21;23
+#: /views/tagsets/view.ctp:23;25
 msgid "Tag Set"
 msgstr ""
 
-#: /views/tagsets/view.ctp:27
+#: /views/tagsets/view.ctp:29
 msgid "Tag Set Elements"
 msgstr ""
 
-#: /views/tagsets/view.ctp:50
+#: /views/tagsets/view.ctp:52
 msgid "List all Tag Sets"
 msgstr ""
 
-#: /views/users/add.ctp:12
+#: /views/users/add.ctp:13
 msgid "Add User"
 msgstr ""
 
-#: /views/users/add.ctp:14
-#: /views/users/edit.ctp:15
+#: /views/users/add.ctp:15
+#: /views/users/edit.ctp:16
 msgid "Username, alphanumeric"
 msgstr ""
 
-#: /views/users/add.ctp:15
-#: /views/users/changepassword.ctp:15
+#: /views/users/add.ctp:16
+#: /views/users/changepassword.ctp:16
 msgid "Password with a minimum length of 6 letters"
 msgstr ""
 
-#: /views/users/add.ctp:16
+#: /views/users/add.ctp:17
 msgid "Repeat Password"
 msgstr ""
 
-#: /views/users/add.ctp:18
-#: /views/users/edit.ctp:16
+#: /views/users/add.ctp:19
+#: /views/users/edit.ctp:17
 msgid "Real name of user"
 msgstr ""
 
-#: /views/users/add.ctp:26
-#: /views/users/edit.ctp:26
+#: /views/users/add.ctp:27
+#: /views/users/edit.ctp:27
 msgid "Set the privileges of users"
 msgstr ""
 
-#: /views/users/edit.ctp:12
+#: /views/users/edit.ctp:13
 msgid "Edit User"
 msgstr ""
 
-#: /views/users/view.ctp:21
+#: /views/users/view.ctp:22
 msgid "Username"
 msgstr ""
 
-#: /views/users/view.ctp:23
+#: /views/users/view.ctp:24
 msgid "Group"
 msgstr ""
 
-#: /views/users/view.ctp:27
+#: /views/users/view.ctp:28
 msgid "Modified"
 msgstr ""
 
-#: /views/users/view.ctp:29
+#: /views/users/view.ctp:30
 msgid "Last Login"
 msgstr ""
 
-#: /views/vertex_classes/add.ctp:12
+#: /views/vertex_classes/add.ctp:13
 msgid "Add VertexClass"
 msgstr ""
 
-#: /views/vertex_classes/add.ctp:16
-#: /views/vertex_classes/edit.ctp:18
+#: /views/vertex_classes/add.ctp:17
+#: /views/vertex_classes/edit.ctp:19
 msgid "Numeric value, order is ascending (1 = high, 255 = low)"
 msgstr ""
 
-#: /views/vertex_classes/add.ctp:23
-#: /views/vertex_classes/edit.ctp:26
+#: /views/vertex_classes/add.ctp:24
+#: /views/vertex_classes/edit.ctp:27
 msgid "List VertexClasses"
 msgstr ""
 
-#: /views/vertex_classes/edit.ctp:12
+#: /views/vertex_classes/edit.ctp:13
 msgid "Edit VertexClass"
 msgstr ""
 
-#: /views/vertex_classes/view.ctp:17;19
+#: /views/vertex_classes/view.ctp:18;20
 msgid "Vertex Class"
 msgstr ""
 
-#: /views/vertex_types/add.ctp:12
+#: /views/vertex_classes/view.ctp:35
+msgid "Related Vertex Types"
+msgstr ""
+
+#: /views/vertex_types/add.ctp:13
 msgid "Add VertexType"
 msgstr ""
 
-#: /views/vertex_types/add.ctp:25
-#: /views/vertex_types/edit.ctp:28
+#: /views/vertex_types/add.ctp:26
+#: /views/vertex_types/edit.ctp:29
 msgid "List VertexTypes"
 msgstr ""
 
-#: /views/vertex_types/edit.ctp:12
+#: /views/vertex_types/edit.ctp:13
 msgid "Edit VertexType"
 msgstr ""
 
-#: /views/vertex_types/view.ctp:17;30
+#: /views/vertex_types/view.ctp:18;31
 msgid "Vertex Type"
 msgstr ""
 
-#: /views/vertices/add.ctp:12
+#: /views/vertex_types/view.ctp:45
+msgid "Related Vertices"
+msgstr ""
+
+#: /views/vertices/add.ctp:13
 msgid "Add Vertex"
 msgstr ""
 
-#: /views/vertices/add.ctp:26
-#: /views/vertices/edit.ctp:29
+#: /views/vertices/add.ctp:27
+#: /views/vertices/edit.ctp:30
 msgid "List Vertices"
 msgstr ""
 
-#: /views/vertices/edit.ctp:12
+#: /views/vertices/edit.ctp:13
 msgid "Edit Vertex"
 msgstr ""
 
-#: /views/vertices/view.ctp:35;38
+#: /views/vertices/view.ctp:37;40
 msgid "Vertex"
 msgstr ""
 
-#: /views/vertices/view.ctp:38
+#: /views/vertices/view.ctp:40
 msgid " of the Type %s of the Class %s"
 msgstr ""
 
-#: /views/vertices/view.ctp:66
+#: /views/vertices/view.ctp:68
 msgid "Add New Relation to this Vertex"
 msgstr ""
 
-#: /views/vertices/view.ctp:71
+#: /views/vertices/view.ctp:73
 msgid "--- select ---"
 msgstr ""
 
-#: /webroot/test.php:99
+#: /webroot/test.php:103
 msgid "Debug setting does not allow access to this url."
 msgstr ""
 

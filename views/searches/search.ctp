@@ -20,7 +20,7 @@ if (isset($messages) && is_array($messages))
 <p><? printf(__('Search for &quot;%s&quot;', true), Sanitize::html($search)); ?></p>
 <? if ($hits == 0) : ?>
 <p><strong><? __('Nothing was found!'); ?></strong></p>
-<p><? echo $html->link('Back', $backlink); ?></a>
+<p><? echo $html->link(__('Back', true), $backlink); ?>
 <? else : ?>
 <p><strong><? printf(__('Found %s matches. Showing page %s of %s.', true), $hits, $current, $pages); ?></strong></p>
 <ul class="searchmatches">

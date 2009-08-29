@@ -60,7 +60,7 @@ echo $this->element('view_bibliography_list', array('bibliographies' => $vertex[
 echo $this->element('view_tagset_list', array('tagsets' => $vertex['Tagset'], 'id' => $vertex['Vertex']['id']));
 
 //Show related relations
-echo $this->element('list_relations', array('elementtitle' => 'Related Relations', 'useajax' => true));
+echo $this->element('list_relations', array('elementtitle' => __('Related Relations', true), 'useajax' => true));
 
 //Show Dropdown for possible Relations
 if ($auth->sessionValid()) : ?>

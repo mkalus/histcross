@@ -42,7 +42,7 @@ echo $this->element('view_geodate', $model_array);
 	</div>
 <?
 //Show related vertices
-echo $this->element('list_vertices', array('elementtitle' => 'Related Vertices', 'useajax' => true));
+echo $this->element('list_vertices', array('elementtitle' => __('Related Vertices', true), 'useajax' => true));
 
 //Add Footer
 echo $this->element('footer_editinfo', $model_array);

@@ -32,8 +32,8 @@
 
 <?
 //Show related vertices and relations
-echo $this->element('list_vertices_bib', array('elementtitle' => 'Vertices connected to this Bibliographic Entry', 'data' => $vertices));
-echo $this->element('list_relations_bib', array('elementtitle' => 'Relations connected to this Bibliographic Entry', 'data' => $relations));
+echo $this->element('list_vertices_bib', array('elementtitle' => __('Vertices connected to this Bibliographic Entry', true), 'data' => $vertices));
+echo $this->element('list_relations_bib', array('elementtitle' => __('Relations connected to this Bibliographic Entry', true), 'data' => $relations));
 
 
 //Add Footer

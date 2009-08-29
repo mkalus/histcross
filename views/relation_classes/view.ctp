@@ -32,7 +32,7 @@ echo $this->element('view_comment', $model_array);
 
 <?
 //Show related relation types
-echo $this->element('list_relation_types', array('elementtitle' => 'Related Relation Types', 'useajax' => true));
+echo $this->element('list_relation_types', array('elementtitle' => __('Related Relation Types', true), 'useajax' => true));
 
 //Add Footer
 echo $this->element('footer_editinfo', $model_array);

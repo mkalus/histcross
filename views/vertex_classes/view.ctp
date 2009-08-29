@@ -32,7 +32,7 @@ echo $this->element('view_comment', $model_array);
 
 <?
 //Show related verticex types
-echo $this->element('list_vertex_types', array('elementtitle' => 'Related Vertex Types', 'useajax' => true));
+echo $this->element('list_vertex_types', array('elementtitle' => __('Related Vertex Types', true), 'useajax' => true));
 
 //Add Footer
 echo $this->element('footer_editinfo', $model_array);

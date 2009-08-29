@@ -45,7 +45,7 @@ echo $this->element('view_geodate', $model_array);
 //Show related inferences
 echo $this->element('list_inferences', array('id' => $relationType['RelationType']['id'], 'inferences' => $inferences, 'ajax' => false));
 //Show related relations
-echo $this->element('list_relations', array('elementtitle' => 'Related Relations', 'useajax' => true));
+echo $this->element('list_relations', array('elementtitle' => __('Related Relations', true), 'useajax' => true));
 
 //Add Footer
 echo $this->element('footer_editinfo', $model_array);

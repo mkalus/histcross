@@ -84,8 +84,8 @@ echo $this->element('view_comment', $model_array);
 echo $this->element('view_bibliography_list', array('bibliographies' => $relation['Bibliography'], 'id' => $relation['Relation']['id'], 'model' => 'Relation'));
 
 //Show related relations
-echo $this->element('list_relations', array('elementtitle' => 'Similar Relations from left Vertex', 'useajax' => true, 'relations' => $fromsame, 'uniqhandle' => 'from'));
-echo $this->element('list_relations', array('elementtitle' => 'Similar Relations to right Vertex', 'useajax' => true, 'relations' => $tosame, 'uniqhandle' => 'to'));
+echo $this->element('list_relations', array('elementtitle' => __('Similar Relations from left Vertex', true), 'useajax' => true, 'relations' => $fromsame, 'uniqhandle' => 'from'));
+echo $this->element('list_relations', array('elementtitle' => __('Similar Relations to right Vertex', true), 'useajax' => true, 'relations' => $tosame, 'uniqhandle' => 'to'));
 
 //Show link to possible inferences, if logged in
 if ($auth->sessionValid()) :
