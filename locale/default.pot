@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-08-29 15:25+0200\n"
+"POT-Creation-Date: 2009-08-29 17:30+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -213,7 +213,7 @@ msgid "Invalid id for Tag Set"
 msgstr ""
 
 #: /controllers/tagsets_controller.php:141
-#: /controllers/vertices_controller.php:40;158;165
+#: /controllers/vertices_controller.php:40;168;175
 msgid "Invalid Vertex."
 msgstr ""
 
@@ -353,23 +353,23 @@ msgstr ""
 msgid "VertexType deleted"
 msgstr ""
 
-#: /controllers/vertices_controller.php:103;125
+#: /controllers/vertices_controller.php:113;135
 msgid "The Vertex has been saved"
 msgstr ""
 
-#: /controllers/vertices_controller.php:108;129
+#: /controllers/vertices_controller.php:118;139
 msgid "The Vertex could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/vertices_controller.php:118
+#: /controllers/vertices_controller.php:128
 msgid "Invalid Vertex"
 msgstr ""
 
-#: /controllers/vertices_controller.php:143;281
+#: /controllers/vertices_controller.php:153;291
 msgid "Invalid id for Vertex"
 msgstr ""
 
-#: /controllers/vertices_controller.php:147
+#: /controllers/vertices_controller.php:157
 msgid "Vertex deleted"
 msgstr ""
 
@@ -1344,6 +1344,18 @@ msgstr ""
 
 #: /views/vertices/view.ctp:73
 msgid "--- select ---"
+msgstr ""
+
+#: /views/vertices/view.ctp:86
+msgid "Visualized Network"
+msgstr ""
+
+#: /views/vertices/view.ctp:99
+msgid "Activate interactive network view"
+msgstr ""
+
+#: /views/vertices/view.ctp:119
+msgid "The active network view lets you view nodes interactively. This feature needs Java enabled."
 msgstr ""
 
 #: /webroot/test.php:103

@@ -50,10 +50,20 @@ class VerticesController extends AppController {
 		//pr($this->params);
 		
 		if ($this->RequestHandler->isAjax()) {
-			$this->viewPath = 'elements';
-			$this->set('elementtitle', 'Related Relations');
-			$this->set('useajax', true);
-			$this->render('list_relations');
+			//Parameter is command to view applet?
+			if ($this->params['named']['viewnetworkapplet']) {
+				//active as session value
+				//$this->Session->write('VertexViewNetworkApplet', "1");
+				//view path
+				$this->viewPath = 'vertices';
+				$this->set('vertex', $data);
+				$this->render('viewnetworkapplet');
+			} else {			
+				$this->viewPath = 'elements';
+				$this->set('elementtitle', 'Related Relations');
+				$this->set('useajax', true);
+				$this->render('list_relations');
+			}
 		} else {
 			$this->set('vertex', $data);
 			//Add this vertex to list

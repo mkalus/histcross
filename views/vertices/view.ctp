@@ -78,13 +78,51 @@ if ($auth->sessionValid()) : ?>
 <? endif;
 
 //Add Java element
-$hostname = (env('HTTPS')?'https':'http').'://'.env('HTTP_HOST').substr(env('SCRIPT_NAME'), 0, -9);
+	//Has showglobe been set?
+	if (isset($this->params['named']['viewnetworkapplet']) &&
+			$this->params['named']['viewnetworkapplet'] == "yes") {
+		$hostname = (env('HTTPS')?'https':'http').'://'.env('HTTP_HOST').substr(env('SCRIPT_NAME'), 0, -9);
 ?>
+<h3><? __('Visualized Network'); ?></h3>
+
+<div id="viewnetworkapplet">
 <applet code="org.histcross.radar.Radar" archive="/files/HistcrossRadar.jar" width="720" height="720">
 	<param name="id" value="<? echo $vertex['Vertex']['id']; ?>" />
 	<param name="siteUrl" value="<? echo $hostname; ?>" />
 </applet>
+</div>
 <?
+	} else {
+?>
+<div id="viewnetworkapplet"><p><?
+		echo $ajax->link(
+			__('Activate interactive network view', true),
+			array(
+				'controller' => Inflector::tableize($model),
+				'action'=>'view',
+				$vertex['Vertex']['id'],
+				'viewnetworkapplet' => 'yes'
+			),
+    		array(
+				'url' => array( 'controller' => Inflector::tableize($model),
+					'action' => 'view',
+    				$vertex['Vertex']['id'],
+    				'viewnetworkapplet' => 'yes'
+    		),
+				'before' => "Element.show('networkapplet_loading');",
+				'complete' => "Element.hide('networkapplet_loading');",
+				'update' => 'viewnetworkapplet'
+			),
+    		null,
+    		false
+		);
+?><br /><? __('The active network view lets you view nodes interactively. This feature needs Java enabled.'); ?></p></div>
+<?
+		echo '<div id="networkapplet_loading" style="display:none;">';
+		echo $html->image('ajax-loader.gif');
+		echo '</div>';
+	}
+
 //Add Footer
 echo $this->element('footer_editinfo', $model_array);
 ?>
