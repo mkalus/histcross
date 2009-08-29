@@ -122,7 +122,7 @@
 		<!-- begin: #footer -->
 		<div id="footer">
 			<div id="rightfooter"><a href="http://www.cakephp.org" target="_blank"><img src="/img/cake.power.gif" width="98" height="13" title="Powered by CakePHP" alt="Powered by CakePHP" border="0"></a></div>
-			<div id="leftfooter">(c) 2005 — <?=date('Y')?> by Maximilian Kalus, <a href="http://www.histcross.org" target="_blank">histcross.org</a>, Version 2.1</div>
+			<div id="leftfooter">(c) 2005 — <?=date('Y')?> by Maximilian Kalus, <a href="http://www.histcross.org" target="_blank">histcross.org</a>, Version 2.1b</div>
 		</div>
 		<!-- end: #footer -->
 	</div>
