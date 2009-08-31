@@ -18,6 +18,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 
+import org.histcross.radar.BareBonesBrowserLaunch;
+
 /**
  * @author mkalus
  *
@@ -505,9 +507,9 @@ public class RadarPanel extends Panel implements MouseMotionListener, MouseListe
 			//load vertex page in browser
 			try {
 				if (appRef != null)
-					appRef.getAppletContext().showDocument(new URL(siteUrl + "vertices/view/" + inVertex.getId())); //$NON-NLS-1$
-				else //attempt open in browser
-					BareBonesBrowserLaunch.openURL(siteUrl + "vertices/view/" + inVertex.getId()); //$NON-NLS-1$
+					appRef.getAppletContext().showDocument(new URL(siteUrl + "vertices/view/" + inVertex.getId() + "/viewnetworkapplet:yes#visualized_network")); //$NON-NLS-1$
+				else //attempt open in browser - also open visualized network and jump to it in browser
+					BareBonesBrowserLaunch.openURL(siteUrl + "vertices/view/" + inVertex.getId() + "/viewnetworkapplet:yes#visualized_network"); //$NON-NLS-1$
 			} catch (MalformedURLException e1) {}
 			
 		} else if (inVertex != null && e.isControlDown()) {

@@ -47,17 +47,18 @@ class VerticesController extends AppController {
 		$this->paginate['Relation']['conditions'][] = array('OR' => array('Relation.from_vertex_id = '.$id, 'Relation.to_vertex_id = '.$id));
 		//this handles the complex part of pagination in this case - ugly hack, but works...
 		$this->set('relations', $this->_paginateNormalized($id));
-		//pr($this->params);
+		//pr($this->params)
+		$this->set('hostname', (env('HTTPS')?'https':'http').'://'.env('HTTP_HOST').substr(env('SCRIPT_NAME'), 0, -9));
 		
 		if ($this->RequestHandler->isAjax()) {
 			//Parameter is command to view applet?
-			if ($this->params['named']['viewnetworkapplet']) {
+			if ($this->params['named']['viewnetworkapplet'] == 'yes') {
 				//active as session value
-				//$this->Session->write('VertexViewNetworkApplet', "1");
+				$this->Session->write('VertexViewNetworkApplet', '1');
 				//view path
-				$this->viewPath = 'vertices';
-				$this->set('vertex', $data);
-				$this->render('viewnetworkapplet');
+				$this->viewPath = 'elements';
+				$this->set('vertex_id', $data['Vertex']['id']);
+				$this->render('view_network_applet');
 			} else {			
 				$this->viewPath = 'elements';
 				$this->set('elementtitle', 'Related Relations');
@@ -65,6 +66,11 @@ class VerticesController extends AppController {
 				$this->render('list_relations');
 			}
 		} else {
+			//Unhide command?
+			if (isset($this->params['named']['viewnetworkapplet']) &&
+				$this->params['named']['viewnetworkapplet'] != 'yes') {
+				$this->Session->write('VertexViewNetworkApplet', '0');
+			}
 			$this->set('vertex', $data);
 			//Add this vertex to list
 			$this->_writeVertexToSession($data['Vertex']);

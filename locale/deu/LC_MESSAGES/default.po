@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HistCross\n"
-"POT-Creation-Date: 2009-08-29 17:30+0200\n"
-"PO-Revision-Date: 2009-08-29 17:32+0100\n"
+"POT-Creation-Date: 2009-08-31 13:53+0200\n"
+"PO-Revision-Date: 2009-08-31 13:54+0100\n"
 "Last-Translator: Maximilian Kalus <info@histcross.org>\n"
 "Language-Team: Max Kalus <info@histcross.org>\n"
 "MIME-Version: 1.0\n"
@@ -210,7 +210,7 @@ msgid "Invalid id for Tag Set"
 msgstr "Ungültige Id für Schlagwortmenge"
 
 #: /controllers/tagsets_controller.php:141
-#: /controllers/vertices_controller.php:40;168;175
+#: /controllers/vertices_controller.php:40;174;181
 msgid "Invalid Vertex."
 msgstr "Ungültiger Knoten"
 
@@ -350,23 +350,23 @@ msgstr "Ungültige Id für Knotentyp"
 msgid "VertexType deleted"
 msgstr "Knotentyp gelöscht"
 
-#: /controllers/vertices_controller.php:113;135
+#: /controllers/vertices_controller.php:119;141
 msgid "The Vertex has been saved"
 msgstr "Knoten wurde gespeichert"
 
-#: /controllers/vertices_controller.php:118;139
+#: /controllers/vertices_controller.php:124;145
 msgid "The Vertex could not be saved. Please, try again."
 msgstr "Der Knoten konnte nicht gespeichert werden. Bitte versuchen Sie es noch einmal."
 
-#: /controllers/vertices_controller.php:128
+#: /controllers/vertices_controller.php:134
 msgid "Invalid Vertex"
 msgstr "Ungültiger Knoten"
 
-#: /controllers/vertices_controller.php:153;291
+#: /controllers/vertices_controller.php:159;297
 msgid "Invalid id for Vertex"
 msgstr "Ungültige Id für Knoten"
 
-#: /controllers/vertices_controller.php:157
+#: /controllers/vertices_controller.php:163
 msgid "Vertex deleted"
 msgstr "Knoten löscht"
 
@@ -699,6 +699,14 @@ msgstr "Graphviz DOT-Datei mit Koordinaten"
 #: /views/elements/view_network.ctp:38;39
 msgid "Visualize Network"
 msgstr "Netzwerk visualisieren"
+
+#: /views/elements/view_network_applet.ctp:1
+msgid "Visualized Network"
+msgstr "Netzwerk visualisieren"
+
+#: /views/elements/view_network_applet.ctp:8
+msgid "Hide network view"
+msgstr "Netzwerkansicht ausschalten"
 
 #: /views/elements/view_ok_icon.ctp:11;11
 #: /views/elements/view_possible_inferences.ctp:43;43
@@ -1343,16 +1351,11 @@ msgstr "Neue Kante zu diesem Knoten hinzufügen"
 msgid "--- select ---"
 msgstr "--- Bitte auswählen ---"
 
-#: /views/vertices/view.ctp:86
-#, fuzzy
-msgid "Visualized Network"
-msgstr "Netzwerk visualisieren"
-
-#: /views/vertices/view.ctp:99
+#: /views/vertices/view.ctp:91
 msgid "Activate interactive network view"
 msgstr "Interaktive Ansicht des Netzwerks aktivieren."
 
-#: /views/vertices/view.ctp:119
+#: /views/vertices/view.ctp:111
 msgid "The active network view lets you view nodes interactively. This feature needs Java enabled."
 msgstr "Diese Ansicht erlaubt das interaktive Durchsuchen des Netzwerks. Der Browser muss dafür Java-Applets ausführen können."
 

@@ -78,20 +78,12 @@ if ($auth->sessionValid()) : ?>
 <? endif;
 
 //Add Java element
+echo '<a name="visualized_network"></a>';
 	//Has showglobe been set?
-	if (isset($this->params['named']['viewnetworkapplet']) &&
-			$this->params['named']['viewnetworkapplet'] == "yes") {
-		$hostname = (env('HTTPS')?'https':'http').'://'.env('HTTP_HOST').substr(env('SCRIPT_NAME'), 0, -9);
-?>
-<h3><? __('Visualized Network'); ?></h3>
-
-<div id="viewnetworkapplet">
-<applet code="org.histcross.radar.Radar" archive="/files/HistcrossRadar.jar" width="720" height="720">
-	<param name="id" value="<? echo $vertex['Vertex']['id']; ?>" />
-	<param name="siteUrl" value="<? echo $hostname; ?>" />
-</applet>
-</div>
-<?
+	if ($session->read('VertexViewNetworkApplet') == '1' ||
+		(isset($this->params['named']['viewnetworkapplet']) &&
+			$this->params['named']['viewnetworkapplet'] == 'yes')) {
+		echo $this->element('view_network_applet', array('vertex_id' => $vertex['Vertex']['id'], 'hostname' => $hostname));
 	} else {
 ?>
 <div id="viewnetworkapplet"><p><?

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-08-29 17:30+0200\n"
+"POT-Creation-Date: 2009-08-31 13:53+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -213,7 +213,7 @@ msgid "Invalid id for Tag Set"
 msgstr ""
 
 #: /controllers/tagsets_controller.php:141
-#: /controllers/vertices_controller.php:40;168;175
+#: /controllers/vertices_controller.php:40;174;181
 msgid "Invalid Vertex."
 msgstr ""
 
@@ -353,23 +353,23 @@ msgstr ""
 msgid "VertexType deleted"
 msgstr ""
 
-#: /controllers/vertices_controller.php:113;135
+#: /controllers/vertices_controller.php:119;141
 msgid "The Vertex has been saved"
 msgstr ""
 
-#: /controllers/vertices_controller.php:118;139
+#: /controllers/vertices_controller.php:124;145
 msgid "The Vertex could not be saved. Please, try again."
 msgstr ""
 
-#: /controllers/vertices_controller.php:128
+#: /controllers/vertices_controller.php:134
 msgid "Invalid Vertex"
 msgstr ""
 
-#: /controllers/vertices_controller.php:153;291
+#: /controllers/vertices_controller.php:159;297
 msgid "Invalid id for Vertex"
 msgstr ""
 
-#: /controllers/vertices_controller.php:157
+#: /controllers/vertices_controller.php:163
 msgid "Vertex deleted"
 msgstr ""
 
@@ -701,6 +701,14 @@ msgstr ""
 
 #: /views/elements/view_network.ctp:38;39
 msgid "Visualize Network"
+msgstr ""
+
+#: /views/elements/view_network_applet.ctp:1
+msgid "Visualized Network"
+msgstr ""
+
+#: /views/elements/view_network_applet.ctp:8
+msgid "Hide network view"
 msgstr ""
 
 #: /views/elements/view_ok_icon.ctp:11;11
@@ -1346,15 +1354,11 @@ msgstr ""
 msgid "--- select ---"
 msgstr ""
 
-#: /views/vertices/view.ctp:86
-msgid "Visualized Network"
-msgstr ""
-
-#: /views/vertices/view.ctp:99
+#: /views/vertices/view.ctp:91
 msgid "Activate interactive network view"
 msgstr ""
 
-#: /views/vertices/view.ctp:119
+#: /views/vertices/view.ctp:111
 msgid "The active network view lets you view nodes interactively. This feature needs Java enabled."
 msgstr ""
 

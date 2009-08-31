@@ -128,12 +128,14 @@
 /**
  * If set to false, sessions are not automatically started.
  */
+
 	Configure::write('Session.start', true);
 /**
  * When set to false, HTTP_USER_AGENT will not be checked
  * in the session
  */
-	Configure::write('Session.checkAgent', true);
+	//false to prevent Java applet from killing session
+	Configure::write('Session.checkAgent', false);
 /**
  * The level of CakePHP security. The session timeout time defined
  * in 'Session.timeout' is multiplied according to the settings here.
@@ -146,7 +148,8 @@
  * CakePHP session IDs are also regenerated between requests if
  * 'Security.level' is set to 'high'.
  */
-	Configure::write('Security.level', 'high');
+	//medium to prevent Java applet from killing session
+	Configure::write('Security.level', 'medium');
 /**
  * A random string used in security hashing methods.
  */
@@ -239,7 +242,7 @@
  */
 //Path to imagepagick convert
 	DEFINE('PERPAGE', 20);
-	Configure::write('HC.version', '2.1b'); //major/minor version number
+	Configure::write('HC.version', '2.1'); //major/minor version number
 
 //Path to imagepagick convert and graphviz
 	Configure::write('HC.convert_path', '/usr/bin/convert');
