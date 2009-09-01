@@ -558,6 +558,7 @@ class VerticesController extends AppController {
 		
 		//truncate title
 		$title = $data['title'];
+		if ($title == '') return; //security catch
 		if (strlen($title) > 25) {
 			if (function_exists('mb_substr')) //Multibyte-Compatible
 				$title = mb_substr($title, 0, 24, Configure::read('App.encoding')).'...';
