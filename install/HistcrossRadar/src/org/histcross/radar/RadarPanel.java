@@ -18,8 +18,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 
-import org.histcross.radar.BareBonesBrowserLaunch;
-
 /**
  * @author mkalus
  *
@@ -474,11 +472,24 @@ public class RadarPanel extends Panel implements MouseMotionListener, MouseListe
     	if (inVertex == null) //only if not in a vertex!
 	    	for (int i = 0; i < vertexContainer.fastRelations.length; i++) {
 	    		Relation r = vertexContainer.fastRelations[i];
-	    		double dist = Line2D.ptLineDist(r.getFromVertex().getX(), r.getFromVertex().getY(),
-	    				r.getToVertex().getX(), r.getToVertex().getY(), x, y);
-	    		if (dist <= 4) {
-	    			inRelation = r;
-	    			break;
+	    		int fx = r.getFromVertex().getX();
+	    		int fy = r.getFromVertex().getY();
+	    		int tx = r.getToVertex().getX();
+	    		int ty = r.getToVertex().getY();
+	    		//Calculate distance to line
+	    		double dist = Line2D.ptLineDist(fx, fy, tx, ty, x, y);
+	    		if (dist <= 4) { //distance to line <= 4 pixel?
+	    			//check bounds of line
+	    			int xmin, xmax, ymin, ymax; //min/max-bounds
+	    			if (fx < tx) { xmin = fx; xmax = tx; }
+	    			else { xmin = tx; xmax = fx; }
+	    			if (fy < ty) { ymin = fy; ymax = ty; }
+	    			else { ymin = ty; ymax = fy; }
+	    			//mouse within the bounds of the line?
+	    			if (x >= xmin && x <= xmax && y >= ymin && y <= ymax) {
+	    				inRelation = r;
+	    				break;
+	    			}
 	    		}
 	    	}
     		
