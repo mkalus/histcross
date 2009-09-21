@@ -73,8 +73,8 @@ class PaginatedTableHelper extends AppHelper {
     		if (AccessKeeper::checkAccess($controller, 'add', $this->Auth->user('group'))) {
     			echo $this->Html->link(
     				$this->Html->image(
-						'icons'.DS.__('icon_new_en.gif', true),
-						array('width' => '32', 'height' => '16')
+						'icons'.DS.'icon_add.png',
+						array('width' => '16', 'height' => '16')
 					),
 					array(
 						'controller'=>Inflector::tableize($controller),
@@ -197,10 +197,10 @@ class PaginatedTableHelper extends AppHelper {
     	if ($this->Auth->sessionValid()) {
     		//Check Access
     		if (AccessKeeper::checkAccess(Inflector::pluralize(isset($format['refmodelname'])?$format['refmodelname']:$format['refmodel']), 'edit', $this->Auth->user('group'))) {
-		   		$value .= ' <a href="/'.(Inflector::tableize(isset($format['refmodelname'])?$format['refmodelname']:$format['refmodel'])).'/edit/'.low($row[$format['refmodel']][$format['reffield']]).'" title="'.$this->edit.'"><img src="/img/icons/icon_editsmall.gif" width="16" height="16" /></a>';
+		   		$value .= ' <a href="/'.(Inflector::tableize(isset($format['refmodelname'])?$format['refmodelname']:$format['refmodel'])).'/edit/'.low($row[$format['refmodel']][$format['reffield']]).'" title="'.$this->edit.'"><img src="/img/icons/icon_edit.png" width="16" height="16" /></a>';
 /*    			$value .= ' '.$this->Html->link(
     				$this->Html->image(
-						'icons'.DS.'icon_editsmall.gif',
+						'icons'.DS.'icon_edit.png',
 						array('width' => '16', 'height' => '16')
 					),
 					array(

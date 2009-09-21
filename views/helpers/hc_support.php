@@ -92,7 +92,7 @@ class HcSupportHelper extends Helper {
      		if (AccessKeeper::checkAccess(Inflector::classify($this->params['controller']), 'edit', $this->Auth->user('group'))) {
     			$img .= $this->Html->link(
     				$this->Html->image(
-						'icons'.DS.'icon_editsmall.gif',
+						'icons'.DS.'icon_edit.png',
 						array('width' => '16', 'height' => '16')
 					),
 					array(

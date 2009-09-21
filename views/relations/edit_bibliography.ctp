@@ -9,7 +9,7 @@
  *********************************************************/
 
 echo $msg;
-echo $html->image( 'icons'.DS.'icon_editsmall.gif',
+echo $html->image( 'icons'.DS.'icon_edit.png',
 			array('width' => '16', 'height' => '16')
 		);
 ?>

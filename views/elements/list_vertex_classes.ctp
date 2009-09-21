@@ -17,7 +17,7 @@ $paginatedTable->createTable(
 	$vertexClasses, //Data
 	array( //Columns for header
 		'title' => 'Title',
-		'sortkey' => 'Sort Key'),
+		'sortkey' => 'Sortkey'),
 	array(
 		array(
 			'model' => 'VertexClass', //Model to take data from

@@ -38,7 +38,7 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 		//Logged in - prepare a delete action
 		if ($auth->sessionValid()) {
 			//Delete image
-			echo $ajax->link($html->image( 'icons'.DS.'icon_delete.gif',
+			echo $ajax->link($html->image( 'icons'.DS.'icon_delete.png',
 						array('width' => '16', 'height' => '16', 'title' => __('Delete', true), 'alt' => __('Delete', true))
 					), array(
 						'controller' => 'tagsets',
@@ -66,9 +66,9 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 		<div id="tagset_formshowbutton"><?
 		if (!$showform)
 			echo $html->link(
-				$html->image('icons'.DS.'icon_add.png',
-					array('width' => '32', 'height' => '32',
-						'title' => __('Add Bibliography', true))),
+				$html->image('icons'.DS.'comment_new.gif',
+					array('width' => '16', 'height' => '16',
+						'title' => __('Add Tag', true))),
 					array('controller' => 'tagsets', 'action' => 'add_set', $id),
 					array('onClick' => "\$('tagset_addform').show();\$('tagset_formshowbutton').hide(); return false;"),
 					false, false);

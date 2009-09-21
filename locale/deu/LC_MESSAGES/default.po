@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HistCross\n"
-"POT-Creation-Date: 2009-08-31 13:53+0200\n"
-"PO-Revision-Date: 2009-08-31 13:54+0100\n"
+"POT-Creation-Date: 2009-09-21 16:05+0200\n"
+"PO-Revision-Date: 2009-09-21 16:08+0100\n"
 "Last-Translator: Maximilian Kalus <info@histcross.org>\n"
 "Language-Team: Max Kalus <info@histcross.org>\n"
 "MIME-Version: 1.0\n"
@@ -370,13 +370,80 @@ msgstr "Ungültige Id für Knoten"
 msgid "Vertex deleted"
 msgstr "Knoten löscht"
 
+#: /locale/langadd.php:4
+msgid "Bibliographies"
+msgstr "Bibliographie"
+
+#: /locale/langadd.php:5
+msgid "Users"
+msgstr "Benutzer"
+
+#: /locale/langadd.php:6
+msgid "Pictograms"
+msgstr "Bilder"
+
+#: /locale/langadd.php:7
+msgid "Pictogram"
+msgstr "Bild"
+
+#: /locale/langadd.php:8
+msgid "Picture"
+msgstr "Bilddatei"
+
+#: /locale/langadd.php:9
+msgid "Sortkey"
+msgstr "Sortierschlüssel"
+
+#: /locale/langadd.php:10
+msgid "Show Date"
+msgstr "Datum"
+
+#: /locale/langadd.php:11
+msgid "Show Geo"
+msgstr "Koordinaten"
+
+#: /locale/langadd.php:12
+msgid "Date Entries"
+msgstr "Datumseinträge"
+
+#: /locale/langadd.php:13
+msgid "Geographic Coordinates"
+msgstr "Geographische Koordinaten"
+
+#: /locale/langadd.php:14
+msgid "Title From"
+msgstr "Titel von"
+
+#: /locale/langadd.php:15
+msgid "Title To"
+msgstr "Titel nach"
+
+#: /locale/langadd.php:16
+msgid "Class"
+msgstr "Klasse"
+
+#: /locale/langadd.php:17
+msgid "Long Title"
+msgstr "Vollständiger Titel"
+
+#: /locale/langadd.php:18
+msgid "Short Title"
+msgstr "Kurztitel"
+
+#: /locale/langadd.php:19
+msgid "Longtitle"
+msgstr "Vollständiger Titel"
+
+#: /locale/langadd.php:20
+msgid "Shorttitle"
+msgstr "Kurztitel"
+
 #: /models/pictogram.php:59
 msgid "Could not move the temporary picture ito process it further."
 msgstr "Konnte das temporäre Bild nicht in einen anderen Ordner verschieben, um es dort weiter zu verarbeiten."
 
 #: /views/bibliographies/add.ctp:13
 #: /views/elements/view_bibliography_list.ctp:72
-#: /views/elements/view_tagset_list.ctp:71
 msgid "Add Bibliography"
 msgstr "Bibliographischen Eintrag hinzufügen"
 
@@ -571,11 +638,6 @@ msgstr "Relationale Tagwolken"
 msgid "Search!"
 msgstr "Suchen!"
 
-#: /views/elements/list_inferences.ctp:21
-#: /views/helpers/paginated_table.php:76
-msgid "icon_new_en.gif"
-msgstr "icon_new_de.gif"
-
 #: /views/elements/list_inferences.ctp:29
 #: /views/helpers/paginated_table.php:83
 msgid "New"
@@ -725,6 +787,10 @@ msgstr "Hinzufügen"
 #: /views/elements/view_tagset_list.ctp:18
 msgid "Associated Sets"
 msgstr "Verknüpfte Schlagworte"
+
+#: /views/elements/view_tagset_list.ctp:71
+msgid "Add Tag"
+msgstr "Schlagwort hinzufügen"
 
 #: /views/elements/view_tagset_list.ctp:84
 msgid "Add new set name below. Classification of sets can be achieved by using the schema &quot;class:setname&quot;."
@@ -1363,26 +1429,10 @@ msgstr "Diese Ansicht erlaubt das interaktive Durchsuchen des Netzwerks. Der Bro
 msgid "Debug setting does not allow access to this url."
 msgstr "Debug-Einstellung verbietet Zugriff auf diesen URL."
 
-#~ msgid "Class"
-#~ msgstr "Klasse"
-#~ msgid "Sort Key"
-#~ msgstr "Sortierschlüssel"
-#~ msgid "Bibliographies"
-#~ msgstr "Bibliographie"
-#~ msgid "Users"
-#~ msgstr "Benutzer"
-#~ msgid "Long Title"
-#~ msgstr "Langer Titel"
-#~ msgid "Pictogram"
-#~ msgstr "Bild"
-#~ msgid "Pictograms"
-#~ msgstr "Bilder"
+#~ msgid "icon_new_en.gif"
+#~ msgstr "icon_new_de.gif"
 #~ msgid "Home"
 #~ msgstr "Home"
-#~ msgid "Geographic Coordinates"
-#~ msgstr "Geographische Koordinaten"
-#~ msgid "Date Entries"
-#~ msgstr "Datumseinträge"
 #~ msgid "Password must have at least 6 characters"
 #~ msgstr "Passwort muss mindestens 6 Zeichen lang sein."
 #~ msgid "Minimum length is 4 letters"

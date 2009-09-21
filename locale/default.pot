@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-08-31 13:53+0200\n"
+"POT-Creation-Date: 2009-09-21 16:05+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -373,13 +373,80 @@ msgstr ""
 msgid "Vertex deleted"
 msgstr ""
 
+#: /locale/langadd.php:4
+msgid "Bibliographies"
+msgstr ""
+
+#: /locale/langadd.php:5
+msgid "Users"
+msgstr ""
+
+#: /locale/langadd.php:6
+msgid "Pictograms"
+msgstr ""
+
+#: /locale/langadd.php:7
+msgid "Pictogram"
+msgstr ""
+
+#: /locale/langadd.php:8
+msgid "Picture"
+msgstr ""
+
+#: /locale/langadd.php:9
+msgid "Sortkey"
+msgstr ""
+
+#: /locale/langadd.php:10
+msgid "Show Date"
+msgstr ""
+
+#: /locale/langadd.php:11
+msgid "Show Geo"
+msgstr ""
+
+#: /locale/langadd.php:12
+msgid "Date Entries"
+msgstr ""
+
+#: /locale/langadd.php:13
+msgid "Geographic Coordinates"
+msgstr ""
+
+#: /locale/langadd.php:14
+msgid "Title From"
+msgstr ""
+
+#: /locale/langadd.php:15
+msgid "Title To"
+msgstr ""
+
+#: /locale/langadd.php:16
+msgid "Class"
+msgstr ""
+
+#: /locale/langadd.php:17
+msgid "Long Title"
+msgstr ""
+
+#: /locale/langadd.php:18
+msgid "Short Title"
+msgstr ""
+
+#: /locale/langadd.php:19
+msgid "Longtitle"
+msgstr ""
+
+#: /locale/langadd.php:20
+msgid "Shorttitle"
+msgstr ""
+
 #: /models/pictogram.php:59
 msgid "Could not move the temporary picture ito process it further."
 msgstr ""
 
 #: /views/bibliographies/add.ctp:13
 #: /views/elements/view_bibliography_list.ctp:72
-#: /views/elements/view_tagset_list.ctp:71
 msgid "Add Bibliography"
 msgstr ""
 
@@ -574,11 +641,6 @@ msgstr ""
 msgid "Search!"
 msgstr ""
 
-#: /views/elements/list_inferences.ctp:21
-#: /views/helpers/paginated_table.php:76
-msgid "icon_new_en.gif"
-msgstr ""
-
 #: /views/elements/list_inferences.ctp:29
 #: /views/helpers/paginated_table.php:83
 msgid "New"
@@ -727,6 +789,10 @@ msgstr ""
 
 #: /views/elements/view_tagset_list.ctp:18
 msgid "Associated Sets"
+msgstr ""
+
+#: /views/elements/view_tagset_list.ctp:71
+msgid "Add Tag"
 msgstr ""
 
 #: /views/elements/view_tagset_list.ctp:84

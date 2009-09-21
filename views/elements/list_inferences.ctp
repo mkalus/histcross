@@ -18,8 +18,8 @@
     		if (AccessKeeper::checkAccess('inferences', 'add', $auth->user('group'))) {
     			echo $html->link(
     				$html->image(
-						'icons'.DS.__('icon_new_en.gif', true),
-						array('width' => '32', 'height' => '16')
+						'icons'.DS.'icon_add.png',
+						array('width' => '16', 'height' => '16')
 					),
 					array(
 						'controller'=>'inferences',
@@ -34,8 +34,8 @@
 		}
 ?>
 <? __('Inferences'); ?>
-<? echo $html->image('icons'.DS.'icon_addsmall.png', array('width' => '22', 'height' => '22', 'title' => __('Show more', true), 'id' => 'inferencelistadd', 'onClick' => "showInferenceList();")); ?>
-<? echo $html->image('icons'.DS.'icon_removesmall.png', array('width' => '22', 'height' => '22', 'title' => __('Show less', true), 'id' => 'inferencelistremove', 'onClick' => "hideInferenceList();")); ?>
+<? echo $html->image('icons'.DS.'arrow_down.gif', array('width' => '16', 'height' => '16', 'title' => __('Show more', true), 'id' => 'inferencelistadd', 'onClick' => "showInferenceList();")); ?>
+<? echo $html->image('icons'.DS.'arrow_up.gif', array('width' => '16', 'height' => '16', 'title' => __('Show less', true), 'id' => 'inferencelistremove', 'onClick' => "hideInferenceList();")); ?>
 </h2>
 <? endif; ?>
 <? //only display list if Inferences exist
@@ -71,7 +71,7 @@
 		if ($editauth) {
 			echo $html->link(
 				$html->image(
-					'icons'.DS.'icon_editsmall.gif',
+					'icons'.DS.'icon_edit.png',
 					array('width' => '16', 'height' => '16')
 				),
 				array(

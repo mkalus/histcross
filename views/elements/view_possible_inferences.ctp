@@ -48,7 +48,7 @@ if (isset($warning) && $warning != null) : ?>
 						'from_id' => $inference['from_id'],
 						'relation_type_id' => $inference['relation_type_id'],
 						'to_id' => $inference['to_id']);
-					echo $ajax->link($html->image('icons/icon_addxsmall.png', array('width' => 16, 'height' => 16, 'alt' => __('Add', true), 'title' => __('Add', true), 'id' => $htmlid.'img')),
+					echo $ajax->link($html->image('icons/icon_add.png', array('width' => 16, 'height' => 16, 'alt' => __('Add', true), 'title' => __('Add', true), 'id' => $htmlid.'img')),
 						$options,
 						array('update' => $htmlid, 'url' => $options, 'before' => '$('."'".$htmlid."'".').innerHTML = '."'<img src=\"/img/ajax-loader.gif\">';"),
 						null, false);
