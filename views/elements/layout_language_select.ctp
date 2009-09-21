@@ -10,6 +10,6 @@
 ?>
 
 <div class="languageselect">
-	<a href="/users/set_language/deu" ><img src="/img/icons/flag_deu.gif" alt="Deutsch" title="Deutsch" /></a>
-	<a href="/users/set_language/eng" ><img src="/img/icons/flag_eng.gif" alt="English" title="English" /></a>
+	<a href="/users/set_language/deu" ><img src="/img/flags/de.gif" alt="Deutsch" title="Deutsch" width="16" height="11" /></a>
+	<a href="/users/set_language/eng" ><img src="/img/flags/en.gif" alt="English" title="English" width="16" height="11" /></a>
 </div>
