@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: HistCross\n"
-"POT-Creation-Date: 2009-09-21 16:05+0200\n"
-"PO-Revision-Date: 2009-09-21 16:08+0100\n"
+"POT-Creation-Date: 2009-09-21 16:46+0200\n"
+"PO-Revision-Date: 2009-09-21 16:46+0100\n"
 "Last-Translator: Maximilian Kalus <info@histcross.org>\n"
 "Language-Team: Max Kalus <info@histcross.org>\n"
 "MIME-Version: 1.0\n"
@@ -496,7 +496,7 @@ msgstr "Bibliographischen Eintrag editieren"
 #: /views/relations/edit.ctp:28
 #: /views/tagsets/edit.ctp:21
 #: /views/users/changepassword.ctp:21
-#: /views/users/edit.ctp:32
+#: /views/users/edit.ctp:33
 #: /views/vertex_classes/edit.ctp:22
 #: /views/vertex_types/edit.ctp:24
 #: /views/vertices/edit.ctp:25
@@ -511,7 +511,7 @@ msgstr "Ändern!"
 #: /views/relation_types/edit.ctp:31
 #: /views/relations/edit.ctp:32
 #: /views/tagsets/edit.ctp:25
-#: /views/users/edit.ctp:37
+#: /views/users/edit.ctp:38
 #: /views/vertex_classes/edit.ctp:26
 #: /views/vertex_types/edit.ctp:28
 #: /views/vertices/edit.ctp:29
@@ -522,7 +522,7 @@ msgstr "Löschen"
 #: /views/relation_classes/edit.ctp:25
 #: /views/relation_types/edit.ctp:31
 #: /views/tagsets/edit.ctp:25
-#: /views/users/edit.ctp:37
+#: /views/users/edit.ctp:38
 #: /views/vertex_classes/edit.ctp:26
 #: /views/vertex_types/edit.ctp:28
 msgid "Are you sure you want to delete %s?"
@@ -567,7 +567,7 @@ msgid "Relations connected to this Bibliographic Entry"
 msgstr "Mit diesem bibliographischen Eintrag verknüpfte Kanten"
 
 #: /views/elements/footer_editinfo.ctp:13
-#: /views/users/view.ctp:26
+#: /views/users/view.ctp:28
 msgid "Created"
 msgstr "Erstellt"
 
@@ -840,7 +840,7 @@ msgstr "nächste"
 
 #: /views/helpers/paginated_table.php:253;260
 #: /views/users/changepassword.ctp:13
-#: /views/users/view.ctp:38
+#: /views/users/view.ctp:40
 msgid "Change Password"
 msgstr "Passwort ändern"
 
@@ -1118,8 +1118,8 @@ msgstr "Liste Kantenklassen auf"
 #: /views/relation_classes/add.ctp:24
 #: /views/users/add.ctp:37
 #: /views/users/changepassword.ctp:27
-#: /views/users/edit.ctp:40
-#: /views/users/view.ctp:41
+#: /views/users/edit.ctp:41
+#: /views/users/view.ctp:43
 msgid "List Users"
 msgstr "Liste Benutzer auf"
 
@@ -1317,13 +1317,22 @@ msgid "Real name of user"
 msgstr "Echter Name des Benutzers"
 
 #: /views/users/add.ctp:27
-#: /views/users/edit.ctp:27
+#: /views/users/edit.ctp:28
 msgid "Set the privileges of users"
 msgstr "Privilegien der Benutzer festlegen"
 
 #: /views/users/edit.ctp:13
 msgid "Edit User"
 msgstr "Editiere Benutzer"
+
+#: /views/users/edit.ctp:18
+#: /views/users/view.ctp:26
+msgid "Always show network"
+msgstr "Netzwerk immer anzeigen"
+
+#: /views/users/edit.ctp:18
+msgid "Set to always load network applet automatically"
+msgstr "Anhaken, um die Netzwerkansicht immer zu aktivieren"
 
 #: /views/users/view.ctp:22
 msgid "Username"
@@ -1333,11 +1342,19 @@ msgstr "Benutzername"
 msgid "Group"
 msgstr "Gruppe"
 
-#: /views/users/view.ctp:28
+#: /views/users/view.ctp:27
+msgid "yes"
+msgstr "ja"
+
+#: /views/users/view.ctp:27
+msgid "no"
+msgstr "nein"
+
+#: /views/users/view.ctp:30
 msgid "Modified"
 msgstr "Verändert"
 
-#: /views/users/view.ctp:30
+#: /views/users/view.ctp:32
 msgid "Last Login"
 msgstr "Letzter Login"
 
@@ -1429,6 +1446,8 @@ msgstr "Diese Ansicht erlaubt das interaktive Durchsuchen des Netzwerks. Der Bro
 msgid "Debug setting does not allow access to this url."
 msgstr "Debug-Einstellung verbietet Zugriff auf diesen URL."
 
+#~ msgid "always_show_network"
+#~ msgstr "Netzwerk immer anzeigen"
 #~ msgid "icon_new_en.gif"
 #~ msgstr "icon_new_de.gif"
 #~ msgid "Home"

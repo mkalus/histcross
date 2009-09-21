@@ -21,6 +21,7 @@ class User extends AppModel {
 		'password2' => array('rule' => array('CheckPasswordMatch'), 'message' => 'Passwords did not match'),
 		'name' => array('notempty'),
 		'deleted' => array('numeric'),
+		'always_show_network' => array('numeric'),
 		'group' => array(
 			'rule' => array('checkGroup', 'group'),
 			'message' => 'The only groups allowed are admin, poweruser, and user.'

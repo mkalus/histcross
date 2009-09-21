@@ -15,6 +15,7 @@
 		echo $form->input('id');
 		echo $form->input('username', array('after' => __('Username, alphanumeric', true)));
 		echo $form->input('name', array('after' => __('Real name of user', true)));
+		echo $form->input('always_show_network', array('label' => __('Always show network', true), 'after' => __('Set to always load network applet automatically', true)));
 		echo $this->element('form_undelete');
 		if ($auth->user('group') == 'admin') {
 			echo $form->input('group', array(

@@ -170,6 +170,8 @@ class UsersController extends AppController {
 				$this->User->save(array('User' => array('id' => $someone['User']['id'], 'lastlogin' => $someone['User']['lastlogin'], 'modified' => $someone['User']['modified'])));
 				//actually log in user
 				$this->Auth->login($someone['User']);
+				//set the show network variable
+				$this->Session->write('VertexViewNetworkApplet', $someone['User']['always_show_network']);
 				//redirect
 				$this->redirect($this->data['User']['referer']);
 				return true;

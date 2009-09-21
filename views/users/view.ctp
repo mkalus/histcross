@@ -23,6 +23,8 @@
 			<dd><?php echo Sanitize::html($user['User']['username']); ?></dd>
 			<dt><?php  __('Group');?></dt>
 			<dd><?php echo Sanitize::html($user['User']['group']); ?></dd>
+			<dt><?php  __('Always show network');?></dt>
+			<dd><?php $user['User']['always_show_network']?__('yes'):__('no'); ?></dd>
 			<dt><?php  __('Created');?></dt>
 			<dd><?php echo $user['User']['created']; ?></dd>
 			<dt><?php  __('Modified');?></dt>

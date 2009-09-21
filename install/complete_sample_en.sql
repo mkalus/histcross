@@ -750,18 +750,20 @@ CREATE TABLE `hc_users` (
   `name` varchar(128) NOT NULL,
   `deleted` tinyint(1) NOT NULL default '0',
   `group` varchar(16) NOT NULL,
+  `always_show_network` tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (`id`),
   UNIQUE KEY `username` (`username`),
   KEY `deleted` (`deleted`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Keeps users';
 
+
 --
 -- Daten für Tabelle `hc_users`
 --
 
-INSERT INTO `hc_users` (`id`, `username`, `password`, `created`, `modified`, `lastlogin`, `name`, `deleted`, `group`) VALUES
-(1, 'mkalus', 'xxx', '2005-12-22 09:19:18', '2008-12-29 22:29:13', '2009-07-08 13:13:54', 'Maximilian Kalus', 0, 'admin'),
-(2, 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2009-06-19 08:46:28', '2009-06-19 08:46:28', NULL, 'Test User', 0, 'admin');
+INSERT INTO `hc_users` (`id`, `username`, `password`, `created`, `modified`, `lastlogin`, `name`, `deleted`, `group`, `always_show_network`) VALUES
+(1, 'mkalus', 'xxx', '2005-12-22 09:19:18', '2008-12-29 22:29:13', '2009-07-08 13:13:54', 'Maximilian Kalus', 0, 'admin', 0),
+(2, 'user', '7c4a8d09ca3762af61e59520943dc26494f8941b', '2009-06-19 08:46:28', '2009-06-19 08:46:28', NULL, 'Test User', 0, 'admin', 0);
 
 -- --------------------------------------------------------
 
