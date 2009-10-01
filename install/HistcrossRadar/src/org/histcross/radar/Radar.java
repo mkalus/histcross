@@ -35,6 +35,9 @@ public class Radar extends Applet {
 		try {
 			siteUrl = getParameter("siteurl"); //$NON-NLS-1$
 			vertexId = Integer.parseInt(getParameter("id")); //$NON-NLS-1$
+			//set language, if applicable
+			String lang = getParameter("lang");
+			if (lang != null) Messages.setLanguage(lang);
 		} catch (Exception e) {}
 		System.out.println("Parameters loaded. Proceeding."); //$NON-NLS-1$
 

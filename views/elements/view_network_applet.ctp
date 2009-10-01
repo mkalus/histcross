@@ -3,6 +3,7 @@
 <applet code="org.histcross.radar.Radar" archive="/files/HistcrossRadar.jar" width="720" height="720">
 	<param name="id" value="<? echo $vertex_id; ?>" />
 	<param name="siteUrl" value="<? echo $hostname; ?>" />
+	<param name="lang" value="<? __('en'); ?>" />
 </applet>
 
 <p><? echo $html->link(__('Hide network view', true), array(

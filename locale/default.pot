@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2009-09-21 16:47+0200\n"
+"POT-Creation-Date: 2009-10-01 20:03+0200\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -297,11 +297,11 @@ msgstr ""
 msgid "This user has been deleted."
 msgstr ""
 
-#: /controllers/users_controller.php:189
+#: /controllers/users_controller.php:191
 msgid "Login failed. Invalid username or password."
 msgstr ""
 
-#: /controllers/users_controller.php:207
+#: /controllers/users_controller.php:209
 msgid "You have been logged out"
 msgstr ""
 
@@ -769,7 +769,11 @@ msgstr ""
 msgid "Visualized Network"
 msgstr ""
 
-#: /views/elements/view_network_applet.ctp:8
+#: /views/elements/view_network_applet.ctp:6
+msgid "en"
+msgstr ""
+
+#: /views/elements/view_network_applet.ctp:9
 msgid "Hide network view"
 msgstr ""
 
