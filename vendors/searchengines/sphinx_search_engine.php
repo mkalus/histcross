@@ -40,6 +40,10 @@ class SphinxSearchEngineController extends AppController {
 	}
 
 	function search($s, $page) {
+		//check, what kind of search the user wants
+		if (Configure::read('HC.SphinxRunType') == 'atsearch')
+			$this->updateSearch();
+		
 		$this->searchwords = $s;
 		$this->cl = new SphinxClient(); //create new client
 		
@@ -76,6 +80,57 @@ class SphinxSearchEngineController extends AppController {
 		return Configure::read('HC.SphinxIndex');
 	}
 
+	/**
+	 * Run the indexer if needed
+	 */
+	function updateSearch() {
+		//check for pid file, if needed
+		$pid = Configure::read('HC.SphinVarRun');
+		if ($pid != '' && !file_exists($pid)) {
+			echo 'No pid file '.$pid.' found!';
+			return;
+		}
+
+		//load Model
+		$this->loadModel('TableUpdate');
+		$tableUpdate = new TableUpdate();
+		
+		//check for updates
+		$data = $tableUpdate->read(null, 1);
+		if ($data['TableUpdate']['status'] == 1) $vupdate = true;
+		else $vupdate = false;
+		
+		$data = $tableUpdate->read(null, 2);
+		if ($data['TableUpdate']['status'] == 1) $rupdate = true;
+		else $rupdate = false;
+				
+		//update vertices
+		if ($vupdate) {
+			exec(Configure::read('HC.SphinxIndexer').' --quiet --config '.
+				Configure::read('HC.SphinxConf').' --rotate '.
+				Configure::read('HC.SphinxVertices'));
+				$saveString = array('TableUpdate' => array(
+					'id' => 1,
+					'status' => 0
+				));
+				
+				$tu = $tableUpdate->save($saveString);
+		}
+		
+		//update relations
+		if ($rupdate) {
+			exec(Configure::read('HC.SphinxIndexer').' --quiet --config '.
+				Configure::read('HC.SphinxConf').' --rotate '.
+				Configure::read('HC.SphinxRelations'));
+				$saveString = array('TableUpdate' => array(
+					'id' => 2,
+					'status' => 0
+				));
+				
+				$tu = $tableUpdate->save($saveString);
+		}
+	}
+	
 	/**
 	 * Main query function for Sphinx - core of the search function
 	 */	

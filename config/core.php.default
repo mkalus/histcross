@@ -261,4 +261,13 @@
 	Configure::write('HC.SphinxVertices', 'histcross_vertices');
 	Configure::write('HC.SphinxRelations', 'histcross_relations');
 	Configure::write('HC.SphinxIndex', 'soundex'); //Type of Sphinx index, soundex or plain
+	Configure::write('HC.SphinxRunType', 'crond'); //possible values are "crond" to "atsearch"
+	//crond: use cron-service to update indexer every now and then
+	//atsearch: update indexer when conducting search (slower, but uses less resources)
+//Paths of Sphinx indexing services - these are only needed 
+	Configure::write('HC.SphinxConf', '/etc/sphinx-search/sphinx.conf'); //Path to config
+	Configure::write('HC.SphinxIndexer', '/usr/bin/indexer'); //path to indexer
+	Configure::write('HC.SphinxSearchd', '/usr/bin/searchd'); //path to searchd
+	//only set this, if you need it!
+	Configure::write('HC.SphinVarRun', '/var/run/searchd.pid'); //path to pid file
 ?>
