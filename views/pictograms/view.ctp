@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -21,8 +21,8 @@
 		<dl class="dataentry">
 			<dt><?php  __('Icons');?></dt>
 			<dd>
-				<? __('Big: '); echo $hcSupport->getIconHTML($pictogram['Pictogram']['id'], true); ?>
-				<? __('Small: '); echo $hcSupport->getIconHTML($pictogram['Pictogram']['id'], false); ?>
+				<?php __('Big: '); echo $hcSupport->getIconHTML($pictogram['Pictogram']['id'], true); ?>
+				<?php __('Small: '); echo $hcSupport->getIconHTML($pictogram['Pictogram']['id'], false); ?>
 			</dd>
 		</dl>
 	</div>

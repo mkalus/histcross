@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: changepassword.php
@@ -21,10 +21,10 @@
 <?php echo $form->end(__('Change!', true));?>
 </div>
 
-<?	if ($auth->user('group') == 'admin') : ?>
+<?php	if ($auth->user('group') == 'admin') : ?>
 <div class="actions">
 	<ul>
 		<li><?php echo $html->link(__('List Users', true), array('action'=>'index'));?></li>
 	</ul>
 </div>
-<? endif; ?>
+<?php endif; ?>

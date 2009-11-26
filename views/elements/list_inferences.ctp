@@ -8,10 +8,10 @@
  * See licence.txt for details (MIT licence).
  *********************************************************/
 ?>
-<? //only display list if Inferences exist - and if user is logged in
+<?php //only display list if Inferences exist - and if user is logged in
    if ($auth->sessionValid() || (is_array($inferences) && count($inferences) > 0)) : ?>
 <h2>
-<?
+<?php
 		//new inference icon
 		if ($auth->sessionValid()) {
     		//Check Access
@@ -33,21 +33,21 @@
     		}
 		}
 ?>
-<? __('Inferences'); ?>
-<? echo $html->image('icons'.DS.'arrow_down.gif', array('width' => '16', 'height' => '16', 'title' => __('Show more', true), 'id' => 'inferencelistadd', 'onClick' => "showInferenceList();")); ?>
-<? echo $html->image('icons'.DS.'arrow_up.gif', array('width' => '16', 'height' => '16', 'title' => __('Show less', true), 'id' => 'inferencelistremove', 'onClick' => "hideInferenceList();")); ?>
+<?php __('Inferences'); ?>
+<?php echo $html->image('icons'.DS.'arrow_down.gif', array('width' => '16', 'height' => '16', 'title' => __('Show more', true), 'id' => 'inferencelistadd', 'onClick' => "showInferenceList();")); ?>
+<?php echo $html->image('icons'.DS.'arrow_up.gif', array('width' => '16', 'height' => '16', 'title' => __('Show less', true), 'id' => 'inferencelistremove', 'onClick' => "hideInferenceList();")); ?>
 </h2>
-<? endif; ?>
-<? //only display list if Inferences exist
+<?php endif; ?>
+<?php //only display list if Inferences exist
    if (is_array($inferences) && count($inferences) > 0) : ?>
 <table class="inferencelist" id="tableinferencelist">
-<?
+<?php
 	if ($auth->sessionValid() && AccessKeeper::checkAccess('inferences', 'edit', $auth->user('group')))
 		$editauth = true;
 	else $editauth = false;
 ?>
-<?	foreach($inferences as $inference) : ?>
-<?
+<?php	foreach($inferences as $inference) : ?>
+<?php
 		//prepare the formula
 		if ($inference['InferenceType']['is_xy'] == 1) $a = 'x'; else $a = 'y';
 		$b = substr($inference['InferenceType']['connects'], 1, 1);
@@ -62,11 +62,11 @@
 			($inference['Inference']['p3_dir_from']==1?"($c,$b)":"($b,$c)"));
 ?>
 	<tr>
-		<td class="inference_maps"><? echo $html->image('inferences'.DS.'inference_'.$inference['InferenceType']['img'].'.png', array('width' => 142, 'height' => 142, 'alt' => $inference['InferenceType']['comment'], 'title' => $inference['InferenceType']['comment'])); ?></td>
+		<td class="inference_maps"><?php echo $html->image('inferences'.DS.'inference_'.$inference['InferenceType']['img'].'.png', array('width' => 142, 'height' => 142, 'alt' => $inference['InferenceType']['comment'], 'title' => $inference['InferenceType']['comment'])); ?></td>
 		<td>
 		<div class="inference_formula">
-		<span><? __('Formula:'); ?></span><br />
-<?
+		<span><?php __('Formula:'); ?></span><br />
+<?php
 		//edit icon
 		if ($editauth) {
 			echo $html->link(
@@ -85,16 +85,16 @@
 			).' ';
 		}
 ?>
-		<? echo $formula; ?>
+		<?php echo $formula; ?>
 		</div>
 		<div class="inference_maps">
-			<div class="inference_box">a = <span class="relationtype"><? echo Sanitize::html($inference['Inference']['p1_dir_from']==1?$inference['RelationType1']['title_from'].' ►':$inference['RelationType1']['title_to'].' ◄')?></span></div>
-			<div class="inference_box">b = <span class="relationtype"><? echo Sanitize::html($inference['Inference']['p2_dir_from']==1?$inference['RelationType2']['title_from'].' ►':$inference['RelationType2']['title_to'].' ◄')?></span></div>
-			<div class="inference_box">c = <span class="relationtype"><? echo Sanitize::html($inference['Inference']['p3_dir_from']==1?$inference['RelationType3']['title_from'].' ►':$inference['RelationType3']['title_to'].' ◄')?></span></div>
+			<div class="inference_box">a = <span class="relationtype"><?php echo Sanitize::html($inference['Inference']['p1_dir_from']==1?$inference['RelationType1']['title_from'].' ►':$inference['RelationType1']['title_to'].' ◄')?></span></div>
+			<div class="inference_box">b = <span class="relationtype"><?php echo Sanitize::html($inference['Inference']['p2_dir_from']==1?$inference['RelationType2']['title_from'].' ►':$inference['RelationType2']['title_to'].' ◄')?></span></div>
+			<div class="inference_box">c = <span class="relationtype"><?php echo Sanitize::html($inference['Inference']['p3_dir_from']==1?$inference['RelationType3']['title_from'].' ►':$inference['RelationType3']['title_to'].' ◄')?></span></div>
 		</div>
 		</td>
 	</tr>
-<?	endforeach; ?>
+<?php	endforeach; ?>
 </table>
-<? endif; ?>
-<? echo $javascript->codeBlock('hideInferenceList();', array('inline' => true)); ?>
+<?php endif; ?>
+<?php echo $javascript->codeBlock('hideInferenceList();', array('inline' => true)); ?>

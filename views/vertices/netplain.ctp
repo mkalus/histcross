@@ -1,4 +1,4 @@
-<?
+<?php
 //root data set
 echo "+++VERTEX+++\n";
 echo $root['Vertex']['id']."\n";

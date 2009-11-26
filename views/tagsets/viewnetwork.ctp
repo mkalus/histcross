@@ -20,6 +20,6 @@ $img = $network->createNetwork();
 echo $html->link($html->image($img['small']),
 	'/img/'.$img['big'], array('target' => '_blank'), false, false); ?>
 <br />
-<? echo $html->link(__('Graphviz Data File', true), '/'.$filename, array('target' => '_blank')); ?>
+<?php echo $html->link(__('Graphviz Data File', true), '/'.$filename, array('target' => '_blank')); ?>
 <br />
-<? echo $html->link(__('Coordinated DOT-File', true), '/'.$dotfile, array('target' => '_blank')); ?>
+<?php echo $html->link(__('Coordinated DOT-File', true), '/'.$dotfile, array('target' => '_blank')); ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * Part of histcross - the semantic database for historians.
  * Copyright (c) 2005-2009, Maximilian Kalus, auxnet.de

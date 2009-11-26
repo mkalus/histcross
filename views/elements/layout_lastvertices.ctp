@@ -20,10 +20,10 @@ foreach ($vlist as $key => $val) {
 }
 ?>
 <div class="lastseen_vertices">
-<div class="header"><? __('Last Vertices:'); ?></div>
+<div class="header"><?php __('Last Vertices:'); ?></div>
 <cake:nocache>
 <ul>
-<?= $list ?>
+<?php echo($list); ?>
 </ul>
 </cake:nocache>
 </div>

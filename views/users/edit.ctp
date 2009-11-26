@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: edit.php
@@ -34,11 +34,11 @@
 </div>
 <div class="actions">
 	<ul>
-<? if (AccessKeeper::checkAccess('Users', 'delete', $auth->user('group'))) : ?>
+<?php if (AccessKeeper::checkAccess('Users', 'delete', $auth->user('group'))) : ?>
 		<li><?php echo $html->link(__('Delete', true), array('action'=>'delete', $form->value('User.id')), null, sprintf(__('Are you sure you want to delete %s?', true), $form->value('User.name'))); ?></li>
-<? endif;
+<?php endif;
 	if ($auth->user('group') == 'admin') : ?>
 		<li><?php echo $html->link(__('List Users', true), array('action'=>'index'));?></li>
-<? endif; ?>
+<?php endif; ?>
 	</ul>
 </div>

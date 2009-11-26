@@ -9,17 +9,17 @@
  *********************************************************/
 ?>
 <div class="datetime">
-<? echo $form->input('start_time_entry', array('label' => __('Start Date', true))); ?>
+<?php echo $form->input('start_time_entry', array('label' => __('Start Date', true))); ?>
 	<div class="datetimeboxes">
-<?
+<?php
 	echo $form->input('start_time_ca', array('label' => __('ca', true)));
 	echo $form->input('start_time_questionable', array('label' => __('Unclear Date?', true)));
 	echo $form->input('start_time_julian', array('label' => __('Julian?', true)));
 ?>
 	</div><div style="clear: left;"></div>
-<? echo $form->input('stop_time_entry', array('label' => __('Stop Date', true))); ?>
+<?php echo $form->input('stop_time_entry', array('label' => __('Stop Date', true))); ?>
 	<div class="datetimeboxes">
-<?
+<?php
 	echo $form->input('stop_time_ca', array('label' => __('ca', true)));
 	echo $form->input('stop_time_questionable', array('label' => __('Unclear Date?', true)));
 	echo $form->input('stop_time_julian', array('label' => __('Julian?', true)));

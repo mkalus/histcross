@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view_time.ctp
@@ -33,7 +33,7 @@ if ($data[$model]['stop_time_entry'] != '') {
 	$showtime = true;
 } else $stoptime = '';
 ?>
-<? if ($showtime) : ?>
+<?php if ($showtime) : ?>
 			<dt class="time"><?php  __('Time');?></dt>
 			<dd class="time"><?php echo $starttime; ?> &mdash; <?php echo $stoptime; ?></dd>
-<? endif ?>
+<?php endif ?>

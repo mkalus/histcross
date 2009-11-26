@@ -9,7 +9,7 @@
  *********************************************************/
 ?>
 <div class="geodate">
-<?
+<?php
 echo $form->input('show_date');
 echo $form->input('show_geo');
 ?>

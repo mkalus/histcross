@@ -9,7 +9,7 @@
  *********************************************************/
 ?>
 <ul class="autocomplete_live">
-<? foreach($vertices as $vertex) : ?>
+<?php foreach($vertices as $vertex) : ?>
 <?
 $pic = $vertex['Vertex']['pictogram_id'];
 if (!is_numeric($pic)) $pic = '';
@@ -17,6 +17,6 @@ else {
 	$pic = $hcSupport->getIconHTML($pic, false);
 }
 ?>
-<li id="<?=$vertex['Vertex']['id']?>"><?=$pic.Sanitize::html($vertex['Vertex']['title'])?></li>
-<? endforeach; ?>
+<li id="<?php echo($vertex['Vertex']['id']); ?>"><?php echo($pic.Sanitize::html($vertex['Vertex']['title'])); ?></li>
+<?php endforeach; ?>
 </ul>

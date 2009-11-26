@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view_geodate.ctp
@@ -17,7 +17,7 @@
 ?>
 			<dt><?php  __('Show');?></dt>
 			<dd>
-<?
+<?php
 	//Create a nice list of shown entries
 	$possibleentries = array('show_geo' => 'Geographic Coordinates',
 		'show_date' => 'Date Entries');

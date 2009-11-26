@@ -8,4 +8,4 @@
  * See licence.txt for details (MIT licence).
  *********************************************************/
 ?>
-<div class="message"><? __('Data deletion failed! Something strange happened...'); ?></div>
+<div class="message"><?php __('Data deletion failed! Something strange happened...'); ?></div>

@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -35,13 +35,13 @@ $model_array =  array('data' => $tagset, 'model' => 'Tagset', 'id' => $tagset['T
 					echo $html->link($val, '/vertices/view/'.$key);
 				}
 				?></dd>
-<?
+<?php
 //Show coordinate element
 echo $this->element('view_network', $model_array);
 ?>
 		</dl>
 	</div>
-<?
+<?php
 //Add Footer
 echo $this->element('footer_editinfo', $model_array);
 ?>

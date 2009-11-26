@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view_comment.ctp
@@ -17,7 +17,7 @@
 
 if (!isset($linkbibs)) $linkbibs = false;
 ?>
-<? if ($data[$model]['comment'] != '') : ?>
+<?php if ($data[$model]['comment'] != '') : ?>
 			<dt class="comment"><?php  __('Comment');?></dt>
 			<dd class="comment"><?php echo $hcFormat->format($data[$model]['comment'], $linkbibs); ?></dd>
-<? endif ?>
+<?php endif ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: edit.php
@@ -33,10 +33,10 @@
 	</fieldset>
 <?php echo $form->end(__('Change!', true));?>
 </div>
-<? if ($linkid != null) : ?>
+<?php if ($linkid != null) : ?>
 <div class="actions">
 	<ul>
 		<li><?php echo $html->link(__('Back to the Relation Type', true), '/relation_types/view/'.$linkid);?></li>
 	</ul>
 </div>
-<? endif; ?>
+<?php endif; ?>

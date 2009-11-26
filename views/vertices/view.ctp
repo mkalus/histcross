@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -41,7 +41,7 @@ $classlink = $html->link(
 		</h2>
 		
 		<dl class="dataentry">
-<?
+<?php
 //Show time element
 echo $this->element('view_time', $model_array);
 //Show coordinate element
@@ -52,7 +52,7 @@ echo $this->element('view_comment', $model_array);
 		</dl>
 	</div>
 
-<?
+<?php
 //Add the bibliography list
 echo $this->element('view_bibliography_list', array('bibliographies' => $vertex['Bibliography'], 'id' => $vertex['Vertex']['id'], 'model' => 'Vertex'));
 
@@ -65,8 +65,8 @@ echo $this->element('list_relations', array('elementtitle' => __('Related Relati
 //Show Dropdown for possible Relations
 if ($auth->sessionValid()) : ?>
 <div class="smallinputline">
-<h3><? __('Add New Relation to this Vertex'); ?></h3>
-<?
+<h3><?php __('Add New Relation to this Vertex'); ?></h3>
+<?php
 	echo $form->create('Relation', array('type' => 'get'));
 	
 	echo $form->hidden('vertex_id', array('value' => $vertex['Vertex']['id']));
@@ -75,7 +75,7 @@ if ($auth->sessionValid()) : ?>
 	echo $form->end(__('Add!', true), array('class' => 'smallinlineinput'));
 ?>
 </div>
-<? endif;
+<?php endif;
 
 //Add Java element
 echo '<a name="visualized_network"></a>';
@@ -86,7 +86,7 @@ echo '<a name="visualized_network"></a>';
 		echo $this->element('view_network_applet', array('vertex_id' => $vertex['Vertex']['id'], 'hostname' => $hostname));
 	} else {
 ?>
-<div id="viewnetworkapplet"><p><?
+<div id="viewnetworkapplet"><p><?php
 		echo $ajax->link(
 			__('Activate interactive network view', true),
 			array(
@@ -108,8 +108,8 @@ echo '<a name="visualized_network"></a>';
     		null,
     		false
 		);
-?><br /><? __('The active network view lets you view nodes interactively. This feature needs Java enabled.'); ?></p></div>
-<?
+?><br /><?php __('The active network view lets you view nodes interactively. This feature needs Java enabled.'); ?></p></div>
+<?php
 		echo '<div id="networkapplet_loading" style="display:none;">';
 		echo $html->image('ajax-loader.gif');
 		echo '</div>';

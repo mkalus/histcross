@@ -35,17 +35,17 @@
 		    		false
 				);
 			?></dd>
-<?
+<?php
 			//Has showglobe been set?
 			if (isset($this->params['named']['showglobe'])) {
 				echo $geography->buildGlobe($model, $data[$model]['id'], $data[$model]['title'], $data[$model]['geo'], $data[$model]['modified']);
 			} else {
 ?>
 <div id="viewglobe"></div>
-<?
+<?php
 				echo '<div id="globe_loading" style="display:none;">';
 				echo $html->image('ajax-loader.gif');
 				echo '</div>';
 			}
 ?>
-<? endif ?>
+<?php endif ?>

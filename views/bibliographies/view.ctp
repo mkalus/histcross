@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -23,14 +23,14 @@
 			<dd class="bibentry"><?php echo Sanitize::html(str_replace('--', '—', $bibliography['Bibliography']['longtitle'])); ?></dd>
 			<dt class="bibshort"><?php  __('Short Reference');?></dt>
 			<dd class="bibshort"><?php echo Sanitize::html($bibliography['Bibliography']['shortref']); ?></dd>
-	<? if ($bibliography['Bibliography']['comment'] != '') : ?>
+	<?php if ($bibliography['Bibliography']['comment'] != '') : ?>
 			<dt class="comment"><?php  __('Comment');?></dt>
 			<dd class="comment"><?php echo $hcFormat->format($bibliography['Bibliography']['comment'], false); ?></dd>
-	<? endif ?>
+	<?php endif ?>
 		</dl>
 	</div>
 
-<?
+<?php
 //Show related vertices and relations
 echo $this->element('list_vertices_bib', array('elementtitle' => __('Vertices connected to this Bibliographic Entry', true), 'data' => $vertices));
 echo $this->element('list_relations_bib', array('elementtitle' => __('Relations connected to this Bibliographic Entry', true), 'data' => $relations));

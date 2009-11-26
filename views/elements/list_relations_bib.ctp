@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: list_relations_bib.ctp
@@ -21,7 +21,7 @@
 	</tr>
 <?php $row = 0; 
 foreach($data as $val): ?>
-<?
+<?php
 $startdate = $hcSupport->dateformat($val['Relation']['start_time_entry'], $val['Relation']['start_time_ca'], $val['Relation']['start_time_questionable'], $val['Relation']['start_time_julian']);
 $stopdate = $hcSupport->dateformat($val['Relation']['stop_time_entry'], $val['Relation']['stop_time_ca'], $val['Relation']['stop_time_questionable'], $val['Relation']['stop_time_julian']);
 if ($startdate == '') $startdate = '----';
@@ -30,7 +30,7 @@ $details = __('Details', true);
 $edit = __('Edit', true);
 ?>
 	<tr<?php if ($row++ % 2 == 0) echo ' class="altrow"'; ?>>
-		<td class="nobreak"><a href="/relations/view/<? echo $val['Relation']['id']; ?>" title="<? echo $details; ?>"><img src="/img/icons/icon_relation.gif" width="16" height="16" /></a>
+		<td class="nobreak"><a href="/relations/view/<?php echo $val['Relation']['id']; ?>" title="<?php echo $details; ?>"><img src="/img/icons/icon_relation.gif" width="16" height="16" /></a>
 		<?php
 		//Edit Icon?
 		if ($auth->sessionValid()) {

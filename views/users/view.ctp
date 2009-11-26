@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -36,11 +36,11 @@
 </div>
 <div class="actions">
 	<ul>
-<? if ($auth->user('group') == 'admin' || $auth->user('id') == $user['User']['id']) : ?>
+<?php if ($auth->user('group') == 'admin' || $auth->user('id') == $user['User']['id']) : ?>
 		<li><?php echo $html->link(__('Change Password', true), array('action'=>'changepassword', $user['User']['id']), null, null); ?></li>
-<? endif;
+<?php endif;
 	if ($auth->user('group') == 'admin') : ?>
 		<li><?php echo $html->link(__('List Users', true), array('action'=>'index'));?></li>
-<? endif; ?>
+<?php endif; ?>
 	</ul>
 </div>

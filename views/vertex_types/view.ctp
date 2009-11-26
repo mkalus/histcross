@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -18,7 +18,7 @@ $model_array =  array('data' => $vertexType, 'model' => 'VertexType', 'linkbibs'
 				 __('Vertex Type', true)).
 				 $hcSupport->getIconHTML($vertexType['VertexType']['pictogram_id'], true).
 				 Sanitize::html($vertexType['VertexType']['title']);?><br />
-<?
+<?php
 $classlink = $html->link(
 	$vertexType['VertexClass']['title'],
 	array(
@@ -32,7 +32,7 @@ $classlink = $html->link(
 		</h2>
 		
 		<dl class="dataentry">
-<?
+<?php
 //Show comment element
 echo $this->element('view_comment', $model_array);
 //Show geo/date allowed element
@@ -40,7 +40,7 @@ echo $this->element('view_geodate', $model_array);
 ?>
 		</dl>
 	</div>
-<?
+<?php
 //Show related vertices
 echo $this->element('list_vertices', array('elementtitle' => __('Related Vertices', true), 'useajax' => true));
 

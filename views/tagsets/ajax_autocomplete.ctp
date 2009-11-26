@@ -10,11 +10,11 @@
 
 ?>
 <ul class="autocomplete_live">
-<? foreach($tagsets as $tagset) : ?>
-<?
+<?php foreach($tagsets as $tagset) : ?>
+<?php
 	if ($tagset['Tagset']['group'] != '') $title = $tagset['Tagset']['group'].':'.$tagset['Tagset']['title'];
 	else $title = $tagset['Tagset']['title'];
 ?>
-<li><?=Sanitize::html($title)?></li>
-<? endforeach; ?>
+<li><?php echo(Sanitize::html($title)); ?></li>
+<?php endforeach; ?>
 </ul>

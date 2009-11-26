@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -20,17 +20,17 @@ $model_array =  array('data' => $relationClass, 'model' => 'RelationClass', 'lin
 			<span style="font-size:smaller;"><?php  __('Relation Class');?></span>
 		</h2>
 		
-	<? if ($relationClass['RelationClass']['comment'] != '') : ?>
+	<?php if ($relationClass['RelationClass']['comment'] != '') : ?>
 		<dl class="dataentry">
-<?
+<?php
 //Show comment element
 echo $this->element('view_comment', $model_array);
 ?>
 		</dl>
-	<? endif ?>
+	<?php endif ?>
 	</div>
 
-<?
+<?php
 //Show related relation types
 echo $this->element('list_relation_types', array('elementtitle' => __('Related Relation Types', true), 'useajax' => true));
 

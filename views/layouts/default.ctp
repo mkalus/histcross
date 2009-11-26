@@ -50,10 +50,10 @@
 	} else
 		echo $html->link(__('Login', true), '/users/login');
 ?>
-				| <a href="/pages/help"><? __('Help'); ?></a> | <a href="/pages/imprint"><? __('Imprint'); ?></a></span>
+				| <a href="/pages/help"><?php __('Help'); ?></a> | <a href="/pages/imprint"><?php __('Imprint'); ?></a></span>
 			</div>
 			<div>
-				<div id="hclogo" style="float:left; padding-right: 5px;"><?=$html->link($html->image('hclogo.gif', array('width' => '46', 'height' => '40', 'alt' => __('histcross', true))), '/', array(), false, false);?></div>
+				<div id="hclogo" style="float:left; padding-right: 5px;"><?php echo($html->link($html->image('hclogo.gif', array('width' => '46', 'height' => '40', 'alt' => __('histcross', true))), '/', array(), false, false)); ?></div>
 				<h1><?php __('historic crossroads'); ?></h1>
 				<span><?php __('The Semantic Database for Historians'); ?></span></div>
 			</div>
@@ -90,7 +90,7 @@
 			<!-- begin: #col1 - first float column -->
 			<div id="col1">
 				<div id="col1_content" class="clearfix">
-<?
+<?php
 	echo $this->element('layout_search');
 	echo $this->element('layout_morelinks');
 	echo $this->element('layout_lastvertices');
@@ -103,7 +103,7 @@
 			<div id="col3">
 				<a id="content" name="content"></a>
 				<div id="col3_content" class="clearfix">
-					<?
+					<?php
 						if ($session->check('Message.flash')):
 							$session->flash();
 						endif;
@@ -122,7 +122,7 @@
 		<!-- begin: #footer -->
 		<div id="footer">
 			<div id="rightfooter"><a href="http://www.cakephp.org" target="_blank"><img src="/img/cake.power.gif" width="98" height="13" title="Powered by CakePHP" alt="Powered by CakePHP" border="0"></a></div>
-			<div id="leftfooter">(c) 2005 — <?=date('Y')?> by Maximilian Kalus, <a href="http://www.histcross.org" target="_blank">histcross.org</a>, Version <? echo Configure::read('HC.version'); ?></div>
+			<div id="leftfooter">(c) 2005 — <?php echo(date('Y')); ?> by Maximilian Kalus, <a href="http://www.histcross.org" target="_blank">histcross.org</a>, Version <?php echo Configure::read('HC.version'); ?></div>
 		</div>
 		<!-- end: #footer -->
 	</div>

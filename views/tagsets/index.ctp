@@ -12,9 +12,9 @@
 <h2><?php __('Tag Sets');?></h2>
 
 <div class="tagsetlist">
-<? $lastheader = -1;
+<?php $lastheader = -1;
    foreach($tagsets as $tagset) : ?>
-<?
+<?php
 		$header = $tagset['Tagset']['group'];
 		if ($header != $lastheader) {
 			if ($lastheader != -1) echo '</ul>';
@@ -23,17 +23,17 @@
 		}
 		echo '<li>'.$html->link($tagset['Tagset']['title'], array('action' => 'view', $tagset['Tagset']['id'])).'</li>';
 ?>
-<? endforeach; ?>
+<?php endforeach; ?>
 </ul></div>
 
 <h2><?php __('Tag Cloud');?></h2>
 <div class="tagcloud">
-<?
+<?php
 $cloud = $tagcloud->shuffleTags($tagcloud->formulateTagCloud($tags));
 ?>
-<? if (count($cloud) > 0) foreach($cloud as $entry => $values) : ?>
+<?php if (count($cloud) > 0) foreach($cloud as $entry => $values) : ?>
 
-<?=$html->link($entry, array('action' => 'view', $idlist[$entry]), array('style' => 'font-size: '.$values['size'].'%;'));?>
-<? endforeach; ?>
+<?php echo($html->link($entry, array('action' => 'view', $idlist[$entry]), array('style' => 'font-size: '.$values['size'].'%;')));?>
+<?php endforeach; ?>
 </div>
 </div>

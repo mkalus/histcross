@@ -20,18 +20,18 @@ if (isset($this->params['named']['shownetwork'])) :
 ?>
 			<dt><?php  __('Network Visualization');?></dt>
 			<dd><div id="viewnetwork">
-				<div id="network_loading" style="display:none;"><? echo $html->image('ajax-loader.gif'); ?></div>
-				<? echo $html->link($html->image($img['small']),
+				<div id="network_loading" style="display:none;"><?php echo $html->image('ajax-loader.gif'); ?></div>
+				<?php echo $html->link($html->image($img['small']),
 					'/img/'.$img['big'], array('target' => '_blank'), false, false); ?>
 				<br />
-				<? echo $html->link(__('Graphviz Data File', true), '/'.$filename, array('target' => '_blank')); ?>
+				<?php echo $html->link(__('Graphviz Data File', true), '/'.$filename, array('target' => '_blank')); ?>
 				<br />
-				<? echo $html->link(__('Coordinated DOT-File', true), '/'.$dotfile, array('target' => '_blank')); ?>
+				<?php echo $html->link(__('Coordinated DOT-File', true), '/'.$dotfile, array('target' => '_blank')); ?>
 			</div></dd>
-<? else : ?>
+<?php else : ?>
 			<dt><?php  __('Network Visualization');?></dt>
 			<dd><div id="viewnetwork">
-<?
+<?php
 	echo $ajax->link(
 		$html->image('icons'.DS.'icon_set.gif',
 			array('width' => '16', 'height' => '16',
@@ -56,6 +56,6 @@ if (isset($this->params['named']['shownetwork'])) :
 		false
 	);
 ?>
-				<div id="network_loading" style="display:none;"><? echo $html->image('ajax-loader.gif'); ?></div>
+				<div id="network_loading" style="display:none;"><?php echo $html->image('ajax-loader.gif'); ?></div>
 			</div></dd>
-<? endif ; ?>
+<?php endif ; ?>

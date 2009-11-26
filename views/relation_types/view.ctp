@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -17,8 +17,8 @@ $model_array =  array('data' => $relationType, 'model' => 'RelationType', 'linkb
 				'icon_relationtype.gif',
 				 __('Relation Type', true)).
 				 $hcSupport->getIconHTML($relationType['RelationType']['pictogram_id'], true).
-				 Sanitize::html($relationType['RelationType']['title_from']);?> &rArr; <? __('X') ?> &rArr; <? echo Sanitize::html($relationType['RelationType']['title_to']);?><br />
-<?
+				 Sanitize::html($relationType['RelationType']['title_from']);?> &rArr; <?php __('X') ?> &rArr; <?php echo Sanitize::html($relationType['RelationType']['title_to']);?><br />
+<?php
 $classlink = $html->link(
 	$relationType['RelationClass']['title'],
 	array(
@@ -32,7 +32,7 @@ $classlink = $html->link(
 		</h2>
 		
 		<dl class="dataentry">
-<?
+<?php
 //Show comment element
 echo $this->element('view_comment', $model_array);
 //Show geo/date allowed element
@@ -41,7 +41,7 @@ echo $this->element('view_geodate', $model_array);
 		</dl>
 	</div>
 
-<?
+<?php
 //Show related inferences
 echo $this->element('list_inferences', array('id' => $relationType['RelationType']['id'], 'inferences' => $inferences, 'ajax' => false));
 //Show related relations

@@ -13,14 +13,14 @@ if (!isset($showform)) $showform = false;
 $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height' => '16', 'title' => __('Details', true), 'alt' => __('Details', true)));
 ?>
 	<div id="tagset_list">
-<? if (count($tagsets) > 0 || $auth->sessionValid()) : ?>
-		<div id="tagset_loading" class="ajaxloaderright" style="display: none;"><?=$html->image('ajax-loader.gif')?></div>
-		<h3><? __('Associated Sets'); ?></h3>
-<? endif; ?>
-<? if ($session->check('Message.tagset')):
+<?php if (count($tagsets) > 0 || $auth->sessionValid()) : ?>
+		<div id="tagset_loading" class="ajaxloaderright" style="display: none;"><?php echo($html->image('ajax-loader.gif')); ?></div>
+		<h3><?php __('Associated Sets'); ?></h3>
+<?php endif; ?>
+<?php if ($session->check('Message.tagset')):
 		$session->flash('tagset');
    endif; ?>
-<? if (count($tagsets) > 0) :
+<?php if (count($tagsets) > 0) :
 	foreach($tagsets as $tagset) :
 		//from Ajax?
 		if (isset($tagset['Tagset'])) {
@@ -33,8 +33,8 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 		if ($tagset['group'] != '') $tagset['title'] = $tagset['group'].':'.$tagset['title'];
 ?>
 		<div class="tagset_entry">
-<?=$html->link($setimg.' '.Sanitize::html($tagset['title']), '/tagsets/view/'.$tagset['id'], array(), false, false);?>
-<?
+<?php echo($html->link($setimg.' '.Sanitize::html($tagset['title']), '/tagsets/view/'.$tagset['id'], array(), false, false));?>
+<?php
 		//Logged in - prepare a delete action
 		if ($auth->sessionValid()) {
 			//Delete image
@@ -60,10 +60,10 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 		}
 ?>
 		</div>
-<? 	endforeach; ?>
-<? endif; ?>
-<? if ($auth->sessionValid()) : ?>
-		<div id="tagset_formshowbutton"><?
+<?php 	endforeach; ?>
+<?php endif; ?>
+<?php if ($auth->sessionValid()) : ?>
+		<div id="tagset_formshowbutton"><?php
 		if (!$showform)
 			echo $html->link(
 				$html->image('icons'.DS.'comment_new.gif',
@@ -73,7 +73,7 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 					array('onClick' => "\$('tagset_addform').show();\$('tagset_formshowbutton').hide(); return false;"),
 					false, false);
 		?></div>
-		<div class="tagsets smallinputline smallline form" id="tagset_addform"<? if (!$showform) : ?> style="display: none;"<? endif; ?>>
+		<div class="tagsets smallinputline smallline form" id="tagset_addform"<?php if (!$showform) : ?> style="display: none;"<?php endif; ?>>
 <?php echo $ajax->form(array('controller' => 'tagsets', 'action' => 'add_set', $id),
 		'post', array('url' => array(
 			'controller' => 'tagsets',
@@ -89,5 +89,5 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 <?php echo ' '.$form->submit(__('Add!', true), array('class' => 'smallinlineinput'));?>
 <?php echo $form->end(null);?>
 		</div>
-<? endif; ?>
+<?php endif; ?>
 	</div>

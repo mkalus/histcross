@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -68,7 +68,7 @@ $classlink = $html->link(
 		</h2>
 		
 		<dl class="dataentry">
-<?
+<?php
 //Show time element
 echo $this->element('view_time', $model_array);
 //Show coordinate element
@@ -79,7 +79,7 @@ echo $this->element('view_comment', $model_array);
 		</dl>
 	</div>
 
-<?
+<?php
 //Add the bibliography list
 echo $this->element('view_bibliography_list', array('bibliographies' => $relation['Bibliography'], 'id' => $relation['Relation']['id'], 'model' => 'Relation'));
 
@@ -91,14 +91,14 @@ echo $this->element('list_relations', array('elementtitle' => __('Similar Relati
 if ($auth->sessionValid()) :
 ?>
 	<div class="possible_inferences" id="possible_inferences">
-	<div id="possible_inferences_loading" class="ajaxloaderright" style="display: none;"><?=$html->image('ajax-loader.gif')?></div>
-	<h3><? __('Possible Derived Relations'); ?></h3>
-	<? echo $ajax->link(__('Show possible derived relations', true),
+	<div id="possible_inferences_loading" class="ajaxloaderright" style="display: none;"><?php echo($html->image('ajax-loader.gif')); ?></div>
+	<h3><?php __('Possible Derived Relations'); ?></h3>
+	<?php echo $ajax->link(__('Show possible derived relations', true),
 		array( 'controller' => 'relations', 'action' => 'possible_inferences', $relation['Relation']['id']),
 		array('update' => 'possible_inferences', 'url' => array('controller' => 'relations', 'action' => 'possible_inferences', $relation['Relation']['id']), 'before' => "Element.show('possible_inferences_loading');")
 		); ?>
 	</div>
-<?
+<?php
 endif;
 
 //Add Footer

@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view_bibliography_list.ctp
@@ -11,18 +11,18 @@
 $bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 'height' => '16', 'title' => __('Details', true), 'alt' => __('Details', true)));
 ?>
 	<div id="bibliography_list">
-<? if (count($bibliographies) > 0 || $auth->sessionValid()) : ?>
-		<div id="bibliography_loading" class="ajaxloaderright" style="display: none;"><?=$html->image('ajax-loader.gif')?></div>
-		<h3><? __('Bibliography'); ?></h3>
-<? endif; ?>
-<? 	if ($session->check('Message.bib')):
+<?php if (count($bibliographies) > 0 || $auth->sessionValid()) : ?>
+		<div id="bibliography_loading" class="ajaxloaderright" style="display: none;"><?php echo ($html->image('ajax-loader.gif')); ?></div>
+		<h3><?php __('Bibliography'); ?></h3>
+<?php endif; ?>
+<?php 	if ($session->check('Message.bib')):
 		$session->flash('bib');
 	endif; ?>
-<? if (count($bibliographies) > 0) :
+<?php if (count($bibliographies) > 0) :
 	foreach($bibliographies as $bibliography) : ?>
 		<div class="bibliography_entry">
-<?=$html->link($bookimg, '/bibliographies/view/'.$bibliography['id'], array(), false, false);?>
-<?		//prepare nice title
+<?php echo($html->link($bookimg, '/bibliographies/view/'.$bibliography['id'], array(), false, false));?>
+<?php		//prepare nice title
 		echo $html->link($bibliography['shorttitle'], '/bibliographies/view/'.$bibliography['id']);
 		//Now, how are pages presented?
 		if ($bibliography['Bibliographies'.$model]['pages'] != '')
@@ -66,10 +66,10 @@ $bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 
 		}
 ?>
 		</div>
-<? 	endforeach; ?>
-<? endif; ?>
-<? if ($auth->sessionValid()) : ?>
-		<div id="bibliography_formshowbutton"><?=$html->image('icons'.DS.'comment_new.gif', array('width' => '16', 'height' => '16', 'title' => __('Add Bibliography', true), 'onClick' => "\$('bibliography_addform').show();\$('bibliography_formshowbutton').hide();"))?></div>
+<?php 	endforeach; ?>
+<?php endif; ?>
+<?php if ($auth->sessionValid()) : ?>
+		<div id="bibliography_formshowbutton"><?php echo($html->image('icons'.DS.'comment_new.gif', array('width' => '16', 'height' => '16', 'title' => __('Add Bibliography', true), 'onClick' => "\$('bibliography_addform').show();\$('bibliography_formshowbutton').hide();"))); ?></div>
 		<div class="bibliographies smallinputline form" id="bibliography_addform" style="display: none;">
 <?php echo $ajax->form(array('controller' => Inflector::tableize($model), 'action' => 'add_bibliography', $id),
 		'post', array('url' => array(
@@ -84,5 +84,5 @@ $bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 
 <?php echo ' '.$form->submit(__('Add!', true), array('class' => 'smallinlineinput'));?>
 <?php echo $form->end(null);?>
 		</div>
-<? endif; ?>
+<?php endif; ?>
 	</div>

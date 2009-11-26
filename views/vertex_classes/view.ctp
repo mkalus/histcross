@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: view.php
@@ -20,17 +20,17 @@ $model_array =  array('data' => $vertexClass, 'model' => 'VertexClass', 'linkbib
 			<span style="font-size:smaller;"><?php  __('Vertex Class');?></span>
 		</h2>
 		
-	<? if ($vertexClass['VertexClass']['comment'] != '') : ?>
+	<?php if ($vertexClass['VertexClass']['comment'] != '') : ?>
 		<dl class="dataentry">
-<?
+<?php
 //Show comment element
 echo $this->element('view_comment', $model_array);
 ?>
 		</dl>
-	<? endif ?>
+	<?php endif ?>
 	</div>
 
-<?
+<?php
 //Show related verticex types
 echo $this->element('list_vertex_types', array('elementtitle' => __('Related Vertex Types', true), 'useajax' => true));
 

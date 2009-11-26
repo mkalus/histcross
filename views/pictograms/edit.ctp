@@ -1,4 +1,4 @@
-<?
+<?php
 /*********************************************************
  * histcross v2.0
  * File: edit.php
@@ -17,9 +17,9 @@
 		echo $form->input('picture', array('between'=>'<br />','type'=>'file'));
 		//echo $form->input('Pictogram.picture.remove', array('type' => 'checkbox'));  
 	?>
-	<div class="input pictures"><label><? __('Current Pictures'); ?></label>
-	<? __('Big: '); echo $hcSupport->getIconHTML($form->value('Pictogram.id'), true); ?>
-	<? __('Small: '); echo $hcSupport->getIconHTML($form->value('Pictogram.id'), false); ?></div>
+	<div class="input pictures"><label><?php __('Current Pictures'); ?></label>
+	<?php __('Big: '); echo $hcSupport->getIconHTML($form->value('Pictogram.id'), true); ?>
+	<?php __('Small: '); echo $hcSupport->getIconHTML($form->value('Pictogram.id'), false); ?></div>
 	</fieldset>
 <?php echo $form->end(__('Change!', true));?>
 </div>

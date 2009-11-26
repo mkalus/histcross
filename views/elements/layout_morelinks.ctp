@@ -10,9 +10,9 @@
 
 ?>
 <div class="morelinks">
-	<? __('Additional Actions:'); ?>
+	<?php __('Additional Actions:'); ?>
 	<ul>
-		<li><a href="/tagsets"><? __('Tag Sets'); ?></a></li>
-		<li><a href="/relations/aggregate_cloud"><? __('Relational Tag Clouds'); ?></a></li>
+		<li><a href="/tagsets"><?php __('Tag Sets'); ?></a></li>
+		<li><a href="/relations/aggregate_cloud"><?php __('Relational Tag Clouds'); ?></a></li>
 	</ul>
 </div>

@@ -10,36 +10,36 @@
 
 //message or warning?
 if (isset($warning) && $warning != null) : ?>
-<div class="message"><?=$warning?></div>
-<? endif; ?>
+<div class="message"><?php echo($warning); ?></div>
+<?php endif; ?>
 
-<? if (count($inferences) > 0) : ?>
+<?php if (count($inferences) > 0) : ?>
 <div class="possible_inferences">
-<h3><? __('Possible Derived Relations'); ?></h3>
+<h3><?php __('Possible Derived Relations'); ?></h3>
 <table class="listtable">
 	<tr>
-		<th><? __('From Vertex'); ?></th>
-		<th><? __('Type'); ?></th>
-		<th><? __('To Vertex'); ?></th>
-<? if ($auth->sessionValid()) : ?>
-		<th><? __('Add'); ?></th>
-<? endif; ?>
+		<th><?php __('From Vertex'); ?></th>
+		<th><?php __('Type'); ?></th>
+		<th><?php __('To Vertex'); ?></th>
+<?php if ($auth->sessionValid()) : ?>
+		<th><?php __('Add'); ?></th>
+<?php endif; ?>
 	</tr>
-<?		$counter = 0;
+<?php		$counter = 0;
 		foreach($inferences as $inference) : ?>
-	<tr<? if($counter++%2==0) echo ' class="altrow"';?>>
-<?
+	<tr<?php if($counter++%2==0) echo ' class="altrow"';?>>
+<?php
 			if ($inference['exists']) $class = 'grey'; else $class = null;
 ?>
-		<td><?=$html->link($inference['from_title'], '/vertices/view/'.$inference['from_id'], array('class' => $class))?></td>
-		<td><?=$html->link($inference['relation_title'], '/relation_types/view/'.$inference['relation_type_id'], array('class' => $class))?></td>
-		<td><?=$html->link($inference['to_title'], '/vertices/view/'.$inference['to_id'], array('class' => $class))?></td>
-<? 			if ($auth->sessionValid()) : ?>
-<?
+		<td><?php echo($html->link($inference['from_title'], '/vertices/view/'.$inference['from_id'], array('class' => $class))); ?></td>
+		<td><?php echo($html->link($inference['relation_title'], '/relation_types/view/'.$inference['relation_type_id'], array('class' => $class)));  ?></td>
+		<td><?php echo($html->link($inference['to_title'], '/vertices/view/'.$inference['to_id'], array('class' => $class))); ?></td>
+<?php		if ($auth->sessionValid()) : ?>
+<?php
 				//prepare some data
 				$htmlid = 'possible_inference_'.$inference['from_id'].'_'.$inference['relation_type_id'].'_'.$inference['to_id'];
 ?>
-		<td class="center" id="<? echo $htmlid; ?>"><?
+		<td class="center" id="<?php echo $htmlid; ?>"><?php
 				if ($inference['exists']) echo $html->image('icons/icon_ok.png', array('width' => 16, 'height' => 16, 'alt' => __('Inference exists', true), 'title' => __('Inference exists', true)));
 				else {
 					$options = array('controller' => 'relations',
@@ -55,9 +55,9 @@ if (isset($warning) && $warning != null) : ?>
 				} 
 				//;
 		?></td>
-<? 			endif; ?>
+<?php 		endif; ?>
 	</tr>
-<?		endforeach; ?>
+<?php		endforeach; ?>
 </table>
 </div>
-<? endif; ?>
+<?php endif; ?>

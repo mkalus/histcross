@@ -66,7 +66,7 @@ $classlink = $html->link(
 		</h2>
 	</div>
 &nbsp;
-<?
+<?php
 //Show possible inferences
 echo $this->element('view_possible_inferences', array('relation' => $relation, 'inferences' => $inferences));
 ?>
