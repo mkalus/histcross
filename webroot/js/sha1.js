@@ -44,17 +44,17 @@ function sha1Hash(msg)
     // HASH COMPUTATION [§6.1.2]
 
     var W = new Array(80); var a, b, c, d, e;
-    for (var i=0; i<N; i++) {
+    for (i=0; i<N; i++) {
 
         // 1 - prepare message schedule 'W'
         for (var t=0;  t<16; t++) W[t] = M[i][t];
-        for (var t=16; t<80; t++) W[t] = ROTL(W[t-3] ^ W[t-8] ^ W[t-14] ^ W[t-16], 1);
+        for (t=16; t<80; t++) W[t] = ROTL(W[t-3] ^ W[t-8] ^ W[t-14] ^ W[t-16], 1);
 
         // 2 - initialise five working variables a, b, c, d, e with previous hash value
         a = H0; b = H1; c = H2; d = H3; e = H4;
 
         // 3 - main loop
-        for (var t=0; t<80; t++) {
+        for (t=0; t<80; t++) {
             var s = Math.floor(t/20); // seq for blocks of 'f' functions and 'K' constants
             var T = (ROTL(a,5) + f(s,b,c,d) + e + K[s] + W[t]) & 0xffffffff;
             e = d;
@@ -114,11 +114,12 @@ function doChallengeResponse() {	//
 	var username = $('UserUsername').value;
 	var password = $('UserPassword').value;
 	var challenge = $('UserChallenge').value;
-	if (password)	{
+	if (password) {
 		password = sha1Hash(password);	// this makes it superchallenged!!
 		var str = username+":"+password+":"+challenge;
 		$('UserUserIdent').value = sha1Hash(str);
 		$('UserPassword').value = "";
 		return true;
 	}
+        return false;
 }

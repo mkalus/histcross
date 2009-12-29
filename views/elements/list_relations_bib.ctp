@@ -30,7 +30,7 @@ $details = __('Details', true);
 $edit = __('Edit', true);
 ?>
 	<tr<?php if ($row++ % 2 == 0) echo ' class="altrow"'; ?>>
-		<td class="nobreak"><a href="/relations/view/<?php echo $val['Relation']['id']; ?>" title="<?php echo $details; ?>"><img src="/img/icons/icon_relation.gif" width="16" height="16" /></a>
+		<td class="nobreak"><a href="/relations/view/<?php echo $val['Relation']['id']; ?>" title="<?php echo $details; ?>"><img src="/img/icons/icon_relation.gif" width="16" height="16" alt=" title="<?php echo $details; ?>" /></a>
 		<?php
 		//Edit Icon?
 		if ($auth->sessionValid()) {

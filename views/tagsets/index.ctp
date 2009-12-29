@@ -24,7 +24,7 @@
 		echo '<li>'.$html->link($tagset['Tagset']['title'], array('action' => 'view', $tagset['Tagset']['id'])).'</li>';
 ?>
 <?php endforeach; ?>
-</ul></div>
+<?php echo '</ul>'; ?></div>
 
 <h2><?php __('Tag Cloud');?></h2>
 <div class="tagcloud">
