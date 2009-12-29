@@ -255,8 +255,8 @@
 //Search engine - possible values are 'simple' and 'sphinx'
 	Configure::write('HC.SearchEngine', 'sphinx');
 //If Sphinx is used, set the server and port of sphinx
-	Configure::write('HC.SphinxHost', 'localhost');
-	Configure::write('HC.SphinxPort', 3312);
+	Configure::write('HC.SphinxHost', '127.0.0.1');
+	Configure::write('HC.SphinxPort', 9312); //change to 3312 for old sphinx versions
 //Also set the indices to search and the type of index
 	Configure::write('HC.SphinxVertices', 'histcross_vertices');
 	Configure::write('HC.SphinxRelations', 'histcross_relations');
