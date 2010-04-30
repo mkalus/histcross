@@ -121,7 +121,7 @@
 		<!-- end: #main -->
 		<!-- begin: #footer -->
 		<div id="footer">
-			<div id="rightfooter"><a href="http://www.cakephp.org"><img src="/img/cake.power.gif" width="98" height="13" title="Powered by CakePHP" alt="Powered by CakePHP" /></a></div>
+			<div id="rightfooter"><a href="http://www.yaml.de/"><img src="/img/yaml_layout.png" width="80" height="15" title="Layout based on YAML" alt="Layout based on YAML" /></a> <a href="http://www.cakephp.org/"><img src="/img/cake_power.png" width="87" height="15" title="Powered by CakePHP" alt="Powered by CakePHP" /></a></div>
 			<div id="leftfooter">(c) 2005 — <?php echo(date('Y')); ?> by Maximilian Kalus, <a href="http://www.histcross.org">histcross.org</a>, Version <?php echo Configure::read('HC.version'); ?></div>
 		</div>
 		<!-- end: #footer -->
