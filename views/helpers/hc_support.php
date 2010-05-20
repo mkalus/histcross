@@ -26,7 +26,7 @@ class HcSupportHelper extends Helper {
 			$myname = 's';
 		}
 		return $pictogram = $this->Html->image(
-			'pictograms'.DS.$myname.$number.'.png',
+			'pictograms/'.$myname.$number.'.png',
 			array('alt' => $myname.$number.'.png', 'class' => 'icon_'.$myname)
 		);
 	}
@@ -92,7 +92,7 @@ class HcSupportHelper extends Helper {
      		if (AccessKeeper::checkAccess(Inflector::classify($this->params['controller']), 'edit', $this->Auth->user('group'))) {
     			$img .= $this->Html->link(
     				$this->Html->image(
-						'icons'.DS.'icon_edit.png',
+						'icons/icon_edit.png',
 						array('width' => '16', 'height' => '16')
 					),
 					array(

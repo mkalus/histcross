@@ -73,7 +73,7 @@ class PaginatedTableHelper extends AppHelper {
     		if (AccessKeeper::checkAccess($controller, 'add', $this->Auth->user('group'))) {
     			echo $this->Html->link(
     				$this->Html->image(
-						'icons'.DS.'icon_add.png',
+						'icons/icon_add.png',
 						array('width' => '16', 'height' => '16')
 					),
 					array(
@@ -181,7 +181,7 @@ class PaginatedTableHelper extends AppHelper {
    		$value = '<a href="/'.(Inflector::tableize(isset($format['refmodelname'])?$format['refmodelname']:$format['refmodel'])).'/view/'.low($row[$format['refmodel']][$format['reffield']]).'" title="'.$this->details.'"><img src="/img/icons/'.$icon.'" width="16" height="16" /></a>';
 /*    	$value = $this->Html->link(
  	  		$this->Html->image(
-				'icons'.DS.$icon,
+				'icons/'.$icon,
 				array('width' => '16', 'height' => '16')
 			),
 			array(
@@ -200,7 +200,7 @@ class PaginatedTableHelper extends AppHelper {
 		   		$value .= ' <a href="/'.(Inflector::tableize(isset($format['refmodelname'])?$format['refmodelname']:$format['refmodel'])).'/edit/'.low($row[$format['refmodel']][$format['reffield']]).'" title="'.$this->edit.'"><img src="/img/icons/icon_edit.png" width="16" height="16" /></a>';
 /*    			$value .= ' '.$this->Html->link(
     				$this->Html->image(
-						'icons'.DS.'icon_edit.png',
+						'icons/icon_edit.png',
 						array('width' => '16', 'height' => '16')
 					),
 					array(
@@ -249,7 +249,7 @@ class PaginatedTableHelper extends AppHelper {
     function changepassword($value, $icon, $format, $row) {
     	return $this->Html->link(
     		$this->Html->image(
-				'icons'.DS.'icon_password.png',
+				'icons/icon_password.png',
 				array('width' => 16, 'height' => 16, 'alt' => __('Change Password', true))
 			),
 			array(

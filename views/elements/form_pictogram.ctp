@@ -13,7 +13,7 @@ if (is_numeric($form->value('pictogram_id')) && $form->value('pictogram_id') != 
 	$icon = 'b'.$form->value('pictogram_id').'.png';
 } else $icon = 'default.png';
 
-echo '<div style="float: right; margin-right: 300px; margin-top: 15px;">'.$html->image('pictograms'.DS.$icon, array('width' => 24, 'height' => 24, 'id' => 'iconcontainer')).'</div>';
+echo '<div style="float: right; margin-right: 300px; margin-top: 15px;">'.$html->image('pictograms/'.$icon, array('width' => 24, 'height' => 24, 'id' => 'iconcontainer')).'</div>';
 
 echo $form->input('pictogram_id', array('empty' => __('--- optional select ---', true), 'onKeyup' => 'changeFormIcon(this.options[this.selectedIndex].value);', 'onChange' => 'changeFormIcon(this.options[this.selectedIndex].value);'));
 ?>

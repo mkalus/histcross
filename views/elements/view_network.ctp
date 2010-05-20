@@ -33,7 +33,7 @@ if (isset($this->params['named']['shownetwork'])) :
 			<dd><div id="viewnetwork">
 <?php
 	echo $ajax->link(
-		$html->image('icons'.DS.'icon_set.gif',
+		$html->image('icons/icon_set.gif',
 			array('width' => '16', 'height' => '16',
 				'alt' => __('Visualize Network', true),
 				'title' => __('Visualize Network', true),

@@ -18,7 +18,7 @@
     		if (AccessKeeper::checkAccess('inferences', 'add', $auth->user('group'))) {
     			echo $html->link(
     				$html->image(
-						'icons'.DS.'icon_add.png',
+						'icons/icon_add.png',
 						array('width' => '16', 'height' => '16')
 					),
 					array(
@@ -34,8 +34,8 @@
 		}
 ?>
 <?php __('Inferences'); ?>
-<?php echo $html->image('icons'.DS.'arrow_down.gif', array('width' => '16', 'height' => '16', 'title' => __('Show more', true), 'id' => 'inferencelistadd', 'onClick' => "showInferenceList();")); ?>
-<?php echo $html->image('icons'.DS.'arrow_up.gif', array('width' => '16', 'height' => '16', 'title' => __('Show less', true), 'id' => 'inferencelistremove', 'onClick' => "hideInferenceList();")); ?>
+<?php echo $html->image('icons/arrow_down.gif', array('width' => '16', 'height' => '16', 'title' => __('Show more', true), 'id' => 'inferencelistadd', 'onClick' => "showInferenceList();")); ?>
+<?php echo $html->image('icons/arrow_up.gif', array('width' => '16', 'height' => '16', 'title' => __('Show less', true), 'id' => 'inferencelistremove', 'onClick' => "hideInferenceList();")); ?>
 </h2>
 <?php endif; ?>
 <?php //only display list if Inferences exist
@@ -62,7 +62,7 @@
 			($inference['Inference']['p3_dir_from']==1?"($c,$b)":"($b,$c)"));
 ?>
 	<tr>
-		<td class="inference_maps"><?php echo $html->image('inferences'.DS.'inference_'.$inference['InferenceType']['img'].'.png', array('width' => 142, 'height' => 142, 'alt' => $inference['InferenceType']['comment'], 'title' => $inference['InferenceType']['comment'])); ?></td>
+		<td class="inference_maps"><?php echo $html->image('inferences/inference_'.$inference['InferenceType']['img'].'.png', array('width' => 142, 'height' => 142, 'alt' => $inference['InferenceType']['comment'], 'title' => $inference['InferenceType']['comment'])); ?></td>
 		<td>
 		<div class="inference_formula">
 		<span><?php __('Formula:'); ?></span><br />
@@ -71,7 +71,7 @@
 		if ($editauth) {
 			echo $html->link(
 				$html->image(
-					'icons'.DS.'icon_edit.png',
+					'icons/icon_edit.png',
 					array('width' => '16', 'height' => '16')
 				),
 				array(

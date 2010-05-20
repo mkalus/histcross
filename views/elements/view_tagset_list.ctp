@@ -10,7 +10,7 @@
 
 //boolean to show form...
 if (!isset($showform)) $showform = false;
-$setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height' => '16', 'title' => __('Details', true), 'alt' => __('Details', true)));
+$setimg = $html->image('icons/icon_set.gif', array('width' => '16', 'height' => '16', 'title' => __('Details', true), 'alt' => __('Details', true)));
 ?>
 	<div id="tagset_list">
 <?php if (count($tagsets) > 0 || $auth->sessionValid()) : ?>
@@ -38,7 +38,7 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 		//Logged in - prepare a delete action
 		if ($auth->sessionValid()) {
 			//Delete image
-			echo $ajax->link($html->image( 'icons'.DS.'icon_delete.png',
+			echo $ajax->link($html->image( 'icons/icon_delete.png',
 						array('width' => '16', 'height' => '16', 'title' => __('Delete', true), 'alt' => __('Delete', true))
 					), array(
 						'controller' => 'tagsets',
@@ -66,7 +66,7 @@ $setimg = $html->image('icons'.DS.'icon_set.gif', array('width' => '16', 'height
 		<div id="tagset_formshowbutton"><?php
 		if (!$showform)
 			echo $html->link(
-				$html->image('icons'.DS.'comment_new.gif',
+				$html->image('icons/comment_new.gif',
 					array('width' => '16', 'height' => '16',
 						'title' => __('Add Tag', true))),
 					array('controller' => 'tagsets', 'action' => 'add_set', $id),

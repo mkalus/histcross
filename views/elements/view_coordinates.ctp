@@ -12,7 +12,7 @@
 			<dt class="geo"><?php  __('Coordinates');?></dt>
 			<dd class="geo"><?php echo $geography->formatCoordinates($data[$model]['geo']);
 			echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$ajax->link(
-					$html->image('icons'.DS.'icon_world.png',
+					$html->image('icons/icon_world.png',
 						array('width' => '16', 'height' => '16',
 							'alt' => __('Show on Globe', true),
 							'title' => __('Show on Globe', true),

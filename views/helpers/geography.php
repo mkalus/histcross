@@ -107,7 +107,7 @@ class GeographyHelper extends Helper {
 			$this->_createGlobe($localname, $model, $id, $title, $geo);
 		}
 
-    	return $this->Html->image(DS.'img'.DS.'maps'.DS.$picname,
+    	return $this->Html->image('/img/maps/'.$picname,
 						array('width' => '455', 'height' => '455',
 							'alt' => $title,
 							'title' => $title,

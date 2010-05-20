@@ -8,7 +8,7 @@
  * See licence.txt for details (MIT licence).
  *********************************************************/
 
-$bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 'height' => '16', 'title' => __('Details', true), 'alt' => __('Details', true)));
+$bookimg = $html->image('icons/icon_booksmall.gif', array('width' => '16', 'height' => '16', 'title' => __('Details', true), 'alt' => __('Details', true)));
 ?>
 	<div id="bibliography_list">
 <?php if (count($bibliographies) > 0 || $auth->sessionValid()) : ?>
@@ -32,7 +32,7 @@ $bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 
 		} else { //logged in: create edit field
 			echo '<div id="bibpages_'.$bibliography['id'].'" class="bibliography_page">'.
 				$bibliography['Bibliographies'.$model]['pages'];
-			echo $html->image( 'icons'.DS.'icon_edit.png',
+			echo $html->image( 'icons/icon_edit.png',
 						array('style' => 'margin-left: 5px;', 'width' => '16', 'height' => '16', 'title' => __('Edit', true), 'alt' => __('Edit', true))
 					);
 			echo '</div>';
@@ -44,7 +44,7 @@ $bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 
 				'bib' => $bibliography['Bibliographies'.$model]['id']
 			));
 			//Delete image
-			echo $ajax->link($html->image( 'icons'.DS.'icon_delete.png',
+			echo $ajax->link($html->image( 'icons/icon_delete.png',
 						array('width' => '16', 'height' => '16', 'title' => __('Delete', true), 'alt' => __('Delete', true))
 					), array(
 						'controller' => Inflector::tableize($model),
@@ -69,7 +69,7 @@ $bookimg = $html->image('icons'.DS.'icon_booksmall.gif', array('width' => '16', 
 <?php 	endforeach; ?>
 <?php endif; ?>
 <?php if ($auth->sessionValid()) : ?>
-		<div id="bibliography_formshowbutton"><?php echo($html->image('icons'.DS.'comment_new.gif', array('width' => '16', 'height' => '16', 'title' => __('Add Bibliography', true), 'onClick' => "\$('bibliography_addform').show();\$('bibliography_formshowbutton').hide();"))); ?></div>
+		<div id="bibliography_formshowbutton"><?php echo($html->image('icons/comment_new.gif', array('width' => '16', 'height' => '16', 'title' => __('Add Bibliography', true), 'onClick' => "\$('bibliography_addform').show();\$('bibliography_formshowbutton').hide();"))); ?></div>
 		<div class="bibliographies smallinputline form" id="bibliography_addform" style="display: none;">
 <?php echo $ajax->form(array('controller' => Inflector::tableize($model), 'action' => 'add_bibliography', $id),
 		'post', array('url' => array(
