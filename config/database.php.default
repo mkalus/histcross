@@ -82,9 +82,9 @@ class DATABASE_CONFIG {
     'driver' => 'mysqli',
     'persistent' => true,
     'host' => 'localhost',
-    'login' => 'histcross2',
+    'login' => 'histcross',
     'password' => 'very_secret_pw',
-    'database' => 'histcross2',
+    'database' => 'histcross',
     'prefix' => 'hc_',
     'encoding' => 'utf8',
   );
