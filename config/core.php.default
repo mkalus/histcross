@@ -242,7 +242,7 @@
  */
 //Path to imagepagick convert
 	DEFINE('PERPAGE', 20);
-	Configure::write('HC.version', '2.1'); //major/minor version number
+	Configure::write('HC.version', '2.2'); //major/minor version number
 
 //Path to imagepagick convert and graphviz
 	Configure::write('HC.convert_path', '/usr/bin/convert');
