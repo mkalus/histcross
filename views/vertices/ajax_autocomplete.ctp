@@ -10,7 +10,7 @@
 ?>
 <ul class="autocomplete_live">
 <?php foreach($vertices as $vertex) : ?>
-<?
+<?php
 $pic = $vertex['Vertex']['pictogram_id'];
 if (!is_numeric($pic)) $pic = '';
 else {
