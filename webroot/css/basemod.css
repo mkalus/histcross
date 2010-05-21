@@ -83,4 +83,5 @@
   #nav * { border: 0px none !important; }
   #nav_main { background-color: #dddddd; padding-top: 5px; padding-bottom: 5px; }
   #nav_main ul { margin-left: 10px; }
+  #nav_main a:visited { color: #494949; }
 }
